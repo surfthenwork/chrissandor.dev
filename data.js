@@ -1,5 +1,5 @@
 angular.module('myApp').factory('myData', function () {
-    
+
     var featuredProjects = [
         {
             "heading": "California Mutual Insurance Company",
@@ -52,5 +52,10 @@ angular.module('myApp').factory('myData', function () {
     ]
 
     return featuredProjects;
+
+
+    var socialLinks = []
+
+    return socialLinks;
 
 });
