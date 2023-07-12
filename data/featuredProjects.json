@@ -1,46 +1,82 @@
 [
-        {
-            "heading": "California Mutual Insurance Company",
-            "subHeading": "",
+    {
+        "heading": "California Mutual Insurance Company",
+        "subHeading": "Website redesign and CMS migration.",
+        "description": "",
+        "featuredAsset": "assets/featured-cmic.png",
+        "featuredAssetPosition": "left",
+        "modalSlug": "cmic",
+        "problem": {
             "description": "",
-            "featuredAsset": "https://fakeimg.pl/540x600",
-            "problem": {
-                "description": "",
-                "asset": "",
-                "assetType": ""
-            },
-            "solution": {
-                "description": "",
-                "asset": "",
-                "assetType": ""
-            },
-            "process": {
-                "description": "",
-                "asset": "",
-                "assetType": ""
-            },
-            "outcome": {
-                "description": "",
-                "asset": "",
-                "assetType": ""
-            }
+            "asset": ""
         },
-        {
-            "heading": "Monterey County Child Abuse Prevention Council",
-            "subHeading": "",
+        "solution": {
             "description": "",
-            "featuredAsset": "https://fakeimg.pl/540x600"
+            "asset": ""
         },
-        {
-            "heading": "Salinas Valley Ag Tech Summit",
-            "subHeading": "",
+        "process": {
             "description": "",
-            "featuredAsset": "https://fakeimg.pl/540x600"
+            "asset": ""
         },
-        {
-            "heading": "Olive Hill Greenhouses",
-            "subHeading": "",
+        "outcome": {
             "description": "",
-            "featuredAsset": "https://fakeimg.pl/540x600"
+            "asset": ""
         }
-    ]
+    },
+    {
+        "heading": "Monterey County Child Abuse Prevention Council",
+        "subHeading": "Website design and development.",
+        "description": "",
+        "featuredAsset": "assets/featured-capc.jpg",
+        "featuredAssetPosition": "center",
+        "modalSlug": "capc"
+    },
+    {
+        "heading": "Salinas Valley Ag Tech Summit",
+        "subHeading": "Website design and development.",
+        "description": "",
+        "featuredAsset": "assets/featured-svats.jpg",
+        "featuredAssetPosition": "center",
+        "modalSlug": "svats"
+    },
+    {
+        "heading": "Olive Hill Greenhouses",
+        "subHeading": "Website redesign, CMS implementation and email marketing.",
+        "description": "",
+        "featuredAsset": "assets/featured-ohg.png",
+        "featuredAssetPosition": "right",
+        "modalSlug": "ohg"
+    },
+    {
+        "heading": "",
+        "subHeading": "",
+        "description": "",
+        "featuredAsset": "assets/featured-jmt.png",
+        "featuredAssetPosition": "left",
+        "modalSlug": ""
+    },
+    {
+        "heading": "",
+        "subHeading": "",
+        "description": "",
+        "featuredAsset": "assets/featured-drac.png",
+        "featuredAssetPosition": "center",
+        "modalSlug": ""
+    },
+    {
+        "heading": "",
+        "subHeading": "",
+        "description": "",
+        "featuredAsset": "assets/featured-hsi.png",
+        "featuredAssetPosition": "center",
+        "modalSlug": ""
+    },
+    {
+        "heading": "",
+        "subHeading": "",
+        "description": "",
+        "featuredAsset": "assets/featured-br-right.png",
+        "featuredAssetPosition": "right",
+        "modalSlug": ""
+    }
+]

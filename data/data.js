@@ -1,4 +1,4 @@
-angular.module('myApp').factory('myData', function () {
+angular.module('myApp').factory('myProjects', function () {
 
     var featuredProjects = [
         {
@@ -53,9 +53,29 @@ angular.module('myApp').factory('myData', function () {
 
     return featuredProjects;
 
+});
 
-    var socialLinks = []
 
-    return socialLinks;
+angular.module('myApp').factory('myLinks', function () {
+
+    var getConnected = [
+        {
+            "title": "Dribbble",
+            "icon": "ico-dribbble.svg",
+            "link": "https://dribbble.com/chrissandor"
+        },
+        {
+            "title": "LinkedIn",
+            "icon": "ico-linkedin.svg",
+            "link": "https://www.linkedin.com/in/chrissandor/"
+        },
+        {
+            "title": "Resume",
+            "icon": "ico-resume.svg",
+            "link": "https://drive.google.com/file/d/1NtBQtozi8-bdZQP62YGal4QiEc6Am0uZ/view?usp=drive_link"
+        }
+    ]
+
+    return getConnected;
 
 });

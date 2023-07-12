@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Dribbble",
+        "icon": "ico-dribbble.svg",
+        "link": "https://dribbble.com/chrissandor"
+    },
+    {
+        "title": "LinkedIn",
+        "icon": "ico-linkedin.svg",
+        "link": "https://www.linkedin.com/in/chrissandor/"
+    },
+    {
+        "title": "Resume",
+        "icon": "ico-resume.svg",
+        "link": "https://drive.google.com/file/d/1NtBQtozi8-bdZQP62YGal4QiEc6Am0uZ/view?usp=drive_link"
+    }
+]
