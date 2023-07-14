@@ -36,6 +36,13 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
     // $scope.getConnected = myLinks; // data.js
 
 
+    // Footer Icons
+    $http.get('./data/footerIcons.json')
+        .then(function (res) {
+            $scope.footerIcons = res.data;
+        });
+
+
     $scope.pageTitle = document.title;
 
 });

@@ -1,3 +1,14 @@
+/* Utilities */
+.ml-auto {
+    margin-left: auto;
+}
+
+.small,
+small {
+    font-size: 1.2rem;
+}
+
+
 html,
 body {
     font-size: 10px;
@@ -97,6 +108,43 @@ header nav.box-shadow {
     -webkit-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, .5);
     -moz-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, .5);
     box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, .5);
+}
+
+header nav .navbar-brand {
+    display: none;
+}
+
+header nav.box-shadow .navbar-brand {
+    display: block;
+}
+
+header nav.navbar {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+.navbar-light .navbar-toggler {
+    color: #2A2829;
+    border-color: #2A2829;
+    border-radius: unset;
+    padding: 0.75rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(42,40,41, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+header .navbar-collapse {
+    flex-grow: unset;
+}
+
+header .navbar-brand a {
+    color: inherit;
+    text-decoration: unset;
 }
 
 header nav ul {
@@ -371,6 +419,26 @@ header nav ul li a.active {
 }
 
 
+/* Footer */
+footer .footer-container {
+    padding: 0 8rem;
+}
+
+footer .icons-list {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    /*color: #988B4C;*/
+}
+
+footer .icons-list li {
+    opacity: .5;
+}
+
+footer .icons-list li:hover {
+    opacity: 1;
+}
+
+
 /* Bootstrap Responsive Breakpoints */
 @media (min-width: 576px) {
 
@@ -568,7 +636,30 @@ header nav ul li a.active {
 }
 
 @media (max-width: 575.98px) {
-h1 {
+    header nav .navbar-collapse {
+        position: absolute;
+        background-color: #FFC800;
+        top: 5.8rem;
+        left: 0px;
+        width: 100%;
+        padding-left: 4rem;
+        padding-bottom: 1rem;
+
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(152, 139, 76, .5);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(152, 139, 76, .5);
+        box-shadow: 0px 3px 3px 0px rgba(152, 139, 76, .5);
+    }
+
+    header nav .list-inline-item {
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+    }
+
+    header nav .navbar-nav {
+        display: table-caption;
+    }
+
+    h1 {
         font-size: 2.8rem;
     }
 

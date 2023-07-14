@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <!--script src="scripts.js"></script-->
+    <!--script src="data/data.js"></script-->
+</head>
+
+<body>
+    <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
+        <!--li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
+                    <button
+                    ng-class="{'disabled': currentPage == 0}"
+                    ng-disabled="currentPage == 0"
+                    ng-click="currentPage = currentPage - 1"
+                    ><span class="fa-solid fa-chevron-left"></span>
+                    </button>
+                </li-->
+        <!--li class="list-inline-item">{{currentPage+1}}/{{numberOfPages()}}</li-->
+        <!--li class="list-inline-item" ng-class="{'d-none': currentPage >= data.length / pageSize - 1}">
+                    <button
+                    ng-disabled="currentPage >= data.length/pageSize - 1"
+                    ng-class="{'disabled': currentPage >= data.length / pageSize - 1}"
+                    ng-click="currentPage = currentPage + 1"
+                    ><span class="fa-solid fa-chevron-right"></span>
+                    </button>
+                </li-->
+        <!--li><button ng-click="currentPage = currentPage === numberOfPages() ? 1 : currentPage + 1"><img src="assets/ico-rotate.svg" alt="Reload"></button></li-->
+    </ul>
+</body>
+
+</html>

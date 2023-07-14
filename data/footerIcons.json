@@ -1,0 +1,26 @@
+[
+    {
+        "title": "HTML5",
+        "icon": "fa-brands fa-html5"
+    },
+    {
+        "title": "CSS3",
+        "icon": "fa-brands fa-css3"
+    },
+    {
+        "title": "Sass",
+        "icon": "fa-brands fa-sass"
+    },
+    {
+        "title": "Bootstrap",
+        "icon": "fa-brands fa-bootstrap"
+    },
+    {
+        "title": "AngularJS",
+        "icon": "fa-brands fa-angular"
+    },
+    {
+        "title": "JS & jQuery",
+        "icon": "fa-brands fa-js"
+    }
+]

@@ -1,13 +1,18 @@
 [
     {
+        "title": "LinkedIn",
+        "icon": "ico-linkedin.svg",
+        "link": "https://www.linkedin.com/in/chrissandor/"
+    },
+    {
         "title": "Dribbble",
         "icon": "ico-dribbble.svg",
         "link": "https://dribbble.com/chrissandor"
     },
     {
-        "title": "LinkedIn",
-        "icon": "ico-linkedin.svg",
-        "link": "https://www.linkedin.com/in/chrissandor/"
+        "title": "GitHub",
+        "icon": "ico-github.svg",
+        "link": "https://github.com/surfthenwork"
     },
     {
         "title": "Resume",
