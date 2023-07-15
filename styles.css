@@ -186,7 +186,7 @@ header::after {
 /* Hero */
 .hero {
   position: relative;
-  /*padding-bottom: 8rem;*/
+  /*padding-bottom: $size-xl;*/
   margin-top: 8rem;
 }
 .hero .hero-message {
@@ -297,8 +297,10 @@ header::after {
   transition: .75s ease-in-out;
   display: flex;
   justify-content: center;
-  align-items: center img;
-  align-items-height: 4rem;
+  align-items: center;
+}
+.projects .pagination button img {
+  height: 4rem;
 }
 .projects .pagination button.reload:hover {
   rotate: .5turn;
@@ -309,7 +311,7 @@ header::after {
 
 /* About */
 #about {
-  padding-top: calc(8rem - 2rem);
+  padding-top: 6rem;
 }
 #about .about-container {
   padding: 0 8rem;

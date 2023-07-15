@@ -1,5 +1,3 @@
-/* Place your JavaScript in this file */
-
 var app = angular.module("myApp", []);
 
 app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
@@ -9,8 +7,6 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
         .then(function (res) {
             $scope.featuredProjects = res.data;
         });
-
-    // $scope.featuredProjects = myProjects; // data.js
 
     // Featured Projects Pagination
     $scope.currentPage = 0;
@@ -23,17 +19,12 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
         $scope.data.push("Item " + i);
     }
 
-    //var itemsPerPage = 4;
-    //$scope.totalPages = Math.ceil($scope.featuredProjects.length / itemsPerPage);
-
 
     // Get Connected
     $http.get('./data/getConnected.json')
         .then(function (res) {
             $scope.getConnected = res.data;
         });
-
-    // $scope.getConnected = myLinks; // data.js
 
 
     // Footer Icons
