@@ -3,6 +3,12 @@ $brand-primary: #FFC800;
 $text-primary: #2A2829;
 $bg-primary: #F2EAE2;
 
+$size-xl: 8rem;
+$size-lg: 6rem;
+$size-md: 4rem;
+$size-sm: 2rem;
+$size-xs: 1rem;
+
 
 /* Animations */
 @keyframes slideRight {
@@ -38,7 +44,7 @@ body {
 p {
     font-size: 1.6rem;
     line-height: 1.75;
-    margin-bottom: 2rem;
+    margin-bottom: $size-sm;
 }
 
 h1 {
@@ -87,8 +93,8 @@ p {
 .container-md,
 .container-sm,
 .container-xl {
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: $size-md;
+    padding-left: $size-md;
     position: relative;
 }
 
@@ -103,14 +109,13 @@ header {
     }
     
     nav {
-        height: 8rem;
+        height: $size-xl;
         display: flex;
         background-color: $brand-primary;
         /*position: fixed;*/
         
         .navbar-brand {
-            display: none;
-            
+            display: none;        
             padding-top: unset;
             padding-bottom: unset;
             margin-right: unset;
@@ -153,7 +158,7 @@ header {
         }
         
         .list-inline-item {
-            margin-right: 4rem !important;
+            margin-right: $size-md !important;
             position: relative;
         }
         
@@ -192,7 +197,7 @@ header::after {
     left: 0;
     bottom: 0;
     background-color: $bg-primary;
-    height: 8rem;
+    height: $size-xl;
     width: 100%;
     content: "";
 }
@@ -218,14 +223,14 @@ header::after {
 /* Hero */
 .hero {
     position: relative;
-    /*padding-bottom: 8rem;*/
-    margin-top: 8rem;
+    /*padding-bottom: $size-xl;*/
+    margin-top: $size-xl;
     
     .hero-message {
-        width: calc(50% + 6rem);
+        width: calc(50% + #{$size-lg});
         z-index: 10;
         position: absolute;
-        top: 8rem;
+        top: $size-xl;
         animation-name: slideRight;
         animation-duration: 1s;
         animation-delay: 0s;
@@ -239,7 +244,7 @@ header::after {
         position: relative;
         z-index: 5;
         float: right;
-        width: calc(50% + 6rem);
+        width: calc(50% + #{$size-lg});
         
         img {
             width: 100%;
@@ -252,14 +257,14 @@ header::after {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: $size-sm;
+    right: $size-sm;
     outline: none;
     background-color: $bg-primary;
     color: white;
     cursor: pointer;
-    height: 4rem;
-    width: 4rem;
+    height: $size-md;
+    width: $size-md;
     line-height: 3.8rem;
     border: solid 1px white;
     z-index: 10;
@@ -270,7 +275,7 @@ header::after {
     }
     
     img {
-        height: 2rem;
+        height: $size-sm;
     }
 }
 
@@ -278,24 +283,24 @@ header::after {
 /* Projects */
 .projects {
     background-color: $bg-primary;
-    padding-top: 4rem;
-    margin-top: -4rem;
+    padding-top: $size-md;
+    margin-top: -$size-md;
     
     .projects-container {
-        padding: 4rem 8rem;
+        padding: $size-md $size-xl;
     }
     
     h3 {
         position: absolute;
-        left: 8rem;
+        left: $size-xl;
         top: -14.88rem;
         padding-top: 12rem;
     }
     
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2rem), 1fr));
-        gap: 4rem;
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - #{$size-sm}), 1fr));
+        gap: $size-md;
         align-items: stretch;
         
         .item {
@@ -311,27 +316,27 @@ header::after {
         }
         
         .item-left {
-            padding: 4rem 8rem 4rem 0;
+            padding: $size-md $size-xl $size-md 0;
         }
         
         .item-right {
-            padding: 4rem 0 4rem 8rem;
+            padding: $size-md 0 $size-md $size-xl;
             justify-content: flex-end;
         }
         
         .item-center {
-            padding: 4rem 8rem;
+            padding: $size-md $size-xl;
             justify-content: center;
             
             img {
-                border: solid 1rem $text-primary;
-                border-radius: 2rem;
+                border: solid $size-xs $text-primary;
+                border-radius: $size-sm;
             }
         }
     }
     
     .pagination {
-        margin: 4rem 0 0 0;
+        margin: $size-md 0 0 0;
         
         li:not(:last-child) {
             margin-right: 0 !important;
@@ -343,15 +348,15 @@ header::after {
             color: $brand-primary;
             font-size: 4rem;
             cursor: pointer;
-            height: 4rem;
-            width: 4rem;
+            height: $size-md;
+            width: $size-md;
             transition: .75s ease-in-out;
             display: flex;
             justify-content: center;
             align-items: center;
             
             img {
-                height: 4rem;
+                height: $size-md;
             }
         }
         
@@ -368,10 +373,10 @@ header::after {
 
 /* About */
 #about {
-    padding-top: calc(8rem - 2rem);
+    padding-top: $size-lg;
     
     .about-container {
-        padding: 0 8rem;
+        padding: 0 $size-xl;
         
         .content {
             width: 50%;
@@ -382,15 +387,15 @@ header::after {
 
 /* Connect */
 .connect {
-    margin-top: 6rem;
-    margin-bottom: 8rem;
+    margin-top: $size-lg;
+    margin-bottom: $size-xl;
     
     li {
         background-color: $brand-primary;
         height: 3.2rem;
         width: 3.2rem;
         line-height: 3.2rem;
-        margin-right: 1rem !important;
+        margin-right: $size-xs !important;
         
         &:hover {
             background-color: $text-primary;
@@ -411,12 +416,12 @@ header::after {
     .modal-header {
         background-color: $bg-primary;
         align-items: unset;
-        padding: 2rem 4rem 2rem 0;
+        padding: $size-sm $size-md $size-sm 0;
         border-bottom: none;
     }
     
     .modal-body {
-        padding: 0 4rem;
+        padding: 0 $size-md;
         
         .hero-modal img {
             width: 50% !important;
@@ -428,12 +433,12 @@ header::after {
 /* Footer */
 footer {
     .footer-container {
-        padding: 0 8rem;
+        padding: 0 $size-xl;
     }
     
     .icons-list {
         font-size: 1.6rem;
-        margin-bottom: 2rem;
+        margin-bottom: $size-sm;
         
         li {
             opacity: .5;
@@ -516,20 +521,20 @@ footer {
     }
 
     .hero .hero-img {
-        margin-right: -4rem;
+        margin-right: -$size-md;
         width: calc(50% + 10rem);
     }
 
     .projects .grid .item-left {
-        padding: 4rem 4rem 4rem 0;
+        padding: $size-md $size-md $size-md 0;
     }
 
     .projects .grid .item-center {
-        padding: 4rem 4rem;
+        padding: $size-md $size-md;
     }
 
     .projects .grid .item-right {
-        padding: 4rem 0 4rem 4rem;
+        padding: $size-md 0 $size-md $size-md;
     }
 }
 
@@ -558,7 +563,7 @@ footer {
     }
 
     .hero .hero-message {
-        width: calc(50% + 4rem);
+        width: calc(50% + #{$size-md});
         
         .role {
             display: unset;
@@ -567,15 +572,15 @@ footer {
 
 
     .projects  .projects-container {
-        padding: 4rem 4rem;
+        padding: $size-md $size-md;
     }
 
     .projects h3 {
-        left: 4rem;
+        left: $size-md;
     }
 
     #about .about-container {
-        padding: 0 4rem;
+        padding: 0 $size-md;
     }
 
     #about .about-container .content {
@@ -598,8 +603,8 @@ footer {
     }
 
     .hero .hero-message {
-        width: calc(50% + 4rem);
-        top: 4rem;
+        width: calc(50% + #{$size-md});
+        top: $size-md;
     }
 }
 
@@ -612,7 +617,7 @@ footer {
     .hero .hero-message {
         position: relative;
         top: unset;
-        padding: 4rem 0;
+        padding: $size-md 0;
         width: 100%;
     }
 
@@ -629,19 +634,19 @@ footer {
 
     .projects .grid {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-        margin-top: 4rem;
+        margin-top: $size-md;
     }
 
     .projects .grid .item-left {
-        padding: 4rem 8rem 4rem 0;
+        padding: $size-md $size-xl $size-md 0;
     }
 
     .projects .grid .item-center {
-        padding: 4rem 8rem;
+        padding: $size-md $size-xl;
     }
 
     .projects .grid .item-right {
-        padding: 4rem 0 4rem 8rem;
+        padding: $size-md 0 $size-md $size-xl;
     }
 }
 
@@ -653,8 +658,8 @@ footer {
         top: 5.8rem;
         left: 0px;
         width: 100%;
-        padding-left: 4rem;
-        padding-bottom: 1rem;
+        padding-left: $size-md;
+        padding-bottom: $size-xs;
         -webkit-box-shadow: 0px 3px 3px 0px rgba(152, 139, 76, .5);
         -moz-box-shadow: 0px 3px 3px 0px rgba(152, 139, 76, .5);
         box-shadow: 0px 3px 3px 0px rgba(152, 139, 76, .5);
@@ -662,7 +667,7 @@ footer {
 
     header nav .list-inline-item {
         margin-right: 0 !important;
-        margin-bottom: 1rem;
+        margin-bottom: $size-xs;
     }
 
     header nav .navbar-nav {
@@ -674,19 +679,19 @@ footer {
     }
 
     .projects .grid .item-left {
-        padding: 4rem 2rem 4rem 0;
+        padding: $size-md $size-sm $size-md 0;
     }
 
     .projects .grid .item-center {
-        padding: 4rem 2rem;
+        padding: $size-md $size-sm;
     }
 
     .projects .grid .item-right {
-        padding: 4rem 0 4rem 2rem;
+        padding: $size-md 0 $size-md $size-sm;
     }
 
     #about .about-container .title {
-        margin-bottom: 2rem;
+        margin-bottom: $size-sm;
         width: unset;
     }
 
