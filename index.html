@@ -155,16 +155,16 @@
                         marketing projects. Specializing in clean, well-functioning wireframing, prototyping and
                         accessible front-end development. Currently living in Oceanside, CA. Seeking to deliver
                         innovative excellence as a UX Engineer.</p>
-
-                    <ul class="list-inline connect text-center">
-                        <li class="list-inline-item text-center" ng-repeat="item in getConnected">
-                            <a href="{{item.link}}" title="{{item.title}}" target="_blank">
-                                <img src="assets/{{item.icon}}" alt="{{item.title}}" height="100%" width="100%">
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
+
+            <ul class="list-inline connect text-center">
+                <li class="list-inline-item text-center" ng-repeat="item in getConnected">
+                    <a href="{{item.link}}" title="{{item.title}}" target="_blank">
+                        <img src="assets/{{item.icon}}" alt="{{item.title}}" height="100%" width="100%">
+                    </a>
+                </li>
+            </ul>
 
         </div>
     </section>

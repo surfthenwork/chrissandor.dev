@@ -1,10 +1,10 @@
 /* Sass Variables */
 /* Animations */
 @keyframes slideRight {
-  0% {
+  from {
     left: -50%;
   }
-  100% {
+  to {
     left: 0px;
   }
 }
@@ -108,7 +108,7 @@ header nav ul {
   align-self: center;
   margin-bottom: 0;
 }
-header nav ul li a {
+header nav ul li a, header nav ul li a.active {
   color: #2A2829;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -117,11 +117,11 @@ header nav ul li a {
   letter-spacing: .025rem;
   text-decoration: none;
 }
-header nav ul li a:hover {
+header nav ul li a:hover, header nav ul li a.active:hover {
   color: #2A2829;
   text-decoration: none;
 }
-header nav ul li a:hover::after {
+header nav ul li a:hover::after, header nav ul li a.active:hover::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -325,12 +325,14 @@ header::after {
   margin-top: 6rem;
   margin-bottom: 8rem;
 }
+.connect li.list-inline-item:not(:last-child) {
+  margin-right: 1rem !important;
+}
 .connect li {
   background-color: #FFC800;
   height: 3.2rem;
   width: 3.2rem;
   line-height: 3.2rem;
-  margin-right: 1rem !important;
 }
 .connect li:hover {
   background-color: #2A2829;
