@@ -309,14 +309,14 @@ header::after {
   justify-content: center;
   align-items: center;
   /*transition: .75s ease-in-out;*/
-  animation: rotate-animation 5s infinite linear;
+  animation: rotate-animation 0s infinite linear;
 }
 .projects .pagination button img {
   height: 4rem;
 }
 .projects .pagination button.reload:hover {
   /*rotate: .5turn;*/
-  animation: rotate-animation 0s infinite linear;
+  animation: rotate-animation 5s infinite linear;
 }
 .projects .pagination button.disabled {
   color: #F2EAE2;
