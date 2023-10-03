@@ -2,195 +2,198 @@
 <html ng-app="myApp" ng-controller="myCtrl" id="home">
 
 <head>
-    <meta charset="utf-8">
-    <title>Christopher Sandor - UI/UX Designer &amp; Front-end Engineer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <!-- Bootstrap Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
-        integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Font Awesome Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Theme Styles -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+<meta charset="utf-8">
+<title>Christopher Sandor - UI/UX Designer &amp; Front-end Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Favicon -->
+<link rel="shortcut icon" href="https://64.media.tumblr.com/1ee869811c6bfdb9d0e150528d7eefb0/e5ceb59b883ae5a1-02/s128x128u_c1/4cf4446ccdb1be18e75c705e11232eaec39a2b04.pnj">
+<link rel="apple-touch-icon-precomposed" href="https://64.media.tumblr.com/1ee869811c6bfdb9d0e150528d7eefb0/e5ceb59b883ae5a1-02/s128x128u_c1/4cf4446ccdb1be18e75c705e11232eaec39a2b04.pnj">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet">
+<!-- Bootstrap Styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Font Awesome Styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Theme Styles -->
+<link rel="stylesheet" href="styles.css">
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="nav">
-            <div class="container d-flex justify-content-between" id="menu-container">
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="nav">
+        <div class="container d-flex justify-content-between" id="menu-container">
 
-                <div class="navbar-brand align-items-center">
-                    <a aria-current="page" href="#home">
-                        <span class="d-block fw-bolder">Christopher Sandor</span>
-                        <span class="small"><em>UI/UX Designer 
-                            <span class="text-light"> &amp; </span>
-                        Front-end Engineer</em></span>
-                    </a>
-                </div>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav list-inline">
-                        <li class="list-inline-item">
-                            <a aria-current="page" href="#home" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent">Home</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a aria-current="page" href="#projects" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent">Projects</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a aria-current="page" href="#about" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent">About</a>
-                        </li>
-                    </ul>
-                </div>
-
+            <div class="navbar-brand align-items-center">
+                <a aria-current="page" href="#home">
+                    <span class="d-block fw-bolder">Christopher Sandor</span>
+                    <span class="small"><em>UI/UX Designer 
+                        <span class="text-light"> &amp; </span>
+                    Front-end Engineer</em></span>
+                </a>
             </div>
-        </nav>
-        <div class="container">
-            <div class="hero">
-                <div class="hero-message">
-                    <h1 id="headline">
-                        <span class="d-block">Hello, I'm Christopher. </span>
-                        <span class="role">UI/UX Designer
-                            <span class="text-light"> &amp; </span>
-                        </span>
-                        <span>Front-end Engineer.</span>
-                    </h1>
 
-                    <h2>Specializing in clean, well-functioning wireframing, prototyping and accessible front-end
-                        development.</h2>
-                </div>
-                <div class="hero-img">
-                    <img src="assets/hero-chris.jpg" alt="{{pageTitle}}">
-                </div>
-                <div class="clearfix"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav list-inline">
+                    <li class="list-inline-item">
+                        <a aria-current="page" href="#home" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a aria-current="page" href="#projects" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent">Projects</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a aria-current="page" href="#about" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent">About</a>
+                    </li>
+                </ul>
             </div>
+
         </div>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-message">
+                <h1 id="headline">
+                    <span class="d-block">Hello, I'm Christopher. </span>
+                    <span class="role">UI/UX Designer
+                        <span class="text-light"> &amp; </span>
+                    </span>
+                    <span>Front-end Engineer.</span>
+                </h1>
 
-    </header>
+                <h2>Specializing in clean, well-functioning wireframing, prototyping and accessible front-end
+                    development.</h2>
+            </div>
+            <div class="hero-img">
+                <img src="assets/hero-chris.jpg" alt="{{pageTitle}}">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <img src="assets/ico-arrow-up.svg" alt="Go to top" height="100%" width="100%">
-    </button>
+</header>
 
-    <section class="projects" id="projects">
-        <div class="container projects-container">
-            <h3>Featured Projects</h3>
+<!--button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img src="assets/ico-arrow-up.svg" alt="Go to top" height="100%" width="100%">
+</button-->
 
-            <div class="grid">
-                <div class="item bg-white"
-                    ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
-                    ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
-                    <!--a href="#" data-bs-toggle="modal" data-bs-target="#{{item.modalSlug}}"-->
-                    <a href="javascript:void(0)" class="arrow" style="cursor: unset;" title="Case study coming soon">
-                        <img src="{{item.featuredAsset}}" alt="{{item.heading}}">
-                    </a>
+<section class="projects" id="projects">
+    <div class="container projects-container">
+        <h3>Featured Projects</h3>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="{{item.modalSlug}}" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
-                            <div class="modal-content container modal-container">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
+        <div class="grid">
+            <div class="item bg-white"
+                ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
+                ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
+                <!--a href="#" data-bs-toggle="modal" data-bs-target="#{{item.modalSlug}}"-->
+                <a href="javascript:void(0)" class="arrow" style="cursor: unset;" title="Case study coming soon">
+                    <img src="{{item.featuredAsset}}" alt="{{item.heading}}">
+                </a>
 
-                                <div class="modal-body">
-                                    <div class="hero-modal">
-                                        <img src="{{item.featuredAsset}}" title="{{item.heading}}">
-                                    </div>
-                                    <h2 class="modal-title" id="exampleModalLabel">{{item.heading}}</h2>
-                                    <h4>{{item.subHeading}}</h4>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-
+                <!-- Modal -->
+                <div class="modal fade" id="{{item.modalSlug}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                        <div class="modal-content container modal-container">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+
+                            <div class="modal-body">
+                                <div class="hero-modal">
+                                    <img src="{{item.featuredAsset}}" title="{{item.heading}}">
+                                </div>
+                                <h2 class="modal-title" id="exampleModalLabel">{{item.heading}}</h2>
+                                <h4>{{item.subHeading}}</h4>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+
                         </div>
                     </div>
-
                 </div>
+
             </div>
-
-            <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
-                <li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
-                    <button ng-click="currentPage = currentPage - 1;" class="reload">
-                        <img src="assets/ico-rotate.svg" alt="Reload">
-                    </button>
-                </li>
-                <li class="list-inline-item" ng-class="{'d-none': currentPage >= data.length / pageSize - 1}">
-                    <button ng-click="currentPage = currentPage + 1;" class="reload">
-                        <img src="assets/ico-rotate.svg" alt="Reload">
-                    </button>
-                </li>
-            </ul>
-    </section>
-
-    <section id="about">
-        <div class="container about-container">
-            <div class="row">
-                <div class="col-3 title">
-                    <h3>About Me</h3>
-                </div>
-                <div class="col-6 content">
-                    <p>Hi, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with
-                        18+ years of experience and proven skills in visual design for interactive web, mobile and email
-                        marketing projects. Specializing in clean, well-functioning wireframing, prototyping and
-                        accessible front-end development. Currently living in Oceanside, CA. Seeking to deliver
-                        innovative excellence as a UX Engineer.</p>
-                </div>
-            </div>
-
-            <ul class="list-inline connect text-center">
-                <li class="list-inline-item text-center" ng-repeat="item in getConnected">
-                    <a href="{{item.link}}" title="{{item.title}}" target="_blank">
-                        <img src="assets/{{item.icon}}" alt="{{item.title}}" height="100%" width="100%">
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </section>
-
-    <footer>
-        <div class="container footer-container text-center">
-            <p class="small mb-2"><em>This site is hand-crafted, with care and:</em></p>
-
-            <ul class="list-inline icons-list">
-                <li class="list-inline-item" ng-repeat="item in footerIcons">
-                    <i class="{{item.icon}}" data-bs-toggle="tooltip"
-                    title="{{item.title}}"></i>
-                </li>
-            </ul>
         </div>
 
-        <!-- Load external JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
+            <li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
+                <button ng-click="currentPage = currentPage - 1;" class="reload">
+                    <img src="assets/ico-rotate.svg" alt="Reload">
+                </button>
+            </li>
+            <li class="list-inline-item" ng-class="{'d-none': currentPage >= data.length / pageSize - 1}">
+                <button ng-click="currentPage = currentPage + 1;" class="reload">
+                    <img src="assets/ico-rotate.svg" alt="Reload">
+                </button>
+            </li>
+        </ul>
+</section>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
-            integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<section id="about">
+    <div class="container about-container">
+        <div class="row">
+            <div class="col-3 title">
+                <h3>About Me</h3>
+            </div>
+            <div class="col-6 content">
+                <p>Hi, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with
+                    18+ years of experience and proven skills in visual design for interactive web, mobile and email
+                    marketing projects. Specializing in clean, well-functioning wireframing, prototyping and
+                    accessible front-end development. Currently living in Oceanside, CA. Seeking to deliver
+                    innovative excellence as a UX Engineer.</p>
+            </div>
+        </div>
 
-        <script src="scripts.js"></script>
-    </footer>
+        <ul class="list-inline connect text-center">
+            <li class="list-inline-item text-center" ng-repeat="item in getConnected">
+                <a href="{{item.link}}" title="{{item.title}}" target="_blank">
+                    <img src="assets/{{item.icon}}" alt="{{item.title}}" height="100%" width="100%">
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-container text-center">
+        <p class="small mb-2"><em>This site is hand-crafted, with care and:</em></p>
+
+        <ul class="list-inline icons-list">
+            <li class="list-inline-item" ng-repeat="item in footerIcons">
+                <i class="{{item.icon}}" data-bs-toggle="tooltip"
+                title="{{item.title}}"></i>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Load external JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
+        integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="scripts.js"></script>
+</footer>
 </body>
 
 </html>
