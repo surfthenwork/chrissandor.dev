@@ -20,6 +20,13 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
     }
 
 
+    // Timeline
+    $http.get('./data/experienceTimeline.json')
+        .then(function (res) {
+            $scope.experienceTimeline = res.data;
+        });
+
+
     // Get Connected
     $http.get('./data/getConnected.json')
         .then(function (res) {
@@ -36,6 +43,29 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
 
     $scope.pageTitle = document.title;
 
+});
+
+
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+
+app.directive('bsTooltip', function () {
+    return {
+        restrict: 'A',
+        link: function (scope, element, attrs) {
+            $(element).hover(function () {
+                // on mouseenter
+                $(element).tooltip('show');
+            }, function () {
+                // on mouseleave
+                $(element).tooltip('hide');
+            });
+        }
+    };
 });
 
 
@@ -56,7 +86,8 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        mybutton.style.display = "block";
+        //mybutton.style.display = "block"; //turned off button
+        mybutton.style.display = "none";
         nav.classList.add("box-shadow");
     } else {
         mybutton.style.display = "none";
@@ -110,3 +141,6 @@ function onScroll(event) {
         }
     });
 }
+
+// Get current year
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))

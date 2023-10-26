@@ -4,12 +4,8 @@
         "icon": "fa-brands fa-html5"
     },
     {
-        "title": "CSS3",
+        "title": "CSS3 & Sass",
         "icon": "fa-brands fa-css3"
-    },
-    {
-        "title": "Sass",
-        "icon": "fa-brands fa-sass"
     },
     {
         "title": "Bootstrap",

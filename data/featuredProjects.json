@@ -25,7 +25,7 @@
     },
     {
         "heading": "Monterey County Child Abuse Prevention Council",
-        "subHeading": "Website design and development.",
+        "subHeading": "Website design and CMS implementation.",
         "description": "",
         "featuredAsset": "assets/featured-capc.jpg",
         "featuredAssetPosition": "center",
@@ -33,7 +33,7 @@
     },
     {
         "heading": "Salinas Valley Ag Tech Summit",
-        "subHeading": "Website design and development.",
+        "subHeading": "Website design and CMS implementation.",
         "description": "",
         "featuredAsset": "assets/featured-svats.jpg",
         "featuredAssetPosition": "center",
@@ -48,35 +48,35 @@
         "modalSlug": "ohg"
     },
     {
-        "heading": "",
-        "subHeading": "",
+        "heading": "Jo Mora Trust",
+        "subHeading": "Website redesign and CMS implementation.",
         "description": "",
         "featuredAsset": "assets/featured-jmt.png",
         "featuredAssetPosition": "left",
-        "modalSlug": ""
+        "modalSlug": "jmt"
     },
     {
-        "heading": "",
-        "subHeading": "",
+        "heading": "Del Rey Avocado Company",
+        "subHeading": "Website redesign and CMS implementation.",
         "description": "",
         "featuredAsset": "assets/featured-drac.png",
         "featuredAssetPosition": "center",
-        "modalSlug": ""
+        "modalSlug": "drac"
     },
     {
-        "heading": "",
-        "subHeading": "",
+        "heading": "Horticultural Sales, Inc.",
+        "subHeading": "Website Redesign",
         "description": "",
         "featuredAsset": "assets/featured-hsi.png",
         "featuredAssetPosition": "center",
-        "modalSlug": ""
+        "modalSlug": "hsi"
     },
     {
-        "heading": "",
-        "subHeading": "",
+        "heading": "Booth Ranches",
+        "subHeading": "Website redesign and CMS implementation.",
         "description": "",
-        "featuredAsset": "assets/featured-br-right.png",
+        "featuredAsset": "assets/featured-br.png",
         "featuredAssetPosition": "right",
-        "modalSlug": ""
+        "modalSlug": "br"
     }
 ]
