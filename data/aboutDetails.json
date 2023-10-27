@@ -1,0 +1,223 @@
+[
+    {
+        "category": "Education",
+        "heading": "California State University, Monterey Bay",
+        "subheading": "Bachelor of Science (B.S.), Telecommunications, Multimedia, and Applied Computing",
+        "description": "Emphasis in graphic design for web and print.",
+        "date": "2000 - 2005"
+    },
+    {
+        "category": "Experience",
+        "heading": "ServiceNow Consultant",
+        "subheading": "Infocenter",
+        "description": "Service Portal Designer & Developer",
+        "date": "Jul 2023 - Present",
+        "link": ""
+    },
+    {
+        "category": "Experience",
+        "heading": "Software Engineer",
+        "subheading": "NewRocket",
+        "description": "Service Portal Developer",
+        "date": "Sep 2021 - Jun 2023",
+        "link": ""
+    },
+    {
+        "category": "Experience",
+        "heading": "Director, User Interface Design",
+        "subheading": "TMD Creative",
+        "description": "",
+        "date": "Aug 2014 - Sep 2021",
+        "link": ""
+    },
+    {
+        "category": "Experience",
+        "heading": "Senior Web Developer",
+        "subheading": "TMD Creative",
+        "description": "",
+        "date": "Nov 2009 - Jul 2014",
+        "link": ""
+    },
+    {
+        "category": "Experience",
+        "heading": "Full-Stack Designer",
+        "subheading": "Freelance",
+        "description": "",
+        "date": "Jun 2005 - Jun 2012",
+        "link": ""
+    },
+    {
+        "category": "Experience",
+        "heading": "Web Developer",
+        "subheading": "TMD Creative",
+        "description": "",
+        "date": "Feb 2005 - Oct 2009",
+        "link": ""
+    },
+    {
+        "category": "Experience",
+        "heading": "Webmaster",
+        "subheading": "Transportation Agency for Monterey County (TAMC)",
+        "description": "",
+        "date": "May 2004 - Jan 2005",
+        "link": ""
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Creative Direction"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Design Thinking"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Problem Solving"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Design Research"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "UI/UX"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Information Architecture"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Wireframing"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Prototyping"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Visual Design"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Responsive Design"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Email Marketing"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "ServiceNow",
+        "subheading": "Service Portal Development"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "WordPress",
+        "subheading": "Custom Theme Development"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "ExpressionEngine, Joomla, Drupal, Weebly"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Figma"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Adobe XD"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Adobe Illustrator"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Adobe Photoshop"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "HTML5, CSS3, Sass"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Bootstrap, Flexbox"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "JavaScript, AngularJS, jQuery"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "LAMP stack"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "GitHub, GitLab"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Search Engine Optimization"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Mailchimp, iContact, Constant Contact"
+    },
+    {
+        "category": "Technical Skills",
+        "heading": "Microsoft Office"
+    },
+    {
+        "category": "Awards",
+        "heading": "W³ Award",
+        "description": "W³ Awards Gold Winner for GreenGate Fresh Website.",
+        "date": "2021",
+        "link": "https://www.w3award.com/"
+    },
+    {
+        "category": "Awards",
+        "heading": "Davey Award",
+        "description": "Davey Awards Silver Winner for Del Rey Avocado Company Website.",
+        "date": "2018",
+        "link": "https://daveyawards.com/"
+    },
+    {
+        "category": "Awards",
+        "heading": "MarCom Award",
+        "description": "MarCom Awards Platinum Winner for Taylor Farms Foodservice Website.",
+        "date": "2012",
+        "link": "https://marcomawards.com/"
+    },
+    {
+        "category": "Awards",
+        "heading": "W³ Award",
+        "description": "W³ Awards Silver Winner for Outstanding Website Design for Monterey County Workforce Investment Board (WIB).",
+        "date": "2009",
+        "link": "https://www.w3award.com/"
+    },
+    {
+        "category": "Certifications",
+        "heading": "Figma for UX Design",
+        "subheading": "LinkedIn",
+        "date": "Oct 2023"
+    },
+    {
+        "category": "Certifications",
+        "heading": "Micro-Certification - Service Portal",
+        "subheading": "ServiceNow",
+        "date": "Nov 2022"
+    },
+    {
+        "category": "Certifications",
+        "heading": "Certified System Administrator",
+        "subheading": "ServiceNow",
+        "date": "Aug 2022"
+    },
+    {
+        "category": "Certifications",
+        "heading": "Foundations of User Experience (UX) Design",
+        "subheading": "Coursera",
+        "date": "May 2021"
+    }
+]

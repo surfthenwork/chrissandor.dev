@@ -20,17 +20,10 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
     }
 
 
-    // Timeline
-    $http.get('./data/experienceTimeline.json')
+    // About Details
+    $http.get('./data/aboutDetails.json')
         .then(function (res) {
-            $scope.experienceTimeline = res.data;
-        });
-
-
-    // Get Connected
-    $http.get('./data/getConnected.json')
-        .then(function (res) {
-            $scope.getConnected = res.data;
+            $scope.aboutDetails = res.data;
         });
 
 
@@ -52,7 +45,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-
+// Tooltip directive for ng-repeat
 app.directive('bsTooltip', function () {
     return {
         restrict: 'A',

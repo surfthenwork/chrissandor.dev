@@ -1,22 +1,51 @@
 [
     {
+        "category": "Development",
         "title": "HTML5",
         "icon": "fa-brands fa-html5"
     },
     {
+        "category": "Development",
         "title": "CSS3 & Sass",
         "icon": "fa-brands fa-css3"
     },
     {
+        "category": "Development",
         "title": "Bootstrap",
         "icon": "fa-brands fa-bootstrap"
     },
     {
+        "category": "Development",
         "title": "AngularJS",
         "icon": "fa-brands fa-angular"
     },
     {
+        "category": "Development",
         "title": "JS & jQuery",
         "icon": "fa-brands fa-js"
+    },
+        {
+        "category": "Connect",
+        "title": "LinkedIn",
+        "icon": "fa-brands fa-linkedin-in",
+        "link": "https://www.linkedin.com/in/chrissandor/"
+    },
+    {
+       "category": "Connect",
+       "title": "Dribbble",
+        "icon": "fa-brands fa-dribbble",
+        "link": "https://dribbble.com/chrissandor"
+    },
+    {
+        "category": "Connect",
+        "title": "GitHub",
+        "icon": "fa-brands fa-github",
+        "link": "https://github.com/surfthenwork"
+    },
+    {
+        "category": "Connect",
+        "title": "Resume",
+        "icon": "fa-solid fa-file-lines",
+        "link": "https://drive.google.com/file/d/1NtBQtozi8-bdZQP62YGal4QiEc6Am0uZ/view?usp=drive_link"
     }
 ]
