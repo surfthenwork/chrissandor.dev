@@ -86,156 +86,136 @@
         </div>
     </header>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><!--img src="assets/ico-arrow-up.svg" alt="Go to top" height="100%" width="100%"--></button>
+    <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><!--img src="assets/ico-arrow-up.svg" alt="Go to top" height="100%" width="100%"--></button>
 
-    <section class="projects" id="projects">
-        <div class="container projects-container">
-            <h3>Featured Projects</h3>
+        <section class="projects" id="projects">
+            <div class="container projects-container">
+                <h3>Featured Projects</h3>
+                <div class="grid">
+                    <div class="item bg-white"
+                        ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
+                        ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
+                        <!--a href="#" data-bs-toggle="modal" data-bs-target="#{{item.modalSlug}}"-->
+                        <a href="javascript:void(0)" class="arrow" style="cursor: unset;"
+                            title="Case study coming soon">
+                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
+                        </a>
 
-            <div class="grid">
-                <div class="item bg-white"
-                    ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
-                    ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
-                    <!--a href="#" data-bs-toggle="modal" data-bs-target="#{{item.modalSlug}}"-->
-                    <a href="javascript:void(0)" class="arrow" style="cursor: unset;" title="Case study coming soon">
-                        <img src="{{item.featuredAsset}}" alt="{{item.heading}}">
-                    </a>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="{{item.modalSlug}}" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
-                            <div class="modal-content container modal-container">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
-                                    class="modal-body">
-                                    <div class="hero-modal">
-                                        <div class="">
-                                            <img src="{{item.featuredAsset}}" title="{{item.heading}}">
-                                        </div>
-                                        <h2 class="modal-title" id="exampleModalLabel">{{item.heading}}</h2>
-                                        <h4>{{item.subHeading}}</h4>
+                        <!-- Modal -->
+                        <div class="modal fade" id="{{item.modalSlug}}" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                                <div class="modal-content container modal-container">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <div ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
+                                        class="modal-body">
+                                        <div class="hero-modal">
+                                            <div class="">
+                                                <img src="{{item.featuredAsset}}" title="{{item.heading}}">
+                                            </div>
+                                            <h2 class="modal-title" id="exampleModalLabel">{{item.heading}}</h2>
+                                            <h4>{{item.subHeading}}</h4>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-
                 </div>
-            </div>
 
-            <!-- Pagination -->
-            <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
-                <li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
-                    <button ng-click="currentPage = currentPage - 1;" class="reload" bs-tooltip title="Reload">
+                <!-- Pagination -->
+                <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
+                    <li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
+                        <button ng-click="currentPage = currentPage - 1;" class="reload" bs-tooltip title="Reload">
                 <img src="assets/ico-rotate.svg" alt="Reload">
             </button>
-                </li>
-                <li class="list-inline-item" ng-class="{'d-none': currentPage >= data.length / pageSize - 1}">
-                    <button ng-click="currentPage = currentPage + 1;" class="reload" bs-tooltip title="Reload">
+                    </li>
+                    <li class="list-inline-item" ng-class="{'d-none': currentPage >= data.length / pageSize - 1}">
+                        <button ng-click="currentPage = currentPage + 1;" class="reload" bs-tooltip title="Reload">
                 <img src="assets/ico-rotate.svg" alt="Reload">
             </button>
-                </li>
-            </ul>
-    </section>
+                    </li>
+                </ul>
+        </section>
 
-    <section id="about">
-        <div class="container about-container">
-            <div class="row">
-                <div class="col-3 title">
-                    <h3>About Me</h3>
-                </div>
-                <div class="col-6 content">
-                    <p>Hi, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with
-                        18+ years of experience and proven skills in visual design for interactive web, mobile and email
-                        marketing projects. Specializing in clean, well-functioning wireframing, prototyping and
-                        accessible front-end development. Currently living in Oceanside, CA. Seeking to deliver
-                        innovative excellence as a UX Engineer.</p>
+        <section id="about">
+            <div class="container about-container">
+                <div class="row">
+                    <div class="col-3 title">
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="col-6 content">
+                        <p>Hi, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with
+                            18+ years of experience and proven skills in visual design for interactive web, mobile and
+                            email marketing projects. Specializing in clean, well-functioning wireframing, prototyping
+                            and
+                            accessible front-end development. Currently living in Oceanside, CA. Seeking to deliver
+                            innovative excellence as a UX Engineer.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <section class="about-details">
-        <div class="container about-details-container">
-
-            <div class="grid">
-                <!--div class="item">
-                    <h4>Education</h4>
-                    <ul class="list-unstyled">
-                        <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Education' }">
-                            <strong>{{item.heading}}</strong><br>
+        <section class="about-details">
+            <div class="container about-details-container">
+                <div class="grid">
+                    <div class="item">
+                        <h4>Experience</h4>
+                        <ul class="list-unstyled">
+                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Experience' }">
+                                <strong>{{item.heading}}</strong><br>
                         {{item.subheading}}<br>
-                            <em>{{item.date}}</em>
-                        </li>
-                    </ul>
-                </div-->
-                <div class="item">
-                    <h4>Experience</h4>
-                    <ul class="list-unstyled">
-                        <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Experience' }">
-                            <strong>{{item.heading}}</strong><br>
-                        {{item.subheading}}<br>
-                            <span ng-if="item.description">{{item.description}}<br></span>
-                            <em>{{item.date}}</em>
-                        </li>
-                    </ul>
-                </div>
-                <div class="item">
-                    <h4>Awards &amp; Certifications</h4>
-                    <ul class="list-unstyled">
-                        <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
-                            <strong>{{item.heading}}</strong><br>
-                            <span ng-if="item.subheading">
+                                <span ng-if="item.description">{{item.description}}<br></span>
+                                <em>{{item.date}}</em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Awards &amp; Certifications</h4>
+                        <ul class="list-unstyled">
+                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
+                                <strong>{{item.heading}}</strong><br>
+                                <span ng-if="item.subheading">
                                 <a ng-if="item.link" href="{{item.link}}" target="_blank">{{item.subheading}}</a>
                                 <span ng-if="!item.link">{{item.subheading}}</span><br>
-                            </span>
-                            <span ng-if="item.description">{{item.description}}<br></span>
-                            <em>{{item.date}}</em>
-                        </li>
-                    </ul>
+                                </span>
+                                <span ng-if="item.description">{{item.description}}<br></span>
+                                <em>{{item.date}}</em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Design Skills</h4>
+                        <ul class="list-unstyled">
+                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Design Skills' }">
+                                {{item.heading}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Technical Skills</h4>
+                        <ul class="list-unstyled">
+                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Technical Skills' }">
+                                {{item.heading}}
+                                <span ng-if="item.subheading"> - <em>{{item.subheading}}</em></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="item">
-                    <h4>Design Skills</h4>
-                    <ul class="list-unstyled">
-                        <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Design Skills' }">
-                            {{item.heading}}
-                        </li>
-                    </ul>
-                </div>
-                <div class="item">
-                    <h4>Technical Skills</h4>
-                    <ul class="list-unstyled">
-                        <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Technical Skills' }">
-                            {{item.heading}}
-                            <span ng-if="item.subheading"> - <em>{{item.subheading}}</em></span>
-                        </li>
-                    </ul>
-                </div>
-                <!--div class="item">
-                    <h4>Certifications</h4>
-                    <ul class="list-unstyled">
-                        <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Certifications' }">
-                            <strong>{{item.heading}}</strong><br>
-                            {{item.subheading}}<br>
-                            <em>{{item.date}}</em>
-                        </li>
-                    </ul>
-                </div-->
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container-fluid footer-container d-flex justify-content-between">
             <div class="footer-left d-flex align-items-center">
-                <!--p class="small text-muted">&copy; Christopher Sandor <span id="copyright"></span> | UI/UX Designer &amp; Front-end Engineer</p-->
                 <p class="small text-muted mr-2 d-inline-block"><em>Hand-crafted with care and</em></p>
                 <ul class="list-inline d-inline-block icons-list">
                     <li class="list-inline-item" ng-repeat="item in footerIcons | filter: { category: 'Development' }">
