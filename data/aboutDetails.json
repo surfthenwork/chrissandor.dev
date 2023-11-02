@@ -47,7 +47,7 @@
         "link": ""
     },
     {
-        "category": "Experience",
+        "category": "Archive",
         "heading": "Web Developer",
         "subheading": "TMD Creative",
         "description": "",
@@ -55,7 +55,7 @@
         "link": ""
     },
     {
-        "category": "Experience",
+        "category": "Archive",
         "heading": "Webmaster",
         "subheading": "Transportation Agency for Monterey County (TAMC)",
         "description": "",
@@ -169,34 +169,6 @@
         "heading": "Microsoft Office"
     },
     {
-        "category": "Awards",
-        "heading": "W³ Award",
-        "description": "W³ Awards Gold Winner for GreenGate Fresh Website.",
-        "date": "2021",
-        "link": "https://www.w3award.com/"
-    },
-    {
-        "category": "Awards",
-        "heading": "Davey Award",
-        "description": "Davey Awards Silver Winner for Del Rey Avocado Company Website.",
-        "date": "2018",
-        "link": "https://daveyawards.com/"
-    },
-    {
-        "category": "Awards",
-        "heading": "MarCom Award",
-        "description": "MarCom Awards Platinum Winner for Taylor Farms Foodservice Website.",
-        "date": "2012",
-        "link": "https://marcomawards.com/"
-    },
-    {
-        "category": "Awards",
-        "heading": "W³ Award",
-        "description": "W³ Awards Silver Winner for Outstanding Website Design for Monterey County Workforce Investment Board (WIB).",
-        "date": "2009",
-        "link": "https://www.w3award.com/"
-    },
-    {
         "category": "Certifications",
         "heading": "Figma for UX Design",
         "subheading": "LinkedIn",
@@ -209,7 +181,7 @@
         "date": "Nov 2022"
     },
     {
-        "category": "Certifications",
+        "category": "Awards & Certifications",
         "heading": "Certified System Administrator",
         "subheading": "ServiceNow",
         "date": "Aug 2022"
@@ -219,5 +191,33 @@
         "heading": "Foundations of User Experience (UX) Design",
         "subheading": "Coursera",
         "date": "May 2021"
+    },
+    {
+        "category": "Awards",
+        "heading": "Gold Winner - GreenGate Fresh Website",
+        "description": "W³ Award",
+        "date": "2021",
+        "link": "https://www.w3award.com/"
+    },
+    {
+        "category": "Awards",
+        "heading": "Silver Winner - Del Rey Avocado Company Website",
+        "description": "Davey Award",
+        "date": "2018",
+        "link": "https://daveyawards.com/"
+    },
+    {
+        "category": "Awards",
+        "heading": "Platinum Winner - Taylor Farms Foodservice Website",
+        "description": "MarCom Award",
+        "date": "2012",
+        "link": "https://marcomawards.com/"
+    },
+    {
+        "category": "Awards",
+        "heading": "Silver Winner - Monterey County Workforce Investment Board",
+        "description": "W³ Award",
+        "date": "2009",
+        "link": "https://www.w3award.com/"
     }
 ]
