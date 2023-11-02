@@ -97,8 +97,7 @@
                         ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
                         ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
                         <!--a href="#" data-bs-toggle="modal" data-bs-target="#{{item.modalSlug}}"-->
-                        <a href="javascript:void(0)" class="arrow" style="cursor: unset;"
-                            title="Case study coming soon">
+                        <a href="javascript:void(0)" class="arrow" style="cursor: unset;" bs-tooltip data-bs-placement="bottom" title="Case study coming soon">
                             <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
                         </a>
 
