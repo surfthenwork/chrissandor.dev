@@ -24,7 +24,12 @@
   }
 }
 
+
 /* Utilities */
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -303,7 +308,7 @@ header::after {
 }
 
 /* Back to top */
-#myBtn {
+#top {
   display: none;
   position: fixed;
   bottom: 2rem;
@@ -323,13 +328,13 @@ header::after {
   opacity: 0;
 }
 
-#myBtn:hover {
+#top:hover {
   /*background-color: #FFC800;*/
   background-color: #2A2829;
   /*border: solid 1px $bg-primary;*/
 }
 
-#myBtn img {
+#top img {
   height: 2rem;
 }
 
@@ -435,7 +440,7 @@ header::after {
 }
 
 .projects .pagination button.reload:hover {
-  /*rotate: .5turn;*/
+  rotate: .5turn;
   animation: rotate-animation 5s infinite linear;
 }
 

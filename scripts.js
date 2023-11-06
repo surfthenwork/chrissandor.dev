@@ -2,6 +2,24 @@ var app = angular.module("myApp", []);
 
 app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
 
+    $scope.pageTitle = document.title;
+
+
+    // Preload Featured Projects
+    var projectImg = new Array()
+    function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+            projectImg[i] = new Image()
+            projectImg[i].src = preload.arguments[i]
+        }
+    }
+    preload( // Preload paginated items
+        "./assets/featured-jmt.png",
+        "./assets/featured-drac.png",
+        "./assets/featured-hsi.png",
+        "./assets/featured-br.png"
+    )
+
     // Featured Projects
     $http.get('./data/featuredProjects.json')
         .then(function (res) {
@@ -33,9 +51,6 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
             $scope.footerIcons = res.data;
         });
 
-
-    $scope.pageTitle = document.title;
-
 });
 
 
@@ -62,7 +77,7 @@ app.directive('bsTooltip', function () {
 });
 
 
-// Pagination startFrom filter
+// Featured Projects Pagination startFrom filter
 app.filter('startFrom', function () {
     return function (input, start) {
         start = +start; // parse to int
@@ -71,11 +86,13 @@ app.filter('startFrom', function () {
 });
 
 
-// Get the button:
-let mybutton = document.getElementById("myBtn");
+// Get the scroll to top button:
+let mybutton = document.getElementById("top");
 
 // When the user scrolls down 80px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -90,15 +107,14 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
-
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
-    //smoothscroll
+    // Smooth scroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
@@ -136,4 +152,7 @@ function onScroll(event) {
 }
 
 // Get current year
-document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
+
+
+//ScrollReveal().reveal('.about-details .grid .item', { interval: 200 });
