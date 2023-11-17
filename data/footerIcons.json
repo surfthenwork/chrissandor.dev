@@ -24,15 +24,15 @@
         "title": "JS & jQuery",
         "icon": "fa-brands fa-js"
     },
-        {
+    {
         "category": "Connect",
         "title": "LinkedIn",
         "icon": "fa-brands fa-linkedin-in",
         "link": "https://www.linkedin.com/in/chrissandor/"
     },
     {
-       "category": "Connect",
-       "title": "Dribbble",
+        "category": "Connect",
+        "title": "Dribbble",
         "icon": "fa-brands fa-dribbble",
         "link": "https://dribbble.com/chrissandor"
     },

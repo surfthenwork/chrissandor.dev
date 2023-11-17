@@ -37,7 +37,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="nav">
-            <div class="container-fluid d-flex justify-content-between" id="menu-container">
+            <div class="container d-flex justify-content-between" id="menu-container">
                 <div class="navbar-brand align-items-center collapse">
                     <a aria-current="page" href="#home">
                         <span class="d-block fw-bolder">Christopher Sandor</span>
@@ -185,7 +185,7 @@
                             <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
                                 <strong>{{item.heading}}</strong><br>
                                 <span ng-if="item.subheading">
-                                <a ng-if="item.link" href="{{item.link}}" target="_blank">{{item.subheading}}</a>
+                                <span ng-if="item.link"><a href="{{item.link}}" target="_blank">{{item.subheading}}</a></span>
                                 <span ng-if="!item.link">{{item.subheading}}</span><br>
                                 </span>
                                 <span ng-if="item.description">{{item.description}}<br></span>
@@ -196,7 +196,8 @@
                     <div class="item">
                         <h4>Design Skills</h4>
                         <ul class="list-unstyled">
-                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Design Skills' }">
+                            <li class=""
+                                ng-repeat="item in aboutDetails | filter: { category: 'Design Skills' } | orderBy:'heading'">
                                 {{item.heading}}
                             </li>
                         </ul>
@@ -204,7 +205,8 @@
                     <div class="item">
                         <h4>Technical Skills</h4>
                         <ul class="list-unstyled">
-                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Technical Skills' }">
+                            <li class=""
+                                ng-repeat="item in aboutDetails | filter: { category: 'Technical Skills' } | orderBy:['subheading','heading']">
                                 {{item.heading}}
                                 <span ng-if="item.subheading"> - <em>{{item.subheading}}</em></span>
                             </li>
@@ -216,7 +218,7 @@
     </main>
 
     <footer>
-        <div class="container-fluid footer-container d-flex justify-content-between">
+        <div class="container footer-container d-flex justify-content-between">
             <div class="footer-left d-flex align-items-center">
                 <p class="small text-muted mr-2 d-inline-block"><em>Hand-crafted with care and</em></p>
                 <ul class="list-inline d-inline-block icons-list">

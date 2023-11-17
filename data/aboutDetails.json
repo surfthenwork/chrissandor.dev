@@ -118,7 +118,7 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "ExpressionEngine, Joomla, Drupal, Weebly"
+        "heading": "Drupal, ExpressionEngine, Joomla, Weebly"
     },
     {
         "category": "Technical Skills",
@@ -138,15 +138,15 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "HTML5, CSS3, Sass"
+        "heading": "CSS3 (Sass), HTML5"
     },
     {
         "category": "Technical Skills",
-        "heading": "Bootstrap, Flexbox"
+        "heading": "Bootstrap, CSS Flexbox"
     },
     {
         "category": "Technical Skills",
-        "heading": "JavaScript, AngularJS, jQuery"
+        "heading": "AngularJS, JavaScript, jQuery"
     },
     {
         "category": "Technical Skills",
@@ -162,7 +162,7 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "Mailchimp, iContact, Constant Contact"
+        "heading": "Constant Contact, iContact, Mailchimp"
     },
     {
         "category": "Technical Skills",
@@ -172,25 +172,25 @@
         "category": "Certifications",
         "heading": "Figma for UX Design",
         "subheading": "LinkedIn",
-        "date": "Oct 2023"
+        "date": "2023"
     },
     {
         "category": "Certifications",
         "heading": "Micro-Certification - Service Portal",
         "subheading": "ServiceNow",
-        "date": "Nov 2022"
+        "date": "2022"
     },
     {
         "category": "Awards & Certifications",
         "heading": "Certified System Administrator",
         "subheading": "ServiceNow",
-        "date": "Aug 2022"
+        "date": "2022"
     },
     {
         "category": "Certifications",
         "heading": "Foundations of User Experience (UX) Design",
         "subheading": "Coursera",
-        "date": "May 2021"
+        "date": "2021"
     },
     {
         "category": "Awards",
@@ -215,7 +215,7 @@
     },
     {
         "category": "Awards",
-        "heading": "Silver Winner - Monterey County Workforce Investment Board",
+        "heading": "Silver Winner - Monterey County Workforce Investment Board Website",
         "description": "W³ Award",
         "date": "2009",
         "link": "https://www.w3award.com/"
