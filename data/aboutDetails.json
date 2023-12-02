@@ -104,7 +104,7 @@
     },
     {
         "category": "Design Skills",
-        "heading": "Email Marketing"
+        "heading": "Email Marketing Design"
     },
     {
         "category": "Technical Skills",
@@ -118,7 +118,7 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "Drupal, ExpressionEngine, Joomla, Weebly"
+        "heading": "CMS - Drupal, ExpressionEngine, Joomla, Weebly, WordPress"
     },
     {
         "category": "Technical Skills",
@@ -126,27 +126,15 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "Adobe XD"
+        "heading": "Adobe - Illustrator, Photoshop, XD"
     },
     {
         "category": "Technical Skills",
-        "heading": "Adobe Illustrator"
+        "heading": "Frontend - CSS3, Flexbox, HTML5, JavaScript, Sass"
     },
     {
         "category": "Technical Skills",
-        "heading": "Adobe Photoshop"
-    },
-    {
-        "category": "Technical Skills",
-        "heading": "CSS3 (Sass), HTML5"
-    },
-    {
-        "category": "Technical Skills",
-        "heading": "Bootstrap, CSS Flexbox"
-    },
-    {
-        "category": "Technical Skills",
-        "heading": "AngularJS, JavaScript, jQuery"
+        "heading": "Frameworks - AngularJS, Bootstrap"
     },
     {
         "category": "Technical Skills",
@@ -162,7 +150,7 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "Constant Contact, iContact, Mailchimp"
+        "heading": "Email Marketing - Constant Contact, iContact, Mailchimp"
     },
     {
         "category": "Technical Skills",
