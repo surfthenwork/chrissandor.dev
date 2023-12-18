@@ -27,7 +27,7 @@
 
 /* Utilities */
 html.sr .load-hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .ml-auto {
@@ -203,7 +203,9 @@ header nav ul li a.active:hover {
 }
 
 header nav ul li a:hover::after,
-header nav ul li a.active:hover::after {
+header nav ul li a:focus::after,
+header nav ul li a.active:hover::after,
+header nav ul li a.active:focus::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -375,9 +377,16 @@ header::after {
   align-self: center;
 }
 
+.projects .grid .item a figure {
+  margin-bottom: unset;
+}
+
+.projects .grid .item img {
+  transition: .25s ease-in-out;
+}
+
 .projects .grid .item img:hover {
   transform: scale(1.0125);
-  transition: .25s ease-in-out;
 }
 
 .projects .grid .item img {

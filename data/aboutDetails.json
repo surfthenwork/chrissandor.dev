@@ -109,40 +109,34 @@
     {
         "category": "Technical Skills",
         "heading": "ServiceNow",
-        "subheading": "Service Portal Development"
+        "subheading": "Service Portal Development",
+        "featured": true
     },
     {
         "category": "Technical Skills",
         "heading": "WordPress",
-        "subheading": "Custom Theme Development"
+        "subheading": "Custom Theme Development",
+        "featured": true
     },
     {
         "category": "Technical Skills",
-        "heading": "CMS - Drupal, ExpressionEngine, Joomla, Weebly, WordPress"
+        "heading": "CMS (Drupal, ExpressionEngine, Joomla, Weebly, WordPress)"
     },
     {
         "category": "Technical Skills",
-        "heading": "Figma"
+        "heading": "Design Tools (Adobe Illustrator, Adobe Photoshop, Adobe XD, Figma)"
     },
     {
         "category": "Technical Skills",
-        "heading": "Adobe - Illustrator, Photoshop, XD"
+        "heading": "Frontend (CSS3, HTML5, JavaScript, Sass)"
     },
     {
         "category": "Technical Skills",
-        "heading": "Frontend - CSS3, Flexbox, HTML5, JavaScript, Sass"
+        "heading": "Frameworks (AngularJS, Bootstrap)"
     },
     {
         "category": "Technical Skills",
-        "heading": "Frameworks - AngularJS, Bootstrap"
-    },
-    {
-        "category": "Technical Skills",
-        "heading": "LAMP stack"
-    },
-    {
-        "category": "Technical Skills",
-        "heading": "GitHub, GitLab"
+        "heading": "LAMP (Linux, Apache, MySQL, PHP)"
     },
     {
         "category": "Technical Skills",
@@ -150,11 +144,11 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "Email Marketing - Constant Contact, iContact, Mailchimp"
+        "heading": "Email Marketing (Constant Contact, iContact, Mailchimp)"
     },
     {
         "category": "Technical Skills",
-        "heading": "Microsoft Office"
+        "heading": "Google Workspace, Microsoft Office"
     },
     {
         "category": "Certifications",

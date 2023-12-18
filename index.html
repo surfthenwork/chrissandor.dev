@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christopher Sandor - UI/UX Designer &amp; Front-end Engineer</title>
     <!-- Favicon -->
-    <link rel="shortcut icon"
-        href="https://64.media.tumblr.com/1ee869811c6bfdb9d0e150528d7eefb0/e5ceb59b883ae5a1-02/s128x128u_c1/4cf4446ccdb1be18e75c705e11232eaec39a2b04.pnj">
-    <link rel="apple-touch-icon-precomposed"
-        href="https://64.media.tumblr.com/1ee869811c6bfdb9d0e150528d7eefb0/e5ceb59b883ae5a1-02/s128x128u_c1/4cf4446ccdb1be18e75c705e11232eaec39a2b04.pnj">
+    <!--link rel="shortcut icon"
+        href="https://64.media.tumblr.com/1ee869811c6bfdb9d0e150528d7eefb0/e5ceb59b883ae5a1-02/s128x128u_c1/4cf4446ccdb1be18e75c705e11232eaec39a2b04.pnj"-->
+    <!--link rel="apple-touch-icon-precomposed"
+        href="https://64.media.tumblr.com/1ee869811c6bfdb9d0e150528d7eefb0/e5ceb59b883ae5a1-02/s128x128u_c1/4cf4446ccdb1be18e75c705e11232eaec39a2b04.pnj"-->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,17 +50,17 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav list-inline">
-                        <li class="list-inline-item">
-                            <a aria-current="page" href="#home" data-bs-toggle="collapse"
+                    <ul class="nav navbar-nav list-inline">
+                        <li class="nav-item list-inline-item">
+                            <a class="" aria-current="page" href="#home" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent">Home</a>
                         </li>
-                        <li class="list-inline-item">
-                            <a aria-current="page" href="#projects" data-bs-toggle="collapse"
+                        <li class="nav-item list-inline-item">
+                            <a class="" aria-current="page" href="#projects" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent">Projects</a>
                         </li>
-                        <li class="list-inline-item">
-                            <a aria-current="page" href="#about" data-bs-toggle="collapse"
+                        <li class="nav-item list-inline-item">
+                            <a class="" aria-current="page" href="#about" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent">About</a>
                         </li>
                     </ul>
@@ -98,9 +98,14 @@
                     <div class="item bg-white"
                         ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
                         ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
-                        <!--a href="#" data-bs-toggle="modal" data-bs-target="#{{item.modalSlug}}"-->
-                        <a href="javascript:void(0)" class="arrow" style="cursor: unset;" bs-tooltip
-                            data-bs-placement="bottom" title="Case study coming soon">
+
+                        <a ng-hide="item.caseStudy" href="javascript:void(0)" class="arrow" style="cursor: unset;"
+                            bs-tooltip data-bs-placement="bottom" title="">
+                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
+                        </a>
+
+                        <a ng-if="item.caseStudy" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#{{item.modalSlug}}">
                             <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
                         </a>
 
@@ -135,12 +140,12 @@
                 <!-- Pagination -->
                 <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
                     <li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
-                        <button ng-click="currentPage = currentPage - 1;" class="reload" bs-tooltip title="Reload">
+                        <button ng-click="currentPage = currentPage - 1;" onclick="location.href='#projects';" class="reload" bs-tooltip title="">
                 <img src="assets/ico-rotate.svg" alt="Reload">
             </button>
                     </li>
                     <li class="list-inline-item" ng-class="{'d-none': currentPage >= data.length / pageSize - 1}">
-                        <button ng-click="currentPage = currentPage + 1;" class="reload" bs-tooltip title="Reload">
+                        <button ng-click="currentPage = currentPage + 1;" onclick="location.href='#projects';" class="reload" bs-tooltip title="">
                 <img src="assets/ico-rotate.svg" alt="Reload">
             </button>
                     </li>
@@ -155,7 +160,7 @@
                     </div>
                     <div class="col-6 content">
                         <p>Hi, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with
-                            18+ years of experience and proven skills in visual design for interactive web, mobile and
+                            18 years of experience and proven skills in visual design for interactive web, mobile and
                             email marketing projects. Specializing in clean, well-functioning wireframing, prototyping
                             and
                             accessible front-end development. Currently living in Oceanside, CA. Seeking to deliver
@@ -185,8 +190,8 @@
                             <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
                                 <strong>{{item.heading}}</strong><br>
                                 <span ng-if="item.subheading">
-                                <span ng-if="item.link"><a href="{{item.link}}" target="_blank">{{item.subheading}}</a></span>
-                                <span ng-if="!item.link">{{item.subheading}}</span><br>
+                                <!--span ng-if="item.link"><a href="{{item.link}}" target="_blank">{{item.subheading}}</a></span-->
+                                {{item.subheading}}<br>
                                 </span>
                                 <span ng-if="item.description">{{item.description}}<br></span>
                                 <em>{{item.date}}</em>
@@ -206,7 +211,7 @@
                         <h4>Technical Skills</h4>
                         <ul class="list-unstyled">
                             <li class=""
-                                ng-repeat="item in aboutDetails | filter: { category: 'Technical Skills' } | orderBy:['subheading','heading']">
+                                ng-repeat="item in aboutDetails | filter: { category: 'Technical Skills' } | orderBy:['featured','heading']">
                                 {{item.heading}}
                                 <span ng-if="item.subheading"> - <em>{{item.subheading}}</em></span>
                             </li>
@@ -232,7 +237,7 @@
             </div>
             <div class="footer-right d-flex align-items-end">
                 <ul class="list-inline connect">
-                    <li class="list-inline-item text-center"
+                    <li ng-hide="item.hide" class="list-inline-item text-center"
                         ng-repeat="item in footerIcons | filter: { category: 'Connect' }" bs-tooltip
                         title="{{item.title}}">
                         <a href="{{item.link}}" target="_blank"><i class="{{item.icon}}"></i></a>

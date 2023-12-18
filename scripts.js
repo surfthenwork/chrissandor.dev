@@ -111,10 +111,9 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
-
-    // Smooth scroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
@@ -136,6 +135,7 @@ $(document).ready(function () {
     });
 });
 
+
 function onScroll(event) {
     var scrollPos = $(document).scrollTop() + 80;
     $('#menu-container a').each(function () {
@@ -150,6 +150,7 @@ function onScroll(event) {
         }
     });
 }
+
 
 // Get current year
 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
