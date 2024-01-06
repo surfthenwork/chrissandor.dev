@@ -518,7 +518,15 @@ header::after {
 }
 
 .about-details ul li {
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
+}
+
+.about-details ul li.pill-item {
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  border: solid 1px #7f7d7e;
+  margin-right: .75rem;
+  /*line-height: 1;*/
 }
 
 .about-details ul li a {
@@ -566,7 +574,7 @@ header::after {
 .modal-container .modal-header {
   background-color: #F2EAE2;
   align-items: unset;
-  padding: 2rem 4rem 2rem 0;
+  padding: 3.5rem 4rem 3.5rem 0;
   border-bottom: none;
 }
 
@@ -574,8 +582,24 @@ header::after {
   padding: 0 4rem;
 }
 
-.modal-container .modal-body .hero-modal img {
+.modal-container .modal-body .hero-modal {
+  background-color: #F2EAE2;
+}
+
+.modal-container .modal-body .hero-modal .item-left {
+  padding: 0 4rem 0 0;
+}
+
+.modal-container .modal-body .hero-modal figure img {
   width: 50% !important;
+}
+
+.projects .grid .item .modal-container figure img:hover {
+  transform: unset;
+}
+
+.modal-container .modal-body .hero-modal figure figcaption {
+  margin-left: 4rem;
 }
 
 
@@ -708,8 +732,8 @@ footer .source-code {
   }
 
   h4 {
-  font-size: 1.4rem;
-}
+    font-size: 1.4rem;
+  }
 
   .hero .hero-img {
     margin-right: -4rem;

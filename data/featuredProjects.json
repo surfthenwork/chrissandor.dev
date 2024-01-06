@@ -5,7 +5,7 @@
         "description": "",
         "featuredAsset": "assets/featured-cmic.png",
         "featuredAssetPosition": "left",
-        "caseStudy": false,
+        "caseStudy": true,
         "modalSlug": "cmic"
     },
     {

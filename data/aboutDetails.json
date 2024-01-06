@@ -55,7 +55,7 @@
         "link": ""
     },
     {
-        "category": "Archive",
+        "category": "Experience",
         "heading": "Webmaster",
         "subheading": "Transportation Agency for Monterey County (TAMC)",
         "description": "",
@@ -80,7 +80,7 @@
     },
     {
         "category": "Design Skills",
-        "heading": "UI/UX"
+        "heading": "UI/UX Design"
     },
     {
         "category": "Design Skills",
@@ -107,6 +107,14 @@
         "heading": "Email Marketing Design"
     },
     {
+        "category": "Design Skills",
+        "heading": "Digital Design"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Interaction Design"
+    },
+    {
         "category": "Technical Skills",
         "heading": "ServiceNow",
         "subheading": "Service Portal Development",
@@ -120,44 +128,47 @@
     },
     {
         "category": "Technical Skills",
-        "heading": "CMS (Drupal, ExpressionEngine, Joomla, Weebly, WordPress)"
+        "heading": "CMS",
+        "subheading": "Drupal, ExpressionEngine, Joomla, Weebly, WordPress"
     },
     {
         "category": "Technical Skills",
-        "heading": "Design Tools (Adobe Illustrator, Adobe Photoshop, Adobe XD, Figma)"
+        "heading": "Design Tools",
+        "subheading": "Adobe Illustrator, Adobe Photoshop, Adobe XD, Figma"
     },
     {
         "category": "Technical Skills",
-        "heading": "Frontend (CSS3/Sass, HTML5, JavaScript)"
+        "heading": "Front-end",
+        "subheading": "CSS3, HTML5, JavaScript, Sass"
     },
     {
         "category": "Technical Skills",
-        "heading": "Frameworks (AngularJS, Bootstrap)"
+        "heading": "Frameworks",
+        "subheading": "AngularJS, Bootstrap"
     },
     {
         "category": "Technical Skills",
-        "heading": "LAMP (Linux, Apache, MySQL, PHP)"
+        "heading": "LAMP",
+        "subheading": "Linux, Apache, MySQL, PHP"
     },
     {
         "category": "Technical Skills",
-        "heading": "Search Engine Optimization"
+        "heading": "Search Engine Optimization",
+        "subheading": "Bing Webmaster Tools, Google Search Console, Yoast SEO"
     },
     {
         "category": "Technical Skills",
-        "heading": "Email Marketing (Constant Contact, iContact, Mailchimp)"
+        "heading": "Email Marketing",
+        "subheading": "Constant Contact, iContact, Mailchimp"
     },
     {
-        "category": "Technical Skills",
-        "heading": "Google Workspace, Microsoft Office"
-    },
-    {
-        "category": "Certifications",
+        "category": "Archive",
         "heading": "Figma for UX Design",
         "subheading": "LinkedIn",
         "date": "2023"
     },
     {
-        "category": "Certifications",
+        "category": "Archive",
         "heading": "Micro-Certification - Service Portal",
         "subheading": "ServiceNow",
         "date": "2022"
@@ -169,7 +180,7 @@
         "date": "2022"
     },
     {
-        "category": "Certifications",
+        "category": "Archive",
         "heading": "Foundations of User Experience (UX) Design",
         "subheading": "Coursera",
         "date": "2021"
