@@ -6,7 +6,27 @@
         "featuredAsset": "assets/featured-cmic.png",
         "featuredAssetPosition": "left",
         "caseStudy": true,
-        "modalSlug": "cmic"
+        "modalSlug": "cmic",
+        "objective": {
+            "description": "Rebrand company website. Migrate website to an alternative server and content management system. Reprogram website with clean front-end mark up.",
+            "asset": ""
+        },
+        "role": {
+            "description": "",
+            "asset": ""
+        },
+        "process": {
+            "description": "Business Analysis > User Research > Task Analysis > Wireframes > Visual Design > Prototype > User Feedback",
+            "asset": ""
+        },
+        "solution": {
+            "description": "",
+            "asset": ""
+        },
+        "outcome": {
+            "description": "",
+            "asset": ""
+        }
     },
     {
         "heading": "Monterey County Child Abuse Prevention Council",
@@ -41,7 +61,7 @@
         "description": "",
         "featuredAsset": "assets/featured-jmt.png",
         "featuredAssetPosition": "left",
-        "caseStudy": false,
+        "caseStudy": true,
         "modalSlug": "jmt"
     },
     {

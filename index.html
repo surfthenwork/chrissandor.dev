@@ -120,19 +120,49 @@
                                     <div class="modal-body p-0">
 
                                         <div class="hero-modal">
-
-                                            <div ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}">
+                                            <div
+                                                ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}">
                                                 <figure class="d-flex align-items-center mb-0">
                                                     <img src="{{item.featuredAsset}}" title="{{item.heading}}">
                                                     <figcaption class="flex-grow-1">
-                                                        <h2 class="modal-title" id="exampleModalLabel">{{item.heading}}</h2>
-                                                        <h4>{{item.subHeading}}</h4>
+                                                        <h2 class="modal-title" id="exampleModalLabel">{{item.heading}}
+                                                        </h2>
+                                                        <h4 class="mb-0">{{item.subHeading}}</h4>
                                                     </figcaption>
                                                 </figure>
+                                            </div>
+                                        </div>
 
+                                        <article class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-3">
+
+                                                </div>
+                                                <div class="col-6">
+                                                    <div ng-if="item.objective.description">
+                                                        <h3>Objective</h3>
+                                                        <p>{{item.objective.description}}</p>
+                                                    </div>
+
+                                                    <div ng-if="item.process.description">
+                                                        <h3>Process</h3>
+                                                        <p>{{item.process.description}}</p>
+                                                    </div>
+
+                                                    <div ng-if="item.solution.description">
+                                                        <h3>Solution</h3>
+                                                        <p>{{item.solution.description}}</p>
+                                                    </div>
+
+                                                    <div ng-if="item.result.description">
+                                                        <h3>Result</h3>
+                                                        <p>{{item.result.description}}</p>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
 
-                                        </div>
+                                        </article>
 
                                     </div>
                                     <!--div class="modal-footer">
@@ -168,15 +198,16 @@
                     </div>
                     <div class="col-6 content">
                         <p>Hello, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with 18 years
-                            of
-                            experience and proven skills in visual design for interactive web, mobile and email
+                            of experience and proven skills in visual design for interactive web, mobile and email
                             marketing projects. Specializing in clean, well-functioning wireframing, prototyping and
                             accessible front-end development.</p>
+
                         <!--p>Seeking to deliver innovative excellence as a UX Engineer</p-->
-                        <!--p>Aside from design and development, I enjoy surfing, skateboarding and gardening.</p-->
+
                         <p>I am currently a consultant at Infocenter, a ServiceNow Elite Partner where I design and
                             deliver innovative
                             custom portals and intranets to clients.</p>
+
                         <p><em>— Based in North San Diego County</em></p>
                     </div>
                 </div>
