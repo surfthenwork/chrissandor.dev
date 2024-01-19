@@ -34,7 +34,7 @@
         "description": "",
         "featuredAsset": "assets/featured-capc.jpg",
         "featuredAssetPosition": "center",
-        "caseStudy": false,
+        "caseStudy": true,
         "modalSlug": "capc"
     },
     {
@@ -43,16 +43,16 @@
         "description": "",
         "featuredAsset": "assets/featured-svats.jpg",
         "featuredAssetPosition": "center",
-        "caseStudy": false,
+        "caseStudy": true,
         "modalSlug": "svats"
     },
     {
         "heading": "Olive Hill Greenhouses",
-        "subHeading": "Website redesign, CMS implementation and email marketing.",
+        "subHeading": "Website redesign, CMS implementation and email marketing design and development.",
         "description": "",
         "featuredAsset": "assets/featured-ohg.png",
         "featuredAssetPosition": "right",
-        "caseStudy": false,
+        "caseStudy": true,
         "modalSlug": "ohg"
     },
     {
@@ -70,7 +70,7 @@
         "description": "",
         "featuredAsset": "assets/featured-drac.png",
         "featuredAssetPosition": "center",
-        "caseStudy": false,
+        "caseStudy": true,
         "modalSlug": "drac",
         "problem": {
             "description": "",
@@ -91,7 +91,7 @@
     },
     {
         "heading": "Horticultural Sales, Inc.",
-        "subHeading": "Website Redesign",
+        "subHeading": "Homepage design prototype.",
         "description": "",
         "featuredAsset": "assets/featured-hsi.png",
         "featuredAssetPosition": "center",
@@ -104,7 +104,7 @@
         "description": "",
         "featuredAsset": "assets/featured-br.png",
         "featuredAssetPosition": "right",
-        "caseStudy": false,
+        "caseStudy": true,
         "modalSlug": "br"
     }
 ]

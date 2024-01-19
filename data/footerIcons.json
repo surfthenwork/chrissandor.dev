@@ -6,7 +6,7 @@
     },
     {
         "category": "Development",
-        "title": "CSS3 & Sass",
+        "title": "CSS3",
         "icon": "fa-brands fa-css3"
     },
     {
@@ -46,7 +46,6 @@
         "category": "Archive",
         "title": "Resume",
         "icon": "fa-solid fa-file-lines",
-        "link": "https://drive.google.com/file/d/1NtBQtozi8-bdZQP62YGal4QiEc6Am0uZ/view?usp=drive_link",
-        "hide": true
+        "link": "https://drive.google.com/file/d/1NtBQtozi8-bdZQP62YGal4QiEc6Am0uZ/view?usp=drive_link"
     }
 ]
