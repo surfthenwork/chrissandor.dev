@@ -5,27 +5,12 @@
         "description": "",
         "featuredAsset": "assets/featured-cmic.png",
         "featuredAssetPosition": "left",
-        "caseStudy": true,
         "modalSlug": "cmic",
-        "objective": {
-            "description": "Rebrand company website. Migrate website to an alternative server and content management system. Reprogram website with clean front-end mark up.",
-            "asset": ""
-        },
-        "role": {
-            "description": "",
-            "asset": ""
-        },
-        "process": {
-            "description": "Business Analysis > User Research > Task Analysis > Wireframes > Visual Design > Prototype > User Feedback",
-            "asset": ""
-        },
-        "solution": {
-            "description": "",
-            "asset": ""
-        },
-        "outcome": {
-            "description": "",
-            "asset": ""
+        "caseStudy": true,
+        "caseStudyDetails": {
+            "overview": "",
+            "role": "Rebrand company website. Migrate website to new server and new content management system. Reprogram website with current front-end mark up.",
+            "responsibilities": ["Art direction", "UI/UX design", "Prototyping", "WordPress theme development", "HTML5", "CSS3", "Sass", "PHP", "JavaScript", "jQuery"]
         }
     },
     {
@@ -70,23 +55,12 @@
         "description": "",
         "featuredAsset": "assets/featured-drac.png",
         "featuredAssetPosition": "center",
-        "caseStudy": true,
         "modalSlug": "drac",
-        "problem": {
-            "description": "",
-            "asset": ""
-        },
-        "solution": {
-            "description": "",
-            "asset": ""
-        },
-        "process": {
-            "description": "",
-            "asset": ""
-        },
-        "outcome": {
-            "description": "",
-            "asset": ""
+        "caseStudy": true,
+        "caseStudyDetails": {
+            "overview": "",
+            "role": "",
+            "responsibilities": [""]
         }
     },
     {

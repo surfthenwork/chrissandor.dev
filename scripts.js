@@ -1,9 +1,8 @@
 var app = angular.module("myApp", []);
 
-app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
+app.controller("myCtrl", function ($scope, $http) {
 
     $scope.pageTitle = document.title;
-
 
     // Preload Featured Projects
     var projectImg = new Array()
@@ -37,13 +36,11 @@ app.controller("myCtrl", function ($scope, $http) { // myProjects, myLinks
         $scope.data.push("Item " + i);
     }
 
-
     // About Details
     $http.get('./data/aboutDetails.json')
         .then(function (res) {
             $scope.aboutDetails = res.data;
         });
-
 
     // Footer Icons
     $http.get('./data/footerIcons.json')
@@ -76,7 +73,6 @@ app.directive('bsTooltip', function () {
     };
 });
 
-
 // Featured Projects Pagination startFrom filter
 app.filter('startFrom', function () {
     return function (input, start) {
@@ -84,7 +80,6 @@ app.filter('startFrom', function () {
         return input.slice(start);
     }
 });
-
 
 // Get the scroll to top button:
 let mybutton = document.getElementById("top");
@@ -111,7 +106,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
     $('a[href^="#"]').on('click', function (e) {
@@ -135,7 +129,6 @@ $(document).ready(function () {
     });
 });
 
-
 function onScroll(event) {
     var scrollPos = $(document).scrollTop() + 80;
     $('#menu-container a').each(function () {
@@ -151,9 +144,7 @@ function onScroll(event) {
     });
 }
 
-
 // Get current year
 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
-
 
 //ScrollReveal().reveal('.about-details .grid .item', { interval: 200 });
