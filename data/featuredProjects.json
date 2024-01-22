@@ -8,9 +8,21 @@
         "modalSlug": "cmic",
         "caseStudy": true,
         "caseStudyDetails": {
-            "overview": "",
-            "role": "Rebrand company website. Migrate website to new server and new content management system. Reprogram website with current front-end mark up.",
-            "responsibilities": ["Art direction", "UI/UX design", "Prototyping", "WordPress theme development", "HTML5", "CSS3", "Sass", "PHP", "JavaScript", "jQuery"]
+            "overview": "California Mutual Insurance Company is an insurance products and service company.",
+            "role": "Rebrand company website. Migrate application to a new server and a new content management system. Reprogram website with modern front-end markup.",
+            "responsibilities": [
+                "Creative direction",
+                "Wireframes",
+                "UI design",
+                "Prototyping",
+                "Front-end development",
+                "Custom WordPress theme development",
+                "WordPress ACF",
+                "HTML5",
+                "CSS3/Sass",
+                "PHP",
+                "JavaScript/jQuery"
+            ]
         }
     },
     {
@@ -60,7 +72,7 @@
         "caseStudyDetails": {
             "overview": "",
             "role": "",
-            "responsibilities": [""]
+            "responsibilities": []
         }
     },
     {

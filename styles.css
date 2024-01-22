@@ -105,7 +105,7 @@ h3::after,
 h4::after {
   position: absolute;
   left: 0;
-  bottom: 3px;
+  bottom: 2px;
   /*opacity: .75;*/
   border-bottom: 4px solid #FFC800;
   width: 100%;
@@ -521,7 +521,8 @@ header::after {
   margin-bottom: 1rem;
 }
 
-.about-details ul li.pill-item {
+.about-details ul li.pill-item,
+ul li.pill-item {
   padding: .5rem 1rem;
   border-radius: 2rem;
   border: solid 1px #7f7d7e;
@@ -618,7 +619,12 @@ header::after {
 }
 
 .modal-container .modal-body .hero-modal figure img {
-  width: 50% !important;
+  max-width: 50% !important;
+  width: unset !important;
+}
+
+.modal-container .modal-body .hero-modal .item-center figure img {
+  max-height: calc(100vh - 20rem);
 }
 
 .projects .grid .item .modal-container figure img:hover {
@@ -637,10 +643,17 @@ header::after {
 
 .modal-container .modal-body article {
   margin-top: 4rem;
+  width: 50%;
+  margin-left: unset;
+  margin-right: unset;
 }
 
-.modal-container .modal-body article .row {
-  margin-bottom: 4rem;
+
+.modal-container .modal-body article ul li {
+  margin-bottom: 1rem;
+  color: #7f7d7e;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.2rem;
 }
 
 .modal-container .modal-body h3 {
@@ -650,7 +663,8 @@ header::after {
   padding-top: unset;
 }
 
-.modal-container .modal-body p {
+.modal-container .modal-body p,
+.modal-container .modal-body ul {
   /*margin-bottom: 0;*/
   margin-top: 1rem;
   line-height: 1.25;
@@ -685,7 +699,6 @@ footer .icons-list li {
   opacity: .5;
   font-size: 1.6rem;
   line-height: 1;
-  ;
 }
 
 footer .icons-list li:hover {
@@ -776,6 +789,13 @@ footer .source-code {
 }
 
 /* Max-width Responsive Breakpoints */
+@media (max-width: 1279.98px) {
+  .about-details .grid {
+    grid-template-columns: repeat(auto-fill, minmax(calc(18%), 1fr));
+    gap: 4rem;
+  }
+}
+
 @media (max-width: 1199.98px) {
   h1 {
     font-size: 4.8rem;
@@ -808,6 +828,10 @@ footer .source-code {
 }
 
 @media (max-width: 1094.98px) {
+  .about-details .grid {
+    grid-template-columns: repeat(auto-fill, minmax(calc(31%), 1fr));
+  }
+
   h1 {
     font-size: 4.2rem;
   }
@@ -819,6 +843,10 @@ footer .source-code {
 }
 
 @media (max-width: 991.98px) {
+  .modal-container .modal-body article {
+    width: 100%;
+  }
+
   h1 {
     font-size: 3.6rem;
     letter-spacing: unset;
@@ -859,7 +887,7 @@ footer .source-code {
   }
 
   .about-details .grid {
-    grid-template-columns: repeat(auto-fill, minmax(calc(17%), 1fr));
+    /*grid-template-columns: repeat(auto-fill, minmax(calc(17%), 1fr));*/
     gap: 4rem;
   }
 }
@@ -885,7 +913,7 @@ footer .source-code {
 
 @media (max-width: 823.98px) {
   .about-details .grid {
-    grid-template-columns: repeat(auto-fill, minmax(calc(30%), 1fr));
+    /*grid-template-columns: repeat(auto-fill, minmax(calc(30%), 1fr));*/
     gap: 4rem;
   }
 }
@@ -924,6 +952,8 @@ footer .source-code {
 
   .modal-container .modal-body .hero-modal figure img {
     width: 100% !important;
+    max-width: unset !important;
+    max-height: unset !important;
   }
 
   header::after {
@@ -970,7 +1000,7 @@ footer .source-code {
   }
 
   .about-details ul {
-    margin-bottom: 4.25rem;
+    /*margin-bottom: 4.25rem;*/
   }
 
   #about .about-container .title {
@@ -982,10 +1012,13 @@ footer .source-code {
     width: 100%;
   }
 
-
 }
 
 @media (max-width: 575.98px) {
+  .about-details ul {
+    margin-bottom: 4.25rem;
+  }
+
   .modal-container .modal-body .hero-modal h2 {
     font-size: 2.4rem;
   }
