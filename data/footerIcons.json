@@ -43,6 +43,13 @@
         "link": "https://github.com/surfthenwork"
     },
     {
+        "category": "Connect",
+        "title": "ServiceNow Learning Resume",
+        "icon": "ico-servicenow.svg",
+        "link": "https://nowlearning.servicenow.com/lxp/en/pages/nl-public-resume?id=nl_public&user=chrissando634456",
+        "svg": true
+    },
+    {
         "category": "Archive",
         "title": "Resume",
         "icon": "fa-solid fa-file-lines",

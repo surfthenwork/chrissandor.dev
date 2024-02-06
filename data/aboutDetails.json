@@ -47,7 +47,7 @@
         "link": ""
     },
     {
-        "category": "Archive",
+        "category": "Experience",
         "heading": "Web Developer",
         "subheading": "TMD Creative",
         "description": "",
@@ -162,28 +162,10 @@
         "subheading": "Constant Contact, iContact, Mailchimp"
     },
     {
-        "category": "Archive",
-        "heading": "Figma for UX Design",
-        "subheading": "LinkedIn",
-        "date": "2023"
-    },
-    {
-        "category": "Archive",
-        "heading": "Micro-Certification - Service Portal",
-        "subheading": "ServiceNow",
-        "date": "2022"
-    },
-    {
         "category": "Awards & Certifications",
         "heading": "Certified System Administrator",
         "subheading": "ServiceNow",
         "date": "2022"
-    },
-    {
-        "category": "Archive",
-        "heading": "Foundations of User Experience (UX) Design",
-        "subheading": "Coursera",
-        "date": "2021"
     },
     {
         "category": "Awards",
@@ -198,6 +180,13 @@
         "description": "Davey Award",
         "date": "2018",
         "link": "https://daveyawards.com/"
+    },
+    {
+        "category": "Awards",
+        "heading": "Honorable Mention - Del Rey Avocado Company Website",
+        "description": "MarCom Award",
+        "date": "2018",
+        "link": "https://marcomawards.com/"
     },
     {
         "category": "Awards",

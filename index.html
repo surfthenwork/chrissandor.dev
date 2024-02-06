@@ -27,7 +27,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Theme Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 
     <!-- ScrollReveal -->
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.0/scrollreveal.min.js"
@@ -143,6 +143,9 @@
                                         </div>
 
                                         <article class="container-fluid">
+                                            <!--h3>Case Study</h3>
+                                            <p>Case study coming soon...</p>
+
                                             <div ng-if="item.caseStudyDetails.overview">
                                                 <h3>Overview</h3>
                                                 <p>{{item.caseStudyDetails.overview}}</p>
@@ -159,7 +162,7 @@
                                                     <li ng-repeat="item in item.caseStudyDetails.responsibilities"
                                                         class="list-inline-item pill-item">{{item}}</li>
                                                 </ul>
-                                            </div>
+                                            </div-->
                                         </article>
 
                                     </div>
@@ -195,16 +198,15 @@
                         <h3>About Me</h3>
                     </div>
                     <div class="col-9 content">
-                        <p>Hello, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with 18 years
-                            of experience and proven skills in visual design for interactive web, mobile and email
-                            marketing projects. Specializing in clean, well-functioning wireframing, prototyping and
+                        <p>Hello, I'm Christopher Sandor, a creative UX engineer with 19 years
+                            of experience and proven skills in visual design for mobile responsive web applications.
+                            Specializing in clean, well-functioning wireframing, prototyping and
                             accessible front-end development.</p>
 
                         <!--p>Seeking to deliver innovative excellence as a UX Engineer</p-->
 
                         <p>I am currently a consultant at Infocenter, a ServiceNow Elite Partner where I design and
-                            deliver innovative
-                            custom portals and intranets to clients.</p>
+                            develop innovative custom portals and intranets to clients.</p>
 
                         <p><em>— Based in North San Diego County</em></p>
                     </div>
@@ -219,7 +221,7 @@
                     <div class="item">
                         <h4>Experience</h4>
                         <ul class="list-unstyled">
-                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Experience' }">
+                            <li ng-repeat="item in aboutDetails | filter: { category: 'Experience' }">
                                 <strong>{{item.heading}}</strong><br>
                         {{item.subheading}}<br>
                                 <span ng-if="item.description">{{item.description}}<br></span>
@@ -230,7 +232,7 @@
                     <div class="item">
                         <h4>Awards &amp; Certifications</h4>
                         <ul class="list-unstyled">
-                            <li class="" ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
+                            <li ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
                                 <strong>{{item.heading}}</strong><br>
                                 <span ng-if="item.subheading">
                                 <!--span ng-if="item.link"><a href="{{item.link}}" target="_blank">{{item.subheading}}</a></span-->
@@ -245,7 +247,7 @@
                     <div class="item">
                         <h4>Technical Skills</h4>
                         <ul class="list-unstyled">
-                            <li class=""
+                            <li
                                 ng-repeat="item in aboutDetails | filter: { category: 'Technical Skills' } | orderBy:['featured','heading']">
                                 <strong>{{item.heading}}:</strong>
                                 <span ng-if="item.subheading"> {{item.subheading}}</span>
@@ -281,11 +283,12 @@
                 </p>
             </div>
             <div class="footer-right d-flex align-items-end">
-                <ul class="list-inline connect">
+                <ul class="list-inline connect d-flex align-items-center">
                     <li class="list-inline-item text-center"
                         ng-repeat="item in footerIcons | filter: { category: 'Connect' }" bs-tooltip
                         title="{{item.title}}">
-                        <a href="{{item.link}}" target="_blank"><i class="{{item.icon}}"></i></a>
+                        <a href="{{item.link}}"
+                            target="_blank"><i ng-hide="item.svg" class="{{item.icon}}"></i><img ng-if="item.svg" src="./assets/{{item.icon}}" alt="{{item.title}}" height="16" width="16"></a>
                     </li>
                 </ul>
             </div>

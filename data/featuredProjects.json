@@ -9,7 +9,7 @@
         "caseStudy": true,
         "caseStudyDetails": {
             "overview": "California Mutual Insurance Company is an insurance products and service company.",
-            "role": "Rebrand company website. Migrate application to a new server and a new content management system. Reprogram website with modern front-end markup.",
+            "role": "Rebrand company website. Migrate application to a new server and content management system. Reprogram website with modern front-end markup.",
             "responsibilities": [
                 "Creative direction",
                 "Wireframes",
@@ -45,7 +45,7 @@
     },
     {
         "heading": "Olive Hill Greenhouses",
-        "subHeading": "Website redesign, CMS implementation and email marketing design and development.",
+        "subHeading": "Website redesign, CMS implementation and email marketing template design and development.",
         "description": "",
         "featuredAsset": "assets/featured-ohg.png",
         "featuredAssetPosition": "right",

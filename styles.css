@@ -545,11 +545,17 @@ ul li.pill-item {
   margin-right: 1rem !important;
 }
 
+.connect li:last-child {
+  /*top: -6px;*/
+  /*position: relative;*/
+}
+
 .connect li {
   background-color: #FFC800;
   height: 3.2rem;
   width: 3.2rem;
   line-height: 3.2rem;
+  font-size: 0;
 }
 
 .connect li:hover {
@@ -558,6 +564,7 @@ ul li.pill-item {
 
 .connect li img {
   max-height: 1.6rem;
+  line-height: 3.2rem;
 }
 
 .connect li i {
@@ -624,7 +631,7 @@ ul li.pill-item {
 }
 
 .modal-container .modal-body .hero-modal .item-center figure img {
-  max-height: calc(100vh - 20rem);
+  max-height: calc(100vh - 16rem);
 }
 
 .projects .grid .item .modal-container figure img:hover {
