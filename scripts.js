@@ -82,7 +82,7 @@ app.filter('startFrom', function () {
 });
 
 // Get the scroll to top button:
-let mybutton = document.getElementById("top");
+let upArrow = document.getElementById("top");
 
 // When the user scrolls down 80px from the top of the document, show the button
 window.onscroll = function () {
@@ -91,11 +91,11 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        //mybutton.style.display = "block"; //turned off button
-        mybutton.style.display = "none";
+        upArrow.style.display = "block"; 
+        //upArrow.style.display = "none"; //turned off button
         nav.classList.add("box-shadow");
     } else {
-        mybutton.style.display = "none";
+        upArrow.style.display = "none";
         nav.classList.remove("box-shadow");
     }
 }

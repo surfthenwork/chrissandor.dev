@@ -10,6 +10,28 @@
   }
 }
 
+@keyframes slideLeft {
+  from {
+    right: -50%;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    top: -100vh;
+  }
+
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
 @keyframes rotate-animation {
   0% {
     transform: rotate(0deg);
@@ -277,6 +299,7 @@ header::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(42,40,41, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+
 /* Hero */
 .hero {
   position: relative;
@@ -303,6 +326,10 @@ header::after {
   z-index: 5;
   float: right;
   width: calc(50% + 6rem);
+
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
 }
 
 .hero .hero-img img {
@@ -316,18 +343,18 @@ header::after {
   bottom: 2rem;
   right: 2rem;
   outline: none;
-  /*background-color: #F2EAE2;*/
   background-color: #FFC800;
   color: #FFFFFFE0;
   cursor: pointer;
-  height: 4rem;
-  width: 4rem;
-  line-height: 3.8rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  line-height: 3.2rem;
   /*border: solid 1px white;*/
   border: none;
   z-index: 10;
+  font-size: 1.6rem;
 
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 #top:hover {
@@ -683,6 +710,8 @@ footer {
   padding-bottom: 2rem;
   padding-top: 2rem;
   background-color: #F2EAE2;
+  position: relative;
+  z-index: 15;
 }
 
 footer .footer-container {
