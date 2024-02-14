@@ -91,7 +91,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        upArrow.style.display = "block"; 
+        upArrow.style.display = "flex"; 
         //upArrow.style.display = "none"; //turned off button
         nav.classList.add("box-shadow");
     } else {
