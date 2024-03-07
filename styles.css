@@ -48,6 +48,10 @@
 
 
 /* Utilities */
+.mix-blend-difference {
+  mix-blend-mode: difference;
+}
+
 html.sr .load-hidden {
   visibility: hidden;
 }
@@ -179,12 +183,15 @@ header {
 
 header .text-light {
   color: #F2EAE2 !important;
+  /*color: unset !important;*/
+  /*opacity: .5;*/
 }
 
 header nav {
   height: 8rem;
   display: flex;
-  background-color: #FFC800;
+  /*background-color: #FFC800;*/
+  background-color: transparent;
   /*position: fixed;*/
 }
 
@@ -216,6 +223,7 @@ header nav ul li a.active {
   font-weight: 700;
   letter-spacing: .025rem;
   text-decoration: none;
+
 }
 
 header nav ul li a:hover,
@@ -250,19 +258,59 @@ header nav .list-inline-item:last-child {
   margin-right: 0 !important;
 }
 
-header nav.box-shadow {
+header nav.scroll {
+  /*-webkit-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
+  box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);*/
+  mix-blend-mode: difference;
+}
+
+header nav.scroll:hover {
+  mix-blend-mode: normal;
+  background-color: #FFC800;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
   -moz-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
   box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
 }
 
-header nav.box-shadow .navbar-brand {
+
+
+header nav.scroll .container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+header nav.scroll .navbar-brand {
   display: block;
 }
 
-header nav.box-shadow .navbar-brand a {
-  color: inherit;
+header nav.scroll .text-light {
+  color: unset !important;
+  opacity: .5;
+}
+
+header nav.scroll:hover .text-light {
+  color: #F2EAE2 !important;
+  opacity: 1;
+}
+
+header nav.scroll .navbar-brand {
+  /*background-color: #FFFFFFE0;*/
+  /*padding: 8px;*/
+}
+
+header nav.scroll:hover .navbar-brand a,
+header nav.scroll:hover ul li a,
+header nav.scroll:hover ul li a.active {
+  color: #2A2829;
+}
+
+header nav.scroll .navbar-brand a,
+header nav.scroll ul li a,
+header nav.scroll ul li a.active {
+  color: #2A2829;
   text-decoration: unset;
+  /*color: #FFFFFFE0;*/
 }
 
 header nav.navbar {
@@ -304,14 +352,15 @@ header::after {
 .hero {
   position: relative;
   /*padding-bottom: $size-xl;*/
-  margin-top: 8rem;
+  /*margin-top: 8rem;*/
+  padding-top: 8rem;
 }
 
 .hero .hero-message {
   width: calc(50% + 6rem);
   z-index: 10;
   position: absolute;
-  top: 8rem;
+  top: 16rem;
   animation-name: slideRight;
   animation-duration: 1s;
   animation-delay: 0s;
@@ -514,9 +563,10 @@ button#top {
 
 /* About Details */
 .about-details {
-  /*padding-top: 8rem;*/
-  padding-bottom: 6.25rem;
-  background: #FFFFFFE0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  /*background: #FFFFFFE0;*/
+  background-color: #2A2829;
   /*background: radial-gradient(circle, rgba(242, 234, 226, 1) 0%, #FFFFFFE0 75%);*/
 }
 
@@ -536,20 +586,21 @@ button#top {
 }
 
 .about-details .grid .item {
-  background-color: #FFFFFFE0;
+  /*background-color: #FFFFFFE0;*/
   /*padding: 4rem 4rem 2.25rem 4rem;*/
 
-  /*box-shadow: 0 5px 5px 0px rgba(242,234,226,1);
--webkit-box-shadow: 0 5px 5px 0px rgba(242,234,226,1);
--moz-box-shadow: 0 5px 5px 0px rgba(242,234,226,1);*/
-
-border-right: solid 2px rgba(242,234,226,1);
-padding-right: 4rem;
+  border-right: solid 2px #7f7d7e;
+  padding-right: 4rem;
 }
 
 .about-details .grid .item:last-child {
   border-right: none;
   padding-right: unset;
+}
+
+.about-details h4 {
+  color: #FFFFFFE0;
+  margin-bottom: 2rem;
 }
 
 .about-details ul {
@@ -593,7 +644,8 @@ ul li.pill-item {
 }
 
 .connect li {
-  background-color: #FFC800;
+  /*background-color: #FFC800;*/
+  background-color: #2A2829EB;
   height: 3.2rem;
   width: 3.2rem;
   line-height: 3.2rem;
@@ -612,7 +664,9 @@ ul li.pill-item {
 .connect li i {
   font-size: 1.6rem;
   line-height: 3.2rem;
-  color: #FFFFFFE0;
+  /*color: #FFFFFFE0;*/
+  /*color: #FFC800;*/
+  color: #F2EAE2;
 }
 
 /* Modal */
@@ -724,7 +778,8 @@ ul li.pill-item {
 footer {
   padding-bottom: 2rem;
   padding-top: 2rem;
-  background-color: #F2EAE2;
+  /*background-color: #F2EAE2;*/
+  background-color: #FFC800;
   position: relative;
   z-index: 15;
 }
@@ -747,9 +802,10 @@ footer ul {
 }
 
 footer .icons-list li {
-  opacity: .5;
+  opacity: .67;
   font-size: 1.6rem;
   line-height: 1;
+  /*color: #FFFFFFE0;*/
 }
 
 footer .icons-list li:hover {
@@ -768,7 +824,7 @@ footer p strong {
 
 footer p a {
   color: inherit;
-  opacity: .5;
+  /*opacity: .5;*/
   /*text-decoration: none;*/
 }
 
@@ -883,7 +939,7 @@ footer .source-code {
     grid-template-columns: repeat(auto-fill, minmax(calc(31%), 1fr));
   }
 
-  .about-details .grid .item:nth-child(2){
+  .about-details .grid .item:nth-child(2) {
     border-right: none;
     padding-right: unset;
   }
@@ -963,7 +1019,7 @@ footer .source-code {
 
   .hero .hero-message {
     width: calc(50% + 4rem);
-    top: 4rem;
+    top: 12rem;
   }
 }
 
@@ -1071,6 +1127,25 @@ footer .source-code {
 }
 
 @media (max-width: 575.98px) {
+  header nav.scroll {
+    mix-blend-mode: normal;
+    background-color: #FFC800;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
+    box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5)
+  }
+
+  header nav.scroll .navbar-brand a,
+  header nav.scroll ul li a,
+  header nav.scroll ul li a.active {
+    color: #2A2829;
+  }
+
+  header nav.scroll .text-light {
+  color: #F2EAE2 !important;
+  opacity: 1;
+}
+
   .about-details ul {
     margin-bottom: 4.25rem;
   }
@@ -1087,6 +1162,7 @@ footer .source-code {
     position: absolute;
     background-color: #FFC800F7;
     top: 5.8rem;
+    /*top: -2.2rem;*/
     left: 0px;
     width: 100%;
     padding-left: 4rem;
@@ -1130,7 +1206,7 @@ footer .source-code {
   }
 
   #about {
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
   }
 
   .about-details {
@@ -1140,8 +1216,8 @@ footer .source-code {
   .about-details .grid::before {
     content: "";
     display: block;
-    border-top: solid 4px #F2EAE2;
-    margin-bottom: 4rem;
+    /*border-top: solid 4px #7f7d7e;*/
+   /*margin-bottom: 4rem;*/
   }
 
   .about-details .grid {
@@ -1149,7 +1225,7 @@ footer .source-code {
     display: unset;
   }
 
-   .about-details .grid .item {
+  .about-details .grid .item {
     border-right: none;
     padding-right: unset;
   }

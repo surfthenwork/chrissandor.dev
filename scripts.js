@@ -93,10 +93,10 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         upArrow.style.display = "flex"; 
         //upArrow.style.display = "none"; //turned off button
-        nav.classList.add("box-shadow");
+        nav.classList.add("scroll");
     } else {
         upArrow.style.display = "none";
-        nav.classList.remove("box-shadow");
+        nav.classList.remove("scroll");
     }
 }
 
