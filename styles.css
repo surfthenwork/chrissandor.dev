@@ -589,7 +589,7 @@ button#top {
   /*background-color: #FFFFFFE0;*/
   /*padding: 4rem 4rem 2.25rem 4rem;*/
 
-  border-right: solid 2px #7f7d7e;
+  /*border-right: solid 2px #7f7d7e;*/
   padding-right: 4rem;
 }
 
@@ -645,15 +645,17 @@ ul li.pill-item {
 
 .connect li {
   /*background-color: #FFC800;*/
-  background-color: #2A2829EB;
+  background-color: #2A2829;
   height: 3.2rem;
   width: 3.2rem;
   line-height: 3.2rem;
   font-size: 0;
+  mix-blend-mode: darken;
 }
 
 .connect li:hover {
-  background-color: #2A2829;
+  /*background-color: #2A2829;*/
+  mix-blend-mode: unset;
 }
 
 .connect li img {
@@ -790,6 +792,8 @@ footer .footer-container {
 
 footer .footer-left {
   font-size: 0;
+  color: #7f7d7e;
+  mix-blend-mode: multiply;
 }
 
 footer .icons-list {
@@ -802,14 +806,14 @@ footer ul {
 }
 
 footer .icons-list li {
-  opacity: .67;
+  /*opacity: .67;*/
   font-size: 1.6rem;
   line-height: 1;
   /*color: #FFFFFFE0;*/
 }
 
 footer .icons-list li:hover {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 footer p {
@@ -834,7 +838,7 @@ footer p a:hover {
 }
 
 footer .source-code {
-  border-left: solid 1px #FFFFFFE0;
+  border-left: solid 1px #7f7d7e80;
   margin-left: 1rem;
 }
 
