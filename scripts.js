@@ -90,12 +90,36 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+
+
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        
+        if (prevScrollpos > currentScrollPos || currentScrollPos <= 80) {
+            document.getElementById("nav").classList.add("scroll");
+            document.getElementById("nav").style.top = "0px";
+        } else {
+            document.getElementById("nav").style.top = "-80px";
+        }
+        if (currentScrollPos <= 79) {
+            document.getElementById("nav").classList.remove("scroll");
+            document.getElementById("nav").style.top = "0px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+
+
+
+
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        upArrow.style.display = "flex"; 
+        upArrow.style.display = "flex";
         //upArrow.style.display = "none"; //turned off button
         nav.classList.add("scroll");
     } else {
-        upArrow.style.display = "none";
+        //upArrow.style.display = "none";
         nav.classList.remove("scroll");
     }
 }

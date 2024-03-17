@@ -41,6 +41,7 @@
 
 <body>
     <header>
+
         <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="nav">
             <div class="container d-flex justify-content-between" id="menu-container">
 
@@ -76,6 +77,7 @@
 
             </div>
         </nav>
+
         <div class="container">
             <div class="hero">
                 <div class="hero-message">
@@ -149,26 +151,34 @@
                                         </div>
 
                                         <article class="container-fluid">
-                                            <!--h3>Case Study</h3>
-                                            <p>Case study coming soon...</p>
+                                            <div class="row">
+                                                <div class="col">
 
-                                            <div ng-if="item.caseStudyDetails.overview">
-                                                <h3>Overview</h3>
-                                                <p>{{item.caseStudyDetails.overview}}</p>
+                                                    <div ng-if="item.caseStudyDetails.overview">
+                                                        <h3>Overview</h3>
+                                                        <p>{{item.caseStudyDetails.overview}}</p>
+                                                    </div>
+
+                                                    <div ng-if="item.caseStudyDetails.role">
+                                                        <h3>My Role</h3>
+                                                        <p>{{item.caseStudyDetails.role}}</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <div ng-if="item.caseStudyDetails.responsibilities.length">
+                                                        <h3>My Responsibilities</h3>
+                                                        <ul class="list-unstyled">
+                                                            <li ng-repeat="item in item.caseStudyDetails.responsibilities"
+                                                                class="list-inline-item pill-item">{{item}}
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
                                             </div>
 
-                                            <div ng-if="item.caseStudyDetails.role">
-                                                <h3>My Role</h3>
-                                                <p>{{item.caseStudyDetails.role}}</p>
-                                            </div>
-
-                                            <div ng-if="item.caseStudyDetails.responsibilities.length">
-                                                <h3>My Responsibilities</h3>
-                                                <ul class="list-unstyled">
-                                                    <li ng-repeat="item in item.caseStudyDetails.responsibilities"
-                                                        class="list-inline-item pill-item">{{item}}</li>
-                                                </ul>
-                                            </div-->
                                         </article>
 
                                     </div>
@@ -211,8 +221,11 @@
 
                         <!--p>Seeking to deliver innovative excellence as a UX Engineer</p-->
 
-                        <p>I am currently a consultant at Infocenter, a <span bs-tooltip title="2024 Consulting &amp; Implementation Partner of the Year">ServiceNow Elite Partner</span> where I design and
-                            develop innovative custom portals and intranets to clients.</p>
+                        <p>I am currently a consultant at Infocenter, a
+                            <span class="" bs-tooltip title="2024 Consulting &amp; Implementation Partner of the Year">ServiceNow Elite Partner</span>
+                            where I design and
+                            develop innovative custom portals and intranets to clients.
+                        </p>
 
                         <p><em>— Based in North San Diego County</em></p>
                     </div>
@@ -307,6 +320,21 @@
 
     <!-- Load internal JavaScript -->
     <script src="scripts.js"></script>
+
+    <!--script>
+        var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos || currentScrollPos <= 80) {
+     document.getElementById("nav").classList.add("scroll");
+     document.getElementById("nav").style.top = "0px";
+     } else {
+        document.getElementById("nav").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script-->
+
 </body>
 
 </html>
