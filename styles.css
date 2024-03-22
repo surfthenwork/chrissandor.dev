@@ -394,7 +394,7 @@ header::after {
 
 /* Back to top */
 button#top {
-  /*display: none;*/
+  display: flex;
   position: fixed;
   bottom: 2rem;
   right: 2rem;

@@ -113,18 +113,16 @@
                     <div class="item bg-white"
                         ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}"
                         ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
-
                         <a ng-hide="item.caseStudy" href="javascript:void(0)" class="arrow" style="cursor: unset;"
                             bs-tooltip data-bs-placement="bottom" title="">
                             <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
                         </a>
-
                         <a ng-if="item.caseStudy" href="javascript:void(0)" data-bs-toggle="modal"
                             data-bs-target="#{{item.modalSlug}}">
                             <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
                         </a>
 
-                        <!-- Modal -->
+                        <!-- Modal Start -->
                         <div class="modal fade" id="{{item.modalSlug}}" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
@@ -135,7 +133,6 @@
                                     </div>
 
                                     <div class="modal-body p-0">
-
                                         <div class="hero-modal">
                                             <div
                                                 ng-class="{'item-center': item.featuredAssetPosition == 'center', 'item-left': item.featuredAssetPosition == 'left', 'item-right': item.featuredAssetPosition == 'right'}">
@@ -150,10 +147,9 @@
                                             </div>
                                         </div>
 
-                                        <article class="container-fluid">
+                                        <!--article class="container-fluid">
                                             <div class="row">
                                                 <div class="col">
-
                                                     <div ng-if="item.caseStudyDetails.overview">
                                                         <h3>Overview</h3>
                                                         <p>{{item.caseStudyDetails.overview}}</p>
@@ -163,7 +159,6 @@
                                                         <h3>My Role</h3>
                                                         <p>{{item.caseStudyDetails.role}}</p>
                                                     </div>
-
                                                 </div>
 
                                                 <div class="col">
@@ -175,11 +170,9 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-
                                                 </div>
                                             </div>
-
-                                        </article>
+                                        </article-->
 
                                     </div>
                                     <!--div class="modal-footer">
@@ -188,6 +181,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Modal End-->
 
                     </div>
                 </div>
@@ -219,8 +213,6 @@
                             responsive web apps. Specializing in clean, well-functioning wireframing, prototyping and
                             accessible front-end development.</p>
 
-                        <!--p>Seeking to deliver innovative excellence as a UX Engineer</p-->
-
                         <p>I am currently a consultant at Infocenter, a
                             <span class="" bs-tooltip title="2024 Consulting &amp; Implementation Partner of the Year">ServiceNow Elite Partner</span>
                             where I design and
@@ -249,7 +241,7 @@
                         </ul>
                     </div>
                     <div class="item">
-                        <h4>Awards &amp; Certifications</h4>
+                        <h4>Certifications &amp; Awards</h4>
                         <ul class="list-unstyled">
                             <li ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
                                 <strong>{{item.heading}}</strong><br>
@@ -320,20 +312,6 @@
 
     <!-- Load internal JavaScript -->
     <script src="scripts.js"></script>
-
-    <!--script>
-        var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-if (prevScrollpos > currentScrollPos || currentScrollPos <= 80) {
-     document.getElementById("nav").classList.add("scroll");
-     document.getElementById("nav").style.top = "0px";
-     } else {
-        document.getElementById("nav").style.top = "-80px";
-        }
-        prevScrollpos = currentScrollPos;
-        }
-    </script-->
 
 </body>
 

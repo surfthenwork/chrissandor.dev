@@ -1,14 +1,14 @@
 [
     {
         "heading": "California Mutual Insurance Company",
-        "subHeading": "Website redesign and CMS migration.",
+        "subHeading": "Website Redesign and Custom WordPress Theme Migration",
         "description": "",
         "featuredAsset": "assets/featured-cmic.png",
         "featuredAssetPosition": "left",
         "modalSlug": "cmic",
         "caseStudy": true,
         "caseStudyDetails": {
-            "overview": "California Mutual Insurance Company is an insurance products and service company.",
+            "overview": "California Mutual Insurance Company is an insurance products and service company. CMIC faced the challenge of migrating off their previous CMS, Adobe Catalyst, which was nearing end of life. To address this challenge and enhance their online presence, CMIC embarked on a project to develop a custom WordPress theme. This endeavor required coordination among various roles.",
             "role": "Rebrand company website. Migrate application to a new server and content management system. Reprogram website with modern front-end markup.",
             "responsibilities": [
                 "Creative direction",
