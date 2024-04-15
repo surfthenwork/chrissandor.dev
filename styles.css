@@ -799,7 +799,7 @@ footer .footer-container {
 
 footer .footer-left {
   font-size: 0;
-  color: #7f7d7e;
+  /*color: #7f7d7e;*/
   mix-blend-mode: multiply;
 }
 

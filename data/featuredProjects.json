@@ -6,7 +6,7 @@
         "featuredAsset": "assets/featured-cmic.png",
         "featuredAssetPosition": "left",
         "modalSlug": "cmic",
-        "caseStudy": true,
+        "caseStudy": false,
         "caseStudyDetails": {
             "overview": "California Mutual Insurance Company is an insurance products and service company. CMIC faced the challenge of migrating off their previous CMS, Adobe Catalyst, which was nearing end of life. To address this challenge and enhance their online presence, CMIC embarked on a project to develop a custom WordPress theme. This endeavor required coordination among various roles.",
             "role": "Rebrand company website. Migrate application to a new server and content management system. Reprogram website with modern front-end markup.",
@@ -31,7 +31,7 @@
         "description": "",
         "featuredAsset": "assets/featured-capc.jpg",
         "featuredAssetPosition": "center",
-        "caseStudy": true,
+        "caseStudy": false,
         "modalSlug": "capc"
     },
     {
@@ -40,7 +40,7 @@
         "description": "",
         "featuredAsset": "assets/featured-svats.jpg",
         "featuredAssetPosition": "center",
-        "caseStudy": true,
+        "caseStudy": false,
         "modalSlug": "svats"
     },
     {
@@ -49,7 +49,7 @@
         "description": "",
         "featuredAsset": "assets/featured-ohg.png",
         "featuredAssetPosition": "right",
-        "caseStudy": true,
+        "caseStudy": false,
         "modalSlug": "ohg"
     },
     {
@@ -58,7 +58,7 @@
         "description": "",
         "featuredAsset": "assets/featured-jmt.png",
         "featuredAssetPosition": "left",
-        "caseStudy": true,
+        "caseStudy": false,
         "modalSlug": "jmt"
     },
     {
@@ -68,7 +68,7 @@
         "featuredAsset": "assets/featured-drac.png",
         "featuredAssetPosition": "center",
         "modalSlug": "drac",
-        "caseStudy": true,
+        "caseStudy": false,
         "caseStudyDetails": {
             "overview": "",
             "role": "",
@@ -90,7 +90,7 @@
         "description": "",
         "featuredAsset": "assets/featured-br.png",
         "featuredAssetPosition": "right",
-        "caseStudy": true,
+        "caseStudy": false,
         "modalSlug": "br"
     }
 ]
