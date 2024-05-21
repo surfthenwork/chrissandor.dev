@@ -83,6 +83,14 @@ small {
   color: #7f7d7e !important;
 }
 
+.decoration-solid {
+  text-decoration: solid;
+  text-decoration-color: #F2EAE2;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+
 .collapsing,
 .collapse,
 .show {
@@ -292,8 +300,8 @@ header nav.scroll .navbar-brand {
 }
 
 header nav.scroll .text-light {
-  color: unset !important;
-  opacity: .5;
+  color: #F2EAE2 !important;
+  opacity: 1;
 }
 
 header nav.scroll:hover .text-light {
@@ -618,7 +626,7 @@ button#top {
 }
 
 .about-details ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-details ul li.pill-item,
@@ -1153,9 +1161,9 @@ footer .source-code {
   }
 
   header nav.scroll .text-light {
-  color: #F2EAE2 !important;
-  opacity: 1;
-}
+    color: #F2EAE2 !important;
+    opacity: 1;
+  }
 
   .about-details ul {
     margin-bottom: 4.25rem;
@@ -1228,7 +1236,7 @@ footer .source-code {
     content: "";
     display: block;
     /*border-top: solid 4px #7f7d7e;*/
-   /*margin-bottom: 4rem;*/
+    /*margin-bottom: 4rem;*/
   }
 
   .about-details .grid {

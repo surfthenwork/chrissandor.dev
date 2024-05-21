@@ -8,7 +8,7 @@
     },
     {
         "category": "Experience",
-        "heading": "Consultant",
+        "heading": "ServiceNow Consultant",
         "subheading": "Infocenter",
         "description": "Service Portal Designer & Developer",
         "date": "Jul 2023 - Present",
@@ -104,7 +104,19 @@
     },
     {
         "category": "Design Skills",
-        "heading": "Email Marketing Design"
+        "heading": "Email Design"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Infographics"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Landing Pages"
+    },
+    {
+        "category": "Design Skills",
+        "heading": "Web Design"
     },
     {
         "category": "Design Skills",
@@ -147,7 +159,7 @@
         "subheading": "AngularJS, Bootstrap, LAMP"
     },
     {
-        "category": "Technical Skills",
+        "category": "Archive",
         "heading": "LAMP Stack",
         "subheading": "Linux, Apache, MySQL, PHP"
     },
