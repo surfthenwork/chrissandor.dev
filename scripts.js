@@ -91,8 +91,6 @@ window.onscroll = function () {
 
 function scrollFunction() {
 
-
-
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
@@ -109,9 +107,6 @@ function scrollFunction() {
         }
         prevScrollpos = currentScrollPos;
     }
-
-
-
 
 
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

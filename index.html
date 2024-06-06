@@ -189,12 +189,12 @@
                 <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
                     <li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
                         <button ng-click="currentPage = currentPage - 1;" onclick="location.href='#projects';" class="reload" bs-tooltip title="">
-                <img src="assets/ico-rotate.svg" alt="Reload">
+                <img src="assets/ico-rotate.svg" alt="Arrow rotate icon" title="Reload">
             </button>
                     </li>
                     <li class="list-inline-item" ng-class="{'d-none': currentPage >= data.length / pageSize - 1}">
                         <button ng-click="currentPage = currentPage + 1;" onclick="location.href='#projects';" class="reload" bs-tooltip title="">
-                <img src="assets/ico-rotate.svg" alt="Reload">
+                <img src="assets/ico-rotate.svg" alt="Arrow rotate icon" title="Reload">
             </button>
                     </li>
                 </ul>
@@ -209,7 +209,8 @@
                     <div class="col-9 content">
                         <p>Hello, I'm Christopher Sandor, a creative UI/UX designer and engineer with 20 years
                             of experience and proven skills in visual design for interactive websites and mobile
-                            responsive web apps. Specializing in clean wireframing, prototyping and accessible front-end development.</p>
+                            responsive web apps. Specializing in clean wireframing, prototyping and accessible front-end
+                            development.</p>
 
                         <p>I am currently a consultant at Infocenter, a
                             <span class="decoration-solid" bs-tooltip title="2024 Consulting &amp; Implementation Partner of the Year">ServiceNow Elite Partner</span>
@@ -228,6 +229,7 @@
                 <!--div style="width: 6rem; margin: 0 auto 4rem auto"><img src="./assets/ico-route.svg"></div-->
                 <div class="grid">
                     <div class="item">
+                        <img class="mb-4 d-block" src="./assets/ico-lightbulb-gear.svg" alt="Lightbulb gear icon">
                         <h4>Experience</h4>
                         <ul class="list-unstyled">
                             <li ng-repeat="item in aboutDetails | filter: { category: 'Experience' }">
@@ -239,6 +241,7 @@
                         </ul>
                     </div>
                     <div class="item">
+                        <img class="mb-4 d-block" src="./assets/ico-certificate.svg" alt="Certificate icon">
                         <h4>Certifications &amp; Awards</h4>
                         <ul class="list-unstyled">
                             <li ng-repeat="item in aboutDetails | filter: { category: 'Awards' }">
@@ -254,6 +257,7 @@
                     </div>
 
                     <div class="item">
+                        <img class="mb-4 d-block" src="./assets/ico-gear-code.svg" alt="Gear code icon">
                         <h4>Technical Skills</h4>
                         <ul class="list-unstyled">
                             <li
@@ -265,6 +269,7 @@
                     </div>
 
                     <div class="item">
+                        <img class="mb-4 d-block" src="./assets/ico-pen-ruler.svg" alt="Pen ruler icon">
                         <h4>Design Skills</h4>
                         <ul class="list-unstyled">
                             <li class="list-inline-item small pill-item"
