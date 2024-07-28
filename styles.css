@@ -20,6 +20,16 @@
   }
 }
 
+@keyframes slideUp {
+  from {
+    margin-top: 50%;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -83,6 +93,13 @@ small {
   color: #7f7d7e !important;
 }
 
+.g-0 {
+  --bs-gutter-x: 0 !important;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
 .decoration-solid {
   text-decoration: solid;
   text-decoration-color: #F2EAE2;
@@ -118,6 +135,11 @@ h1 {
   margin-bottom: 3rem;
   font-size: 5.6rem;
   letter-spacing: .075rem;
+
+  /*font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 6.4rem;*/
 }
 
 h2 {
@@ -451,6 +473,8 @@ button#top {
 
 .projects .projects-container {
   padding: 4rem 8rem;
+
+
 }
 
 .projects h3 {
@@ -465,6 +489,10 @@ button#top {
   grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2rem), 1fr));
   gap: 4rem;
   align-items: stretch;
+
+  animation-name: slideUp;
+  animation-duration: 1.5s;
+  animation-delay: 0;
 }
 
 .projects .grid .item {

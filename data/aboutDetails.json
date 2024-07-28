@@ -141,7 +141,7 @@
     {
         "category": "Technical Skills",
         "heading": "CMS",
-        "subheading": "Drupal, ExpressionEngine, Joomla, Weebly, WordPress"
+        "subheading": "Drupal, ExpressionEngine, Joomla, Orbit, Weebly, WordPress"
     },
     {
         "category": "Technical Skills",
@@ -175,6 +175,12 @@
     },
     {
         "category": "Awards & Certifications",
+        "heading": "Certified Implementation Specialist - IT Service Management",
+        "subheading": "ServiceNow",
+        "date": "2024"
+    },
+    {
+        "category": "Awards & Certifications",
         "heading": "Certified System Administrator",
         "subheading": "ServiceNow",
         "date": "2022"
@@ -194,7 +200,7 @@
         "link": "https://daveyawards.com/"
     },
     {
-        "category": "Awards",
+        "category": "Archive",
         "heading": "Honorable Mention - Del Rey Avocado Company Website",
         "description": "MarCom Award",
         "date": "2018",

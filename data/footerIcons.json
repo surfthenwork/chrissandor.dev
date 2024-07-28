@@ -52,8 +52,8 @@
     {
         "category": "Archive",
         "title": "Resume",
-        "icon": "fa-solid fa-file-lines",
+        "icon": "ico-cv.svg",
         "link": "https://drive.google.com/file/d/1NhoLAPrwLz8Gadu2frygJ28mayUlOgiv/view?usp=sharing",
-        "svg": false
+        "svg": true
     }
 ]

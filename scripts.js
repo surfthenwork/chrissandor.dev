@@ -1,4 +1,4 @@
-var app = angular.module("myApp", []);
+var app = angular.module("myApp", ['ngSanitize']);
 
 app.controller("myCtrl", function ($scope, $http) {
 
@@ -23,6 +23,10 @@ app.controller("myCtrl", function ($scope, $http) {
     $http.get('./data/featuredProjects.json')
         .then(function (res) {
             $scope.featuredProjects = res.data;
+
+            $scope.deliberatelyTrustDangerousSnippet = function() {
+               return $sce.trustAsHtml($scope.featuredProjects);
+            }
         });
 
     // Featured Projects Pagination

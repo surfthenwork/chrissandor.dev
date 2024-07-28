@@ -49,6 +49,7 @@
         "description": "",
         "featuredAsset": "assets/featured-ohg.png",
         "featuredAssetPosition": "right",
+        "url": "https://olivehill.net/",
         "caseStudy": false,
         "modalSlug": "ohg"
     },
@@ -67,6 +68,7 @@
         "description": "",
         "featuredAsset": "assets/featured-drac.png",
         "featuredAssetPosition": "center",
+        "url": "https://delreyavocado.com/",
         "modalSlug": "drac",
         "caseStudy": false,
         "caseStudyDetails": {
@@ -90,6 +92,7 @@
         "description": "",
         "featuredAsset": "assets/featured-br.png",
         "featuredAssetPosition": "right",
+        "url": "https://boothranches.com/",
         "caseStudy": false,
         "modalSlug": "br"
     }

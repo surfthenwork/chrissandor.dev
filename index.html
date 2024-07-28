@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="./assets/ico-cs.png">
     <link rel="apple-touch-icon-precomposed" href="./assets/ico-cs.png">
 
+    <!--link rel="stylesheet" href="https://use.typekit.net/lbf8poj.css"-->
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +38,7 @@
 
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
 </head>
 
@@ -121,6 +124,10 @@
                             <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
                         </a>
 
+                        <!--a ng-if="item.url" href="{{item.url}}" target="_blank">
+                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
+                        </a-->
+
                         <!-- Modal Start -->
                         <div class="modal fade" id="{{item.modalSlug}}" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -146,12 +153,13 @@
                                             </div>
                                         </div>
 
-                                        <!--article class="container-fluid">
-                                            <div class="row">
-                                                <div class="col">
+                                        <article class="container-fluid">
+                                            <div class="row g-0">
+                                                <div class="col-8">
                                                     <div ng-if="item.caseStudyDetails.overview">
                                                         <h3>Overview</h3>
                                                         <p>{{item.caseStudyDetails.overview}}</p>
+                                                        <!--div ng-bind-html="item.caseStudyDetails.overview"></div-->
                                                     </div>
 
                                                     <div ng-if="item.caseStudyDetails.role">
@@ -160,18 +168,19 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col">
+                                                <div class="col-4">
                                                     <div ng-if="item.caseStudyDetails.responsibilities.length">
                                                         <h3>My Responsibilities</h3>
                                                         <ul class="list-unstyled">
                                                             <li ng-repeat="item in item.caseStudyDetails.responsibilities"
-                                                                class="list-inline-item pill-item">{{item}}
+                                                                class="">{{item}}
                                                             </li>
+                                                            <!--list-inline-item pill-item-->
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </article-->
+                                        </article>
 
                                     </div>
                                     <!--div class="modal-footer">
