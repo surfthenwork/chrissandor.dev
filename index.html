@@ -117,16 +117,19 @@
                         ng-repeat="item in featuredProjects | startFrom:currentPage*pageSize | limitTo:pageSize">
                         <a ng-hide="item.caseStudy" href="javascript:void(0)" class="arrow" style="cursor: unset;"
                             bs-tooltip data-bs-placement="bottom" title="">
-                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
-                        </a>
-                        <a ng-if="item.caseStudy" href="javascript:void(0)" data-bs-toggle="modal"
-                            data-bs-target="#{{item.modalSlug}}">
-                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
+                            <figure>
+                                <img src="{{item.featuredAsset}}" alt="{{item.heading}}">
+                            </figure>
                         </a>
 
-                        <!--a ng-if="item.url" href="{{item.url}}" target="_blank">
-                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
-                        </a-->
+                        <a ng-if="item.url" href="{{item.url}}" target="_blank" class="link">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+
+                        <a ng-if="item.caseStudy" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#{{item.modalSlug}}">
+                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"</figure>
+                        </a>
 
                         <!-- Modal Start -->
                         <div class="modal fade" id="{{item.modalSlug}}" tabindex="-1"
@@ -216,7 +219,7 @@
                         <h3>About Me</h3>
                     </div>
                     <div class="col-9 content">
-                        <p>Hello, I'm Christopher Sandor, a creative UI/UX designer and engineer with 20 years
+                        <p>Hello, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with 20 years
                             of experience and proven skills in visual design for interactive websites and mobile
                             responsive web apps. Specializing in clean wireframing, prototyping and accessible front-end
                             development.</p>

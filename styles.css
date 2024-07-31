@@ -497,6 +497,7 @@ button#top {
 
 .projects .grid .item {
   display: flex;
+  position: relative;
 }
 
 .projects .grid .item a {
@@ -505,6 +506,25 @@ button#top {
 
 .projects .grid .item a figure {
   margin-bottom: unset;
+}
+
+.projects .grid .item a.link {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  color: #F2EAE2;
+  /*border-top: solid 1px #F2EAE2;*/
+  /*border-left: solid 1px #F2EAE2;*/
+}
+
+.projects .grid .item a.link:hover {
+  background-color: #FFC800;
+  color: #FFFFFFE0;
 }
 
 .projects .grid .item a img {
@@ -1174,6 +1194,12 @@ footer .source-code {
 }
 
 @media (max-width: 575.98px) {
+
+  .projects .grid .item a.link {
+    border-top: unset;
+    border-left: unset;
+  }
+
   header nav.scroll {
     mix-blend-mode: normal;
     background-color: #FFC800;
