@@ -45,15 +45,14 @@
     {
         "category": "Connect",
         "title": "ServiceNow Learning Resume",
-        "icon": "ico-servicenow.svg",
+        "svgIcon": "ico-servicenow.svg",
         "link": "https://nowlearning.servicenow.com/lxp/en/pages/nl-public-resume?id=nl_public&user=chrissando634456",
         "svg": true
     },
     {
-        "category": "Archive",
+        "category": "Connect",
         "title": "Resume",
-        "icon": "ico-cv.svg",
-        "link": "https://drive.google.com/file/d/1NhoLAPrwLz8Gadu2frygJ28mayUlOgiv/view?usp=sharing",
-        "svg": true
+        "link": "https://drive.google.com/file/d/1cZ_R0YI_R6xhIEf3y6dLd020_FQBfOtt/view?usp=sharing",
+        "text": "CV"
     }
 ]

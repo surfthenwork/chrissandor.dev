@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Christopher Sandor - UI/UX Designer &amp; Front-end Engineer</title>
+    <title>Christopher Sandor - UX/UI Designer &amp; Front-end Engineer</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/ico-cs.png">
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap -->
@@ -51,7 +51,7 @@
                 <div class="navbar-brand align-items-center collapse">
                     <a aria-current="page" href="#home">
                         <span class="d-block fw-bolder">Christopher Sandor</span>
-                        <span class="small"><em>UI/UX Designer 
+                        <span class="small"><em>UX/UI Designer 
                     <span class="text-light"> &amp; </span>
                         Front-end Engineer</em></span>
                     </a>
@@ -86,7 +86,7 @@
                 <div class="hero-message">
                     <h1 id="headline">
                         <span class="d-block">Hello, I'm Christopher. </span>
-                        <span class="role">UI/UX Designer
+                        <span class="role">UX/UI Designer
                     <span class="text-light"> &amp; </span>
                         </span>
                         <span>Front-end Engineer.</span>
@@ -219,7 +219,7 @@
                         <h3>About Me</h3>
                     </div>
                     <div class="col-9 content">
-                        <p>Hello, I'm Christopher Sandor, a creative UI/UX designer and front-end engineer with 20 years
+                        <p>Hello, I'm Christopher Sandor, a creative UX/UI designer and front-end engineer with 20 years
                             of experience and proven skills in visual design for interactive websites and mobile
                             responsive web apps. Specializing in clean wireframing, prototyping and accessible front-end
                             development.</p>
@@ -313,8 +313,11 @@
                     <li class="list-inline-item text-center"
                         ng-repeat="item in footerIcons | filter: { category: 'Connect' }" bs-tooltip
                         title="{{item.title}}">
-                        <a href="{{item.link}}"
-                            target="_blank"><i ng-hide="item.svg" class="{{item.icon}}"></i><img ng-if="item.svg" src="./assets/{{item.icon}}" alt="{{item.title}}" height="16" width="16"></a>
+                        <a href="{{item.link}}" target="_blank">
+                            <i ng-if="item.icon" class="{{item.icon}}"></i>
+                            <img ng-if="item.svg" src="./assets/{{item.svgIcon}}" alt="{{item.title}}" height="16" width="16">
+                            <span ng-if="item.text" class="text antialiased">{{item.text}}</span>
+                        </a>
                     </li>
                 </ul>
             </div>

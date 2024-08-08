@@ -80,7 +80,7 @@
     },
     {
         "category": "Design Skills",
-        "heading": "UI/UX Design"
+        "heading": "UX/UI Design"
     },
     {
         "category": "Design Skills",
@@ -173,6 +173,11 @@
         "heading": "Email Marketing",
         "subheading": "Constant Contact, iContact, Mailchimp"
     },
+      {
+        "category": "Technical Skills",
+        "heading": "SaaS",
+        "subheading": "Business Catalyst, ServiceNow"
+    },
     {
         "category": "Awards & Certifications",
         "heading": "Certified Implementation Specialist - IT Service Management",
@@ -188,35 +193,35 @@
     {
         "category": "Awards",
         "heading": "Gold Winner - GreenGate Fresh Website",
-        "description": "W³ Award",
+        "description": "w3 Awards",
         "date": "2021",
         "link": "https://www.w3award.com/"
     },
     {
         "category": "Awards",
         "heading": "Silver Winner - Del Rey Avocado Company Website",
-        "description": "Davey Award",
+        "description": "Davey Awards",
         "date": "2018",
         "link": "https://daveyawards.com/"
     },
     {
-        "category": "Archive",
+        "category": "Awards",
         "heading": "Honorable Mention - Del Rey Avocado Company Website",
-        "description": "MarCom Award",
+        "description": "MarCom Awards",
         "date": "2018",
         "link": "https://marcomawards.com/"
     },
     {
         "category": "Awards",
         "heading": "Platinum Winner - Taylor Farms Foodservice Website",
-        "description": "MarCom Award",
+        "description": "MarCom Awards",
         "date": "2012",
         "link": "https://marcomawards.com/"
     },
     {
         "category": "Awards",
         "heading": "Silver Winner - Monterey County Workforce Investment Board Website",
-        "description": "W³ Award",
+        "description": "w3 Awards",
         "date": "2009",
         "link": "https://www.w3award.com/"
     }
