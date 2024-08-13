@@ -8,9 +8,9 @@
     },
     {
         "category": "Experience",
-        "heading": "ServiceNow Consultant",
+        "heading": " Consultant",
         "subheading": "Infocenter",
-        "description": "Service Portal Designer & Developer",
+        "description": "ServiceNow Portal Designer & Developer",
         "date": "Jul 2023 - Present",
         "link": ""
     },
@@ -18,7 +18,7 @@
         "category": "Experience",
         "heading": "Software Engineer",
         "subheading": "NewRocket",
-        "description": "Service Portal Developer",
+        "description": "ServiceNow Portal Developer",
         "date": "Sep 2021 - Jun 2023",
         "link": ""
     },
@@ -173,7 +173,7 @@
         "heading": "Email Marketing",
         "subheading": "Constant Contact, iContact, Mailchimp"
     },
-      {
+    {
         "category": "Technical Skills",
         "heading": "SaaS",
         "subheading": "Business Catalyst, ServiceNow"

@@ -213,7 +213,7 @@ p {
 /* Header */
 header {
   position: relative;
-  background-image: url("./assets/hero-bg.jpg");
+  /*background-image: url("./assets/hero-bg.jpg");*/
   background-color: #FFC800;
   background-blend-mode: screen;
   background-size: cover;
