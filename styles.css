@@ -963,7 +963,8 @@ footer .source-code {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1366px !important;
+    /*max-width: 1366px;*/
+    max-width: 1440px;
   }
 }
 
@@ -974,7 +975,8 @@ footer .source-code {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1366px;
+    /*max-width: 1366px;*/
+    max-width: 1440px;
   }
 }
 
