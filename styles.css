@@ -120,6 +120,16 @@ small {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-ul {
+  margin-left: var(--fa-li-margin, 1.6rem);
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2.4rem)* -1);
+  /*text-align: left;*/
+  width: var(--fa-li-width, 1.6rem);
+}
+
 /* Theme Styles */
 html,
 body {
@@ -132,6 +142,12 @@ p {
   font-size: 1.6rem;
   line-height: 1.75;
   margin-bottom: 2rem;
+  font-family: 'PT Sans', sans-serif;
+}
+
+ul {
+  /*font-size: 1.6rem;*/
+  /*font-family: 'PT Sans', sans-serif;*/
 }
 
 h1 {
@@ -190,9 +206,8 @@ h4 {
   margin-bottom: 1rem;
 }
 
-p {
-  font-size: 1.6rem;
-  font-family: 'PT Sans', sans-serif;
+.text-primary {
+  color: #FFC800 !important;
 }
 
 .container,
@@ -630,6 +645,14 @@ button#top {
 
 #about .about-container .content {
   width: 75%;
+}
+
+#about .about-container .content ul {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-family: 'PT Sans', sans-serif;
+  margin-left: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 
