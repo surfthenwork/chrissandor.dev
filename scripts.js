@@ -1,173 +1,139 @@
 var app = angular.module("myApp", ['ngSanitize']);
 
-app.controller("myCtrl", function ($scope, $http) {
+// Directive to rotate text with fade effect
+app.directive('rotateText', ['$interval', function ($interval) {
+    return function (scope, element) {
+        const wordArr = ['Husband', 'Father', 'Learner', 'Surfer', 'Skateboarder', 'Angler'];
+        let i = 0;
 
+        function updateWord() {
+            element.removeClass('reveal'); // Fade out current word
+            setTimeout(() => {
+                i = (i + 1) % wordArr.length;
+                element.text(wordArr[i]).addClass('reveal'); // Update word and fade in
+            }, 1000);  // Sync with fade-out duration
+        }
+
+        // Initialize with the first word and start rotation
+        element.text(wordArr[0]).addClass('reveal');
+        const stopWord = $interval(updateWord, 4000);
+
+        // Cancel interval on element destroy
+        element.on('$destroy', () => $interval.cancel(stopWord));
+    };
+}]);
+
+app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
     $scope.pageTitle = document.title;
 
-    // Preload Featured Projects
-    var projectImg = new Array()
-    function preload() {
-        for (i = 0; i < preload.arguments.length; i++) {
-            projectImg[i] = new Image()
-            projectImg[i].src = preload.arguments[i]
-        }
+    // Preload images
+    function preload(...images) {
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
     }
-    preload( // Preload paginated items
+    preload(
         "./assets/featured-jmt.png",
         "./assets/featured-drac.png",
         "./assets/featured-hsi.png",
         "./assets/featured-br.png"
-    )
+    );
 
-    // Featured Projects
-    $http.get('./data/featuredProjects.json')
-        .then(function (res) {
-            $scope.featuredProjects = res.data;
+    // Load featured projects and handle trusted HTML snippets
+    $http.get('./data/featuredProjects.json').then(res => {
+        $scope.featuredProjects = res.data;
+        $scope.trustedSnippet = () => $sce.trustAsHtml($scope.featuredProjects);
+    });
 
-            $scope.deliberatelyTrustDangerousSnippet = function() {
-               return $sce.trustAsHtml($scope.featuredProjects);
-            }
-        });
-
-    // Featured Projects Pagination
+    // Pagination logic
     $scope.currentPage = 0;
     $scope.pageSize = 4;
-    $scope.data = [];
-    $scope.numberOfPages = function () {
-        return Math.ceil($scope.data.length / $scope.pageSize);
-    }
-    for (var i = 0; i < 8; i++) {
-        $scope.data.push("Item " + i);
-    }
+    $scope.data = Array.from({ length: 8 }, (_, i) => `Item ${i}`);
+    $scope.numberOfPages = () => Math.ceil($scope.data.length / $scope.pageSize);
 
-    // About Details
-    $http.get('./data/aboutDetails.json')
-        .then(function (res) {
-            $scope.aboutDetails = res.data;
-        });
+    // Load additional data (about details, footer icons)
+    $http.get('./data/aboutDetails.json').then(res => $scope.aboutDetails = res.data);
+    $http.get('./data/footerIcons.json').then(res => $scope.footerIcons = res.data);
+}]);
 
-    // Footer Icons
-    $http.get('./data/footerIcons.json')
-        .then(function (res) {
-            $scope.footerIcons = res.data;
-        });
+// Initialize tooltips using Bootstrap
+const tooltipList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    .map(el => new bootstrap.Tooltip(el));
 
-});
-
-
-// Initialize tooltips
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-
-// Tooltip directive for ng-repeat
+// Tooltip directive for dynamic elements
 app.directive('bsTooltip', function () {
     return {
         restrict: 'A',
-        link: function (scope, element, attrs) {
-            $(element).hover(function () {
-                // on mouseenter
-                $(element).tooltip('show');
-            }, function () {
-                // on mouseleave
-                $(element).tooltip('hide');
-            });
+        link: (scope, element) => {
+            $(element).hover(
+                () => $(element).tooltip('show'),
+                () => $(element).tooltip('hide')
+            );
         }
     };
 });
 
-// Featured Projects Pagination startFrom filter
-app.filter('startFrom', function () {
-    return function (input, start) {
-        start = +start; // parse to int
-        return input.slice(start);
-    }
-});
+// Pagination filter
+app.filter('startFrom', () => (input, start) => input.slice(+start));
 
-// Get the scroll to top button:
+// Scroll to top logic
 let upArrow = document.getElementById("top");
 
-// When the user scrolls down 80px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction()
-};
+window.onscroll = () => scrollFunction();
 
 function scrollFunction() {
+    const nav = document.getElementById("nav");
+    const currentScrollPos = window.pageYOffset;
 
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        
-        if (prevScrollpos > currentScrollPos || currentScrollPos <= 80) {
-            document.getElementById("nav").classList.add("scroll");
-            document.getElementById("nav").style.top = "0px";
-        } else {
-            document.getElementById("nav").style.top = "-80px";
-        }
-        if (currentScrollPos <= 79) {
-            document.getElementById("nav").classList.remove("scroll");
-            document.getElementById("nav").style.top = "0px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-
-
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    // Show/hide navigation based on scroll position
+    if (currentScrollPos > 80) {
         upArrow.style.display = "flex";
-        //upArrow.style.display = "none"; //turned off button
         nav.classList.add("scroll");
+        nav.style.top = currentScrollPos > window.prevScrollPos ? "-80px" : "0px";
     } else {
-        //upArrow.style.display = "none";
         nav.classList.remove("scroll");
+        upArrow.style.display = "none";
     }
+    window.prevScrollPos = currentScrollPos;
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
-$(document).ready(function () {
+// Smooth scrolling for anchor links
+$(document).ready(() => {
     $(document).on("scroll", onScroll);
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
 
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
+        $('a').removeClass('active');
         $(this).addClass('active');
 
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
+        const target = this.hash;
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top + 2
-        }, 500, 'swing', function () {
+            scrollTop: $(target).offset().top + 2
+        }, 500, 'swing', () => {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
     });
 });
 
-function onScroll(event) {
-    var scrollPos = $(document).scrollTop() + 80;
+function onScroll() {
+    const scrollPos = $(document).scrollTop() + 80;
     $('#menu-container a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
+        const currLink = $(this);
+        const refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#menu-container ul li a').removeClass("active");
             currLink.addClass("active");
         }
-        else {
-            currLink.removeClass("active");
-        }
     });
 }
 
-// Get current year
-document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
-
-//ScrollReveal().reveal('.about-details .grid .item', { interval: 200 });
+// Update copyright year
+document.getElementById('copyright').textContent = new Date().getFullYear();
