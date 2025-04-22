@@ -46,7 +46,7 @@
     <header>
 
         <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="nav">
-            <div class="container d-flex justify-content-between" id="menu-container">
+            <div class="container-fluid d-flex justify-content-between" id="menu-container">
 
                 <div class="navbar-brand align-items-center collapse">
                     <a aria-current="page" href="#home">
@@ -76,7 +76,31 @@
                                 data-bs-target="#navbarSupportedContent">About</a>
                         </li>
                     </ul>
+
+                    <!--ul class="list-inline connect d-flex align-items-center mobile">
+                        <li class="list-inline-item text-center"
+                            ng-repeat="item in footerIcons | filter: { category: 'Connect' }" bs-tooltip
+                            title="{{item.title}}">
+                            <a href="{{item.link}}" target="_blank">
+                                <i ng-if="item.icon" class="{{item.icon}}"></i>
+                                <img ng-if="item.svg" src="./assets/{{item.svgIcon}}" alt="{{item.title}}" height="16" width="16">
+                                <span ng-if="item.text" class="text antialiased">{{item.text}}</span>
+                            </a>
+                        </li>
+                    </ul-->
+
                 </div>
+
+                <ul class="list-inline connect d-flex align-items-center desktop">
+                    <li class="list-inline-item text-center"
+                        ng-repeat="item in footerIcons | filter: { category: 'Connect' }" title="{{item.title}}">
+                        <a href="{{item.link}}" target="_blank">
+                            <i ng-if="item.icon" class="{{item.icon}}"></i>
+                            <img ng-if="item.svg" src="./assets/{{item.svgIcon}}" alt="{{item.title}}" height="16" width="16">
+                            <span ng-if="item.text" class="text antialiased">{{item.text}}</span>
+                        </a>
+                    </li>
+                </ul>
 
             </div>
         </nav>
@@ -85,13 +109,14 @@
             <div class="hero">
                 <div class="hero-message">
                     <h1 id="headline">
-                        <span class="d-block">Hello, I'm Christopher.</span>
-                        <span class="role">A UX/UI Designer
-                    <span class="text-light"> &amp; </span>
+                        <span class="fw-bolder">Christopher Sandor</span> —
+                        <span class="role">UX/UI Designer
+                                <span class="text-light"> &amp; </span>
+                        Front-end Engineer.
                         </span>
-                        <span>Front-end Engineer.</span>
                     </h1>
-                    <h2>Specializing in clean wireframing, prototyping and accessible front-end development for interactive websites and mobile responsive web apps.</h2>
+                    <p>A creative UX engineer blending visual design and accessible front-end development to craft
+                        interactive, mobile-responsive websites and web apps.</p>
                 </div>
                 <div class="hero-img">
                     <img src="assets/hero-chris.jpg" alt="{{pageTitle}}">
@@ -128,7 +153,7 @@
 
                         <a ng-if="item.caseStudy" href="javascript:void(0)" data-bs-toggle="modal"
                             data-bs-target="#{{item.modalSlug}}">
-                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"</figure>
+                            <figure><img src="{{item.featuredAsset}}" alt="{{item.heading}}"></figure>
                         </a>
 
                         <!-- Modal Start -->
@@ -158,20 +183,18 @@
 
                                         <article class="container-fluid">
                                             <div class="row g-0">
-                                                <div class="col-8">
+                                                <div class="col-6">
                                                     <div ng-if="item.caseStudyDetails.overview">
                                                         <h3>Overview</h3>
                                                         <p>{{item.caseStudyDetails.overview}}</p>
                                                         <!--div ng-bind-html="item.caseStudyDetails.overview"></div-->
                                                     </div>
 
-                                                    <div ng-if="item.caseStudyDetails.role">
+                                                    <!--div ng-if="item.caseStudyDetails.role">
                                                         <h3>My Role</h3>
                                                         <p>{{item.caseStudyDetails.role}}</p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-4">
+                                                    </div-->
+                                                    
                                                     <div ng-if="item.caseStudyDetails.responsibilities.length">
                                                         <h3>My Responsibilities</h3>
                                                         <ul class="list-unstyled">
@@ -181,6 +204,11 @@
                                                             <!--list-inline-item pill-item-->
                                                         </ul>
                                                     </div>
+
+                                                </div>
+
+                                                <div class="col-6">
+
                                                 </div>
                                             </div>
                                         </article>
@@ -198,7 +226,7 @@
                 </div>
 
                 <!-- Pagination -->
-                <ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
+                <!--ul class="list-inline pagination justify-content-center" ng-class="{'d-none': numberOfPages() == 1}">
                     <li class="list-inline-item" ng-class="{'d-none': currentPage == 0}">
                         <button ng-click="currentPage = currentPage - 1;" onclick="location.href='#projects';" class="reload" bs-tooltip title="">
                 <img src="assets/ico-rotate.svg" alt="Arrow rotate icon" title="Reload">
@@ -209,43 +237,66 @@
                 <img src="assets/ico-rotate.svg" alt="Arrow rotate icon" title="Reload">
             </button>
                     </li>
-                </ul>
+                </ul-->
         </section>
 
         <section id="about">
+
+
             <div class="container about-container">
-                <div class="row">
-                    <div class="col-3 title">
-                        <h3>About Me</h3>
-                    </div>
-                    <div class="col-9 content">
-                        <p>Hello, I'm Christopher Sandor, a creative UX/UI designer and front-end engineer with 20 years
-                            of experience and proven skills in visual design and development for interactive websites and mobile
-                            responsive web apps. Specializing in clean wireframing, prototyping and accessible front-end
-                            development.</p>
 
-                        <p>I am currently a technical consultant at Infocenter, a
-                            <span class="decoration-solid" bs-tooltip title="2024 Consulting &amp; Implementation Partner of the Year">ServiceNow Elite Partner</span>
-                            where I design and develop innovative and custom employee-facing (ITSM, HRSD) and customer-facing (CSM, FSO, HCLS) web applications on ServiceNow's front-end portal framework.
-                        </p>
+                <div class="title">
+                    <h3>Hello, I'm Christopher Sandor.</h3>
+                </div>
+                <div class="content">
+                    <p>I am a creative UX engineer based in North San Diego County with over 20 years of experience
+                        blending visual design and accessible front-end development to craft
+                        interactive, mobile-responsive websites and web apps.</p>
+                    <p>Skilled in HTML5, CSS3/Sass, JavaScript, and frameworks like AngularJS, Vue.js, Bootstrap and
+                        LAMP, I bring
+                        designs to life with pixel-perfect precision and performance in mind. I’m also experienced
+                        with ServiceNow’s Service Portal, WordPress custom theming, and tools like Figma and Adobe
+                        Creative Suite. Whether wireframing, prototyping, or coding, I focus on usability,
+                        accessibility, and delivering clean, scalable user interfaces.</p>
+                    <p>I am currently a technical consultant at Infocenter, a
+                        <span class="decoration-solid" bs-tooltip title="2024 Consulting &amp; Implementation Partner of the Year">ServiceNow Elite Partner</span>
+                        where I design and develop innovative and custom employee-facing (ITSM, HRSD) and
+                        customer-facing (CSM, FSO, HCLS) web applications on ServiceNow's front-end portal
+                        framework.
+                    </p>
 
-                        <ul class="fa-ul text-muted">
-                            <!--li>
-                                <span class="fa-li"><i class="fa-solid fa-fingerprint"></i></span> <span rotate-text class="rotate-text"></span>
-                            </li-->
+                    <!--ul class="fa-ul text-muted">
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-fingerprint"></i></span>
+                                <span rotate-text class="rotate-text"></span>
+                            </li>
                             <li>
                                 <span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>
-                                Based in North San Diego County, CA, USA.
+                                Based in North San Diego County, CA
                             </li>
-                        </ul>
+                        </ul-->
 
-                    </div>
                 </div>
+
             </div>
         </section>
 
+        <div class="row bio-wall">
+            <div class="col-4"></div>
+            <div class="col-2 mobile">
+                <img src="./assets/chris-01.jpg">
+            </div>
+            <div class="col-4">
+                <img src="./assets/chris-03.jpg">
+            </div>
+            <div class="col-2">
+                <img src="./assets/chris-02.jpg">
+            </div>
+
+        </div>
+
         <section class="about-details">
-            <div class="container about-details-container">
+            <div class="container-fluid about-details-container">
                 <div class="grid">
                     <div class="item">
                         <img class="mb-4 d-block" src="./assets/ico-lightbulb-gear.svg" alt="Lightbulb gear icon">
@@ -291,7 +342,7 @@
                         <img class="mb-4 d-block" src="./assets/ico-pen-ruler.svg" alt="Pen ruler icon">
                         <h4>Design Skills</h4>
                         <ul class="list-unstyled">
-                            <li class="list-inline-item small pill-item"
+                            <li class="list-inline-item pill-item"
                                 ng-repeat="item in aboutDetails | filter: { category: 'Design Skills' } | orderBy:'heading'">
                                 {{item.heading}}
                             </li>
@@ -318,8 +369,7 @@
             <div class="footer-right d-flex align-items-end">
                 <ul class="list-inline connect d-flex align-items-center">
                     <li class="list-inline-item text-center"
-                        ng-repeat="item in footerIcons | filter: { category: 'Connect' }" bs-tooltip
-                        title="{{item.title}}">
+                        ng-repeat="item in footerIcons | filter: { category: 'Connect' }" title="{{item.title}}">
                         <a href="{{item.link}}" target="_blank">
                             <i ng-if="item.icon" class="{{item.icon}}"></i>
                             <img ng-if="item.svg" src="./assets/{{item.svgIcon}}" alt="{{item.title}}" height="16" width="16">

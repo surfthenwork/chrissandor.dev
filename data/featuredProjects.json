@@ -8,7 +8,7 @@
         "modalSlug": "cmic",
         "caseStudy": false,
         "caseStudyDetails": {
-            "overview": "California Mutual Insurance Company is an insurance products and service company. CMIC faced the challenge of migrating off their previous CMS, Adobe Catalyst, which was nearing end of life. To address this challenge and enhance their online presence, CMIC embarked on a project to develop a custom WordPress theme. This endeavor required coordination among various roles.",
+            "overview": "California Mutual Insurance Company is an insurance products and service company. CMIC faced the challenge of migrating off their previous CMS, Adobe Catalyst, which was nearing end of life. To address this challenge and enhance their online presence, the client embarked on a project to develop a custom WordPress theme. This endeavor required coordination among various roles, including rebranding company website, migrating application to a new server and content management system, and reprogram website with modern front-end markup.",
             "role": "Rebrand company website. Migrate application to a new server and content management system. Reprogram website with modern front-end markup.",
             "responsibilities": [
                 "Creative direction",
@@ -17,11 +17,12 @@
                 "Prototyping",
                 "Front-end development",
                 "Custom WordPress theme development",
-                "WordPress ACF",
+                "WordPress Advanced Custom Fields (ACF)",
                 "HTML5",
                 "CSS3/Sass",
                 "PHP",
-                "JavaScript/jQuery"
+                "JavaScript/jQuery",
+                "Bootstrap"
             ]
         }
     },
@@ -33,34 +34,6 @@
         "featuredAssetPosition": "center",
         "caseStudy": false,
         "modalSlug": "capc"
-    },
-    {
-        "heading": "Salinas Valley Ag Tech Summit",
-        "subHeading": "Website design and CMS implementation.",
-        "description": "",
-        "featuredAsset": "assets/featured-svats.jpg",
-        "featuredAssetPosition": "center",
-        "caseStudy": false,
-        "modalSlug": "svats"
-    },
-    {
-        "heading": "Olive Hill Greenhouses",
-        "subHeading": "Website redesign, CMS implementation and email marketing template design and development.",
-        "description": "",
-        "featuredAsset": "assets/featured-ohg.png",
-        "featuredAssetPosition": "right",
-        "url": "https://olivehill.net/",
-        "caseStudy": false,
-        "modalSlug": "ohg"
-    },
-    {
-        "heading": "Jo Mora Trust",
-        "subHeading": "Website redesign and CMS implementation.",
-        "description": "",
-        "featuredAsset": "assets/featured-jmt.png",
-        "featuredAssetPosition": "left",
-        "caseStudy": false,
-        "modalSlug": "jmt"
     },
     {
         "heading": "Del Rey Avocado Company",
@@ -78,13 +51,32 @@
         }
     },
     {
-        "heading": "Horticultural Sales, Inc.",
-        "subHeading": "Homepage design prototype.",
+        "heading": "Olive Hill Greenhouses",
+        "subHeading": "Website redesign, CMS implementation and email marketing template design and development.",
         "description": "",
-        "featuredAsset": "assets/featured-hsi.png",
+        "featuredAsset": "assets/featured-ohg.png",
+        "featuredAssetPosition": "right",
+        "url": "https://olivehill.net/",
+        "caseStudy": true,
+        "modalSlug": "ohg"
+    },
+    {
+        "heading": "Jo Mora Trust",
+        "subHeading": "Website redesign and CMS implementation.",
+        "description": "",
+        "featuredAsset": "assets/featured-jmt.png",
+        "featuredAssetPosition": "left",
+        "caseStudy": false,
+        "modalSlug": "jmt"
+    },
+    {
+        "heading": "Salinas Valley Ag Tech Summit",
+        "subHeading": "Website design and CMS implementation.",
+        "description": "",
+        "featuredAsset": "assets/featured-svats.jpg",
         "featuredAssetPosition": "center",
         "caseStudy": false,
-        "modalSlug": "hsi"
+        "modalSlug": "svats"
     },
     {
         "heading": "Booth Ranches",
@@ -95,5 +87,14 @@
         "url": "https://boothranches.com/",
         "caseStudy": false,
         "modalSlug": "br"
+    },
+    {
+        "heading": "Horticultural Sales, Inc.",
+        "subHeading": "Homepage design prototype.",
+        "description": "",
+        "featuredAsset": "assets/featured-hsi.png",
+        "featuredAssetPosition": "center",
+        "caseStudy": false,
+        "modalSlug": "hsi"
     }
 ]

@@ -3,7 +3,7 @@ var app = angular.module("myApp", ['ngSanitize']);
 // Directive to rotate text with fade effect
 app.directive('rotateText', ['$interval', function ($interval) {
     return function (scope, element) {
-        const wordArr = ['Husband', 'Father', 'Learner', 'Surfer', 'Skateboarder', 'Angler'];
+        const wordArr = ['Husband', 'Father', 'Surfer', 'Skateboarder', 'Angler'];
         let i = 0;
 
         function updateWord() {
@@ -48,7 +48,7 @@ app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $s
 
     // Pagination logic
     $scope.currentPage = 0;
-    $scope.pageSize = 4;
+    $scope.pageSize = 6;
     $scope.data = Array.from({ length: 8 }, (_, i) => `Item ${i}`);
     $scope.numberOfPages = () => Math.ceil($scope.data.length / $scope.pageSize);
 
