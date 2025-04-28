@@ -1,0 +1,115 @@
+[
+    {
+        "heading": "California Mutual Insurance Company",
+        "subHeading": "Website Redesign and WordPress Custom Theme",
+        "featured": "featured-cmic.png",
+        "featuredPosition": "left",
+        "modalSlug": "cmic",
+        "heroModal": "featured-cmic.png",
+        "caseStudy": true,
+        "caseStudyDetails": {
+            "overview": "California Mutual Insurance Company, a provider of insurance products and services, faced the challenge of migrating off Adobe Business Catalyst—a platform approaching end-of-life. The solution involved designing and developing a custom WordPress CMS theme tailored to their brand and functional needs. This effort encompassed several key initiatives, including rebranding the corporate website to reflect a modernized identity, migrating all content and services from the legacy CMS to a new, secure server environment, and rebuilding the website with modern, responsive front-end markup and user-centric design principles.",
+            "responsibilities": [
+                "Creative direction",
+                "Wireframes",
+                "UX/UI",
+                "Prototyping",
+                "Front-end development",
+                "WordPress custom theme development",
+                "WordPress Advanced Custom Fields (ACF) development",
+                "HTML5",
+                "CSS3/Sass",
+                "PHP",
+                "JavaScript/jQuery",
+                "Bootstrap",
+                "Mobile Responsive Breakpoints"
+            ],
+            "media": [
+                "cmic-01.jpg",
+                "cmic-02.jpg"
+            ]
+        }
+    },
+    {
+        "heading": "Monterey County Child Abuse Prevention Council",
+        "subHeading": "Website design and CMS implementation.",
+        "featured": "featured-capc.jpg",
+        "featuredPosition": "center",
+        "caseStudy": false,
+        "modalSlug": "capc"
+    },
+    {
+        "heading": "Del Rey Avocado Company",
+        "subHeading": "Website Redesign and CMS Implementation",
+        "featured": "featured-drac.png",
+        "featuredPosition": "center",
+        "url": "https://delreyavocado.com/",
+        "modalSlug": "drac",
+        "heroModal": "drac-01.png",
+        "caseStudy": false,
+        "caseStudyDetails": {
+            "overview": "",
+            "responsibilities": [
+                "Creative direction",
+                "Wireframes",
+                "UX/UI",
+                "Prototyping",
+                "Front-end development",
+                "WordPress Custom Theme development",
+                "WordPress Advanced Custom Fields (ACF) development",
+                "HTML5",
+                "CSS3",
+                "PHP",
+                "JavaScript/jQuery",
+                "Mobile Responsive Breakpoints"
+            ],
+            "media": [
+                "featured-drac.png"
+            ]
+        }
+    },
+    {
+        "heading": "Olive Hill Greenhouses",
+        "subHeading": "Website redesign, CMS implementation and email marketing template design and development.",
+        "featured": "featured-ohg.png",
+        "featuredPosition": "right",
+        "url": "https://olivehill.net/",
+        "caseStudy": false,
+        "modalSlug": "ohg",
+        "heroModal": "ohg-01.png"
+    },
+    {
+        "heading": "Jo Mora Trust",
+        "subHeading": "Website Redesign and CMS Implementation",
+        "featured": "featured-jmt.png",
+        "featuredPosition": "left",
+        "caseStudy": false,
+        "heroModal": "featured-jmt.png",
+        "modalSlug": "jmt"
+    },
+    {
+        "heading": "Salinas Valley Ag Tech Summit",
+        "subHeading": "Website design and CMS Implementation",
+        "featured": "featured-svats.jpg",
+        "featuredPosition": "center",
+        "caseStudy": false,
+        "modalSlug": "svats"
+    },
+    {
+        "heading": "Booth Ranches",
+        "subHeading": "Website Redesign and CMS Implementation",
+        "featured": "featured-br.png",
+        "featuredPosition": "right",
+        "url": "https://boothranches.com/",
+        "caseStudy": false,
+        "modalSlug": "br"
+    },
+    {
+        "heading": "Horticultural Sales, Inc.",
+        "subHeading": "Homepage design prototype.",
+        "featured": "featured-hsi.png",
+        "featuredPosition": "center",
+        "caseStudy": false,
+        "modalSlug": "hsi"
+    }
+]

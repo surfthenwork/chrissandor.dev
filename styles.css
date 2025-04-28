@@ -180,7 +180,7 @@ h1 {
   line-height: 1.125;
   margin-bottom: 3rem;
   font-size: 5.6rem;
-  letter-spacing: .075rem;
+  /*letter-spacing: .075rem;*/
 
   /*font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 900;
@@ -253,12 +253,13 @@ h4 {
 /* Header */
 header {
   position: relative;
-  /*background-image: url("./assets/hero-bg.jpg");*/
+  /*background-image: url("./img/hero-bg.jpg");*/
   /*background-color: #FFC800;*/
   /*background-blend-mode: screen;*/
   background-size: cover;
   background-position: center center;
   background: linear-gradient(180deg, rgba(255, 200, 0, 1) 0%, rgba(255, 200, 0, 1) 50%, rgba(229, 180, 0, 1) 100%);
+  min-height: 50vh;
 }
 
 header .text-light {
@@ -565,6 +566,15 @@ button#top {
   position: relative;
 }
 
+.projects .grid .item:hover::after {
+  /*content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #FFFFFFBF;
+  margin-top: -4rem;*/
+}
+
 .projects .grid .item a {
   align-self: center;
 }
@@ -671,6 +681,10 @@ button#top {
 /* About */
 .bio-wall {
   --bs-gutter-x: 0 !important;
+  background-image: url("./img/bg-bio-wall.gif");
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 .bio-wall>* {
@@ -864,16 +878,24 @@ ul li.pill-item {
 }
 
 /* Modal */
+.modal-backdrop.show {
+  opacity: .75 !important;
+  background-color: #2A2829 !important; 
+}
+
 .modal-container {
   padding-left: 0;
   padding-right: 0;
 }
 
 .modal-container .modal-header {
-  background-color: #F2EAE2;
+  background-color: transparent;
   align-items: unset;
-  padding: 3.5rem 4rem 3.5rem 0;
+  padding: 3rem 3rem 0 0;
   border-bottom: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
 }
 
 .modal-container .modal-body {
@@ -882,6 +904,7 @@ ul li.pill-item {
 
 .modal-container .modal-body .hero-modal {
   background-color: #F2EAE2;
+  padding-top: 8rem;
 }
 
 .modal-container .modal-body .hero-modal h2 {
@@ -916,8 +939,10 @@ ul li.pill-item {
 }
 
 .modal-container .modal-body .hero-modal figure img {
-  max-width: 50% !important;
-  width: unset !important;
+  /*max-width: calc(50% - 2rem) !important;*/
+  width: calc(50% - 2rem) !important;
+  border: unset;
+  border-radius: unset;
 }
 
 .modal-container .modal-body .hero-modal .item-center figure img {
@@ -928,8 +953,31 @@ ul li.pill-item {
   transform: unset;
 }
 
+.modal-header .btn-close {
+  --bs-btn-close-opacity: 1;
+  --bs-btn-close-hover-opacity: 1;
+  --bs-btn-close-focus-shadow: none;
+  --bs-btn-close-focus-opacity: 1;
+  --bs-btn-close-disabled-opacity: 1;
+  width: 32px;
+  height: 32px;
+  padding: 0 !important;
+  border: 0;
+  border-radius: unset;
+  background: none;
+  background-color: #FFC800BF;
+  opacity: 1;
+  color: #FFFFFFE0;
+  font-size: 1.6rem;
+}
+
+.modal-header .btn-close:hover {
+  background-color: #FFC800;
+}
+
 .modal-container .modal-body .hero-modal figure figcaption {
   margin-left: 4rem;
+  margin-right: 4rem;
   margin-bottom: 8rem;
   text-align: left;
 }
@@ -937,6 +985,12 @@ ul li.pill-item {
 .modal-container .modal-body .hero-modal .item-right figure figcaption {
   margin-left: 0;
   margin-right: 4rem;
+}
+
+.modal-container .modal-body .hero-modal figure figcaption p {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 1rem;
 }
 
 .modal-container .modal-body article {
@@ -947,25 +1001,66 @@ ul li.pill-item {
   text-align: left;
 }
 
+.modal-container .modal-body article .details {
+  margin-bottom: 3rem;
+  width: calc(50% - 2rem);
+  margin-right: 2rem;
+}
+
+.modal-container .modal-body article .details .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+}
+
+.modal-container .modal-body article .media {
+  /*margin-bottom: 4rem;*/
+  width: calc(50% + 2rem);
+  padding: unset;
+  margin-left: -2rem;
+  position: relative;
+  right: -4rem;
+  top: -8rem;
+  margin-bottom: -8rem;
+}
+
+.modal-container .modal-body article .media figure:first-child {
+  padding-top: 4rem;
+}
+
+.modal-container .modal-body article .media figure {
+  background-color: #2A2829;
+  padding: 0 4rem 4rem 4rem;
+}
+
+.modal-container .modal-body article .media img {
+  border-radius: 1rem;
+  border: none !important;
+}
+
+.modal-container .modal-body article p {
+  margin-bottom: 4rem;
+  color: #7f7d7e;
+}
+
 .modal-container .modal-body article ul li {
   margin-bottom: 1rem;
   color: #7f7d7e;
   font-family: 'PT Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
 }
 
 .modal-container .modal-body h3 {
-  position: relative;
-  left: unset;
-  top: unset;
-  padding-top: unset;
+  display: unset;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.125;
 }
 
-.modal-container .modal-body p,
-.modal-container .modal-body ul {
-  /*margin-bottom: 0;*/
-  margin-top: 1rem;
-  line-height: 1.25;
+.modal-container .modal-body p {
+  line-height: 1.75;
+  font-size: 1.6rem;
 }
 
 
@@ -1137,7 +1232,11 @@ footer .source-code {
   }
 
   h4 {
-    font-size: 1.4rem;
+    /*font-size: 1.4rem;*/
+  }
+
+  .about-details h4 {
+    font-size: 1.8rem;
   }
 
   .hero .hero-img {
@@ -1180,8 +1279,28 @@ footer .source-code {
 }
 
 @media (max-width: 991.98px) {
+  .modal-container .modal-body article .details .sticky {
+    top: unset;
+  }
+
+  .modal-container .modal-body article .details {
+    width: 100%;
+    margin-right: unset;
+    padding: 0 4rem;
+  }
+
+  .modal-container .modal-body article .media {
+    width: 100%;
+    margin-left: unset;
+    right: unset;
+    top: unset;
+    margin-bottom: unset;
+  }
+
   .modal-container .modal-body article {
     width: 100%;
+    padding-left: unset;
+    padding-right: unset;
   }
 
   h1 {
@@ -1267,15 +1386,15 @@ footer .source-code {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     /*margin-top: 4rem;*/
   }
-}
 
-@media (max-width: 767.98px) {
   .modal-container .modal-header {
-    padding: 1.5rem 2rem 1.5rem 0;
+    /*padding: 1.5rem 2rem 1.5rem 0;*/
   }
 
   .modal-container .modal-body .hero-modal {
     padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-right: 8rem;
   }
 
   .modal-container .modal-body .hero-modal h2 {
@@ -1288,7 +1407,8 @@ footer .source-code {
 
   .modal-container .modal-body .hero-modal figure figcaption {
     margin-top: 4rem;
-    margin-bottom: 0;
+    margin-bottom: unset;
+    margin-right: unset;
     /*text-align: center;*/
   }
 
@@ -1306,6 +1426,9 @@ footer .source-code {
     max-width: unset !important;
     max-height: unset !important;
   }
+}
+
+@media (max-width: 767.98px) {
 
   header::after {
     display: none;
@@ -1365,6 +1488,9 @@ footer .source-code {
 }
 
 @media (max-width: 575.98px) {
+  .modal-container .modal-body .hero-modal {
+    padding-right: 4rem;
+  }
 
   .bio-wall .col-2,
   .bio-wall .col-4 {

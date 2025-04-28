@@ -3,7 +3,7 @@ var app = angular.module("myApp", ['ngSanitize']);
 // Directive to rotate text with fade effect
 app.directive('rotateText', ['$interval', function ($interval) {
     return function (scope, element) {
-        const wordArr = ['Husband', 'Father', 'Surfer', 'Skateboarder', 'Angler'];
+        //const wordArr = ['Husband', 'Father', 'Surfer', 'Skateboarder', 'Angler'];
         let i = 0;
 
         function updateWord() {
@@ -34,16 +34,16 @@ app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $s
         });
     }
     preload(
-        "./assets/featured-jmt.png",
-        "./assets/featured-drac.png",
-        "./assets/featured-hsi.png",
-        "./assets/featured-br.png"
+        //"./img/featured-jmt.png",
+        //"./img/featured-drac.png",
+        //"./img/featured-hsi.png",
+        //"./img/featured-br.png"
     );
 
     // Load featured projects and handle trusted HTML snippets
-    $http.get('./data/featuredProjects.json').then(res => {
-        $scope.featuredProjects = res.data;
-        $scope.trustedSnippet = () => $sce.trustAsHtml($scope.featuredProjects);
+    $http.get('./data/projects.json').then(res => {
+        $scope.projects = res.data;
+        $scope.trustedSnippet = () => $sce.trustAsHtml($scope.projects);
     });
 
     // Pagination logic
@@ -52,9 +52,9 @@ app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $s
     $scope.data = Array.from({ length: 8 }, (_, i) => `Item ${i}`);
     $scope.numberOfPages = () => Math.ceil($scope.data.length / $scope.pageSize);
 
-    // Load additional data (about details, footer icons)
-    $http.get('./data/aboutDetails.json').then(res => $scope.aboutDetails = res.data);
-    $http.get('./data/footerIcons.json').then(res => $scope.footerIcons = res.data);
+    // Load additional data (about, icons)
+    $http.get('./data/about.json').then(res => $scope.about = res.data);
+    $http.get('./data/icons.json').then(res => $scope.icons = res.data);
 }]);
 
 // Initialize tooltips using Bootstrap
