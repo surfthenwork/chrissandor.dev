@@ -256,10 +256,13 @@ header {
   /*background-image: url("./img/hero-bg.jpg");*/
   /*background-color: #FFC800;*/
   /*background-blend-mode: screen;*/
-  background-size: cover;
-  background-position: center center;
-  background: linear-gradient(180deg, rgba(255, 200, 0, 1) 0%, rgba(255, 200, 0, 1) 50%, rgba(229, 180, 0, 1) 100%);
-  min-height: 50vh;
+  /*background: linear-gradient(180deg, rgba(255, 200, 0, 1) 0%, rgba(255, 200, 0, 1) 50%, rgba(229, 180, 0, 1) 100%);*/
+  background-color: rgba(255, 200, 0, 1);
+  background-image: url("./img/bg-hero.gif");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: contain;
+  /*min-height: 50vh;*/
 }
 
 header .text-light {
@@ -280,8 +283,6 @@ header nav {
 header #nav {
   transition: top 0.25s;
 }
-
-
 
 header nav .navbar-brand {
   /*display: none;*/
@@ -359,8 +360,6 @@ header nav.scroll {
   box-shadow: 0px 1px 3px 0px rgba(152, 139, 76, 0.5);
 }
 
-
-
 header nav.scroll .container {
   width: 100% !important;
   max-width: 100% !important;
@@ -433,13 +432,17 @@ header::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(42,40,41, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+header .container {
+  height: 100vh;
+  /*padding-top: 8rem;*/
+}
 
 /* Hero */
 .hero {
   position: relative;
   /*padding-bottom: $size-xl;*/
   /*margin-top: 8rem;*/
-  padding-top: 8rem;
+  /*padding-top: 8rem;*/
 }
 
 .hero .hero-message {
@@ -451,7 +454,7 @@ header::after {
   animation-name: slideRight;
   animation-duration: 1s;
   animation-delay: 0s;
-  padding: 8rem 0 8rem 0;
+  /*padding: 8rem 0 8rem 0;*/
   /*text-align: justify;*/
 }
 
@@ -880,7 +883,7 @@ ul li.pill-item {
 /* Modal */
 .modal-backdrop.show {
   opacity: .75 !important;
-  background-color: #2A2829 !important; 
+  background-color: #2A2829 !important;
 }
 
 .modal-container {
@@ -1003,8 +1006,8 @@ ul li.pill-item {
 
 .modal-container .modal-body article .details {
   margin-bottom: 3rem;
-  width: calc(50% - 2rem);
-  margin-right: 2rem;
+  width: calc(50% - 4rem);
+  margin-right: 4rem;
 }
 
 .modal-container .modal-body article .details .sticky {
@@ -1437,7 +1440,7 @@ footer .source-code {
   .hero .hero-message {
     position: relative;
     top: unset;
-    padding: 4rem 0 8rem 0;
+    /*padding: 4rem 0 8rem 0;*/
     width: 100%;
   }
 
@@ -1631,6 +1634,12 @@ footer .source-code {
   .footer-left {
     margin-bottom: 2rem;
   }
+
+  header .container {
+    height: unset;
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+  }
 }
 
 @media (max-width: 413.98px) {
@@ -1659,5 +1668,13 @@ footer .source-code {
 
   footer .source-code .m-2 {
     margin: 0 !important;
+  }
+}
+
+@media (max-height: 575.98px) {
+  header .container {
+    height: unset;
+    padding-top: 16rem;
+    padding-bottom: 8rem;
   }
 }

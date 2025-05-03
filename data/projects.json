@@ -16,27 +16,21 @@
                 "Prototyping",
                 "Front-end development",
                 "WordPress custom theme development",
-                "WordPress Advanced Custom Fields (ACF) development",
+                "WordPress Advanced Custom Fields (ACF) configuration",
                 "HTML5",
                 "CSS3/Sass",
                 "PHP",
                 "JavaScript/jQuery",
                 "Bootstrap",
-                "Mobile Responsive Breakpoints"
+                "Mobile Responsive Breakpoints",
+                "Adobe Illustrator",
+                "Adobe Photoshop"
             ],
             "media": [
                 "cmic-01.jpg",
                 "cmic-02.jpg"
             ]
         }
-    },
-    {
-        "heading": "Monterey County Child Abuse Prevention Council",
-        "subHeading": "Website design and CMS implementation.",
-        "featured": "featured-capc.jpg",
-        "featuredPosition": "center",
-        "caseStudy": false,
-        "modalSlug": "capc"
     },
     {
         "heading": "Del Rey Avocado Company",
@@ -65,6 +59,38 @@
             ],
             "media": [
                 "featured-drac.png"
+            ]
+        }
+    },
+    {
+        "heading": "Monterey County Child Abuse Prevention Council",
+        "subHeading": "Website Design and CMS Implementation.",
+        "featured": "featured-capc.jpg",
+        "featuredPosition": "center",
+        "caseStudy": false,
+        "modalSlug": "capc",
+        "heroModal": "capc-03.png",
+        "caseStudyDetails": {
+            "overview": "",
+            "responsibilities": [
+                "Creative direction",
+                "Wireframes",
+                "UX/UI",
+                "Prototyping",
+                "Front-end development",
+                "WordPress custom theme development",
+                "WordPress Advanced Custom Fields (ACF) configuration",
+                "HTML5",
+                "CSS3/Sass",
+                "PHP",
+                "JavaScript/jQuery",
+                "Mobile Responsive Breakpoints",
+                "Adobe Illustrator",
+                "Adobe Photoshop"
+            ],
+            "media": [
+                "capc-02.jpg",
+                "capc-01.jpg"
             ]
         }
     },

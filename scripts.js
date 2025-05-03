@@ -48,7 +48,7 @@ app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $s
 
     // Pagination logic
     $scope.currentPage = 0;
-    $scope.pageSize = 6;
+    $scope.pageSize = 8;
     $scope.data = Array.from({ length: 8 }, (_, i) => `Item ${i}`);
     $scope.numberOfPages = () => Math.ceil($scope.data.length / $scope.pageSize);
 
