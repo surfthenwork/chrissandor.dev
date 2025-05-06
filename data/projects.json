@@ -114,6 +114,15 @@
         "modalSlug": "jmt"
     },
     {
+        "heading": "Booth Ranches",
+        "subHeading": "Website Redesign and CMS Implementation",
+        "featured": "featured-br.png",
+        "featuredPosition": "center",
+        "url": "https://boothranches.com/",
+        "caseStudy": false,
+        "modalSlug": "br"
+    },
+    {
         "heading": "Salinas Valley Ag Tech Summit",
         "subHeading": "Website design and CMS Implementation",
         "featured": "featured-svats.jpg",
@@ -122,20 +131,43 @@
         "modalSlug": "svats"
     },
     {
-        "heading": "Booth Ranches",
-        "subHeading": "Website Redesign and CMS Implementation",
-        "featured": "featured-br.png",
-        "featuredPosition": "right",
-        "url": "https://boothranches.com/",
-        "caseStudy": false,
-        "modalSlug": "br"
-    },
-    {
         "heading": "Horticultural Sales, Inc.",
         "subHeading": "Homepage design prototype.",
         "featured": "featured-hsi.png",
         "featuredPosition": "center",
         "caseStudy": false,
         "modalSlug": "hsi"
+    },
+    {
+        "category": "dribbble",
+        "img": "amsl.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "bsi.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "by.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "cfmg.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "hsi.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "ppc.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "svats.jpg"
+    },
+    {
+        "category": "dribbble",
+        "img": "to.jpg"
     }
 ]

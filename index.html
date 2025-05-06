@@ -118,20 +118,16 @@
                     <p>A creative UX engineer blending visual design and accessible front-end development to craft
                         interactive, mobile-responsive websites and web apps.</p>
                 </div>
-                <!--div class="hero-img">
-                    <img src="img/hero-chris.jpg" alt="{{pageTitle}}">
-                </div-->
+                <!--div class="hero-img"><img src="img/hero-chris.jpg" alt="{{pageTitle}}"></div-->
                 <!--div class="clearfix"></div-->
             </div>
         </div>
     </header>
 
     <main>
-
         <button onclick="topFunction()" id="top" title="Go to top">
-            <!--img src="img/ico-arrow-up.svg" alt="Go to top" height="100%" width="100%"-->
             <i class="fa-solid fa-chevron-up"></i>
-            </button>
+        </button>
 
         <section class="projects" id="projects">
             <div class="container projects-container">
@@ -147,9 +143,7 @@
                             </figure>
                         </a>
 
-                        <a ng-if="item.url" href="{{item.url}}" target="_blank" class="link">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
+                        <!--a ng-if="item.url" href="{{item.url}}" target="_blank" class="link"><i class="fa-solid fa-link"></i></a-->
 
                         <a ng-if="item.caseStudy" href="javascript:void(0)" data-bs-toggle="modal"
                             data-bs-target="#{{item.modalSlug}}">
@@ -208,7 +202,8 @@
                                                         <figure
                                                             ng-repeat="item in item.caseStudyDetails.media | limitTo: 3"
                                                             class="mb-0">
-                                                            <img src="./img/projects/{{item}}" alt="{{item.heading}}">
+                                                            <a href="./img/projects/{{item}}"
+                                                                target="_blank"><img src="./img/projects/{{item}}" alt="{{item.heading}}"></a>
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -242,11 +237,17 @@
                 </ul-->
         </section>
 
+        <div class="row portfolio-wall">
+            <div ng-repeat="item in projects | filter: { category: 'dribbble' }" class="col mask"><img src="./img/projects/thumbs/{{item.img}}">
+            </div>
+            <div class="overlay">
+                <div class="btn cta"><a href="https://dribbble.com/chrissandor"
+                        target="_blank"><i class="fa-brands fa-dribbble"></i> View More on Dribbble</a></div>
+            </div>
+        </div>
+
         <section id="about">
-
-
             <div class="container about-container">
-
                 <div class="title">
                     <h3>Hello, I'm Christopher Sandor.</h3>
                 </div>
@@ -255,10 +256,9 @@
                         blending visual design and accessible front-end development to craft
                         interactive, mobile-responsive websites and web apps.</p>
                     <p>Skilled in HTML5, CSS3/Sass, JavaScript, and frameworks like AngularJS, Vue.js, Bootstrap and
-                        LAMP, I bring
-                        designs to life with pixel-perfect precision and performance in mind. I'm also experienced
-                        with ServiceNow's Service Portal, WordPress custom theming, and tools like Figma and Adobe
-                        Creative Suite. Whether wireframing, prototyping, or coding, I focus on usability,
+                        LAMP, I bring designs to life with pixel-perfect precision and performance in mind. I'm also
+                        experienced with ServiceNow's Service Portal, WordPress custom theming, and tools like Figma and
+                        Adobe Creative Suite. Whether wireframing, prototyping, or coding, I focus on usability,
                         accessibility, and delivering clean, scalable user interfaces.</p>
                     <p>I am currently a technical consultant at Infocenter, a
                         <span class="decoration-solid" bs-tooltip title="2024 Consulting &amp; Implementation Partner of the Year">ServiceNow Elite Partner</span>
@@ -266,17 +266,6 @@
                         customer-facing (CSM, FSO, HCLS) web applications on ServiceNow's front-end portal
                         framework.
                     </p>
-
-                    <!--ul class="fa-ul text-muted">
-                            <li>
-                                <span class="fa-li"><i class="fa-solid fa-fingerprint"></i></span>
-                                <span rotate-text class="rotate-text"></span>
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>
-                                Based in North San Diego County, CA
-                            </li>
-                        </ul-->
 
                 </div>
 
@@ -294,7 +283,6 @@
             <div class="col-2">
                 <img src="./img/chris-02.jpg">
             </div>
-
         </div>
 
         <section class="about-details">
@@ -306,7 +294,7 @@
                         <ul class="list-unstyled">
                             <li ng-repeat="item in about | filter: { category: 'Experience' }">
                                 <strong>{{item.heading}}</strong><br>
-                        {{item.subheading}}<br>
+                                {{item.subheading}}<br>
                                 <span ng-if="item.description">{{item.description}}<br></span>
                                 <em>{{item.date}}</em>
                             </li>
@@ -386,7 +374,7 @@
     <!-- Load external JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <!--script src="http://malsup.github.com/jquery.cycle2.js"></script-->
 
     <!-- Load internal JavaScript -->
     <script src="scripts.js"></script>

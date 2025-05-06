@@ -156,11 +156,19 @@ small {
 }
 
 /* Theme Styles */
+:root {
+  --viewport-height: 100%;
+}
+
 html,
 body {
   font-size: 10px;
   color: #2A2829;
   font-family: 'Raleway', sans-serif;
+}
+
+body {
+  /*padding-bottom: env(safe-area-inset-bottom);*/
 }
 
 p {
@@ -262,7 +270,7 @@ header {
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: contain;
-  /*min-height: 50vh;*/
+  /*min-height: 100vh;*/
 }
 
 header .text-light {
@@ -434,6 +442,11 @@ header::after {
 
 header .container {
   height: 100vh;
+
+  @supports (height: var(--)) {
+    height: var(--viewport-height);
+  }
+
   /*padding-top: 8rem;*/
 }
 
@@ -679,6 +692,68 @@ button#top {
 
 .projects .pagination button.disabled {
   color: #F2EAE2;
+}
+
+.portfolio-wall {
+  --bs-gutter-x: unset !important;
+  position: relative;
+}
+
+.portfolio-wall .overlay {
+  width: 100%;
+  height: 16rem;
+  /*opacity: .75;*/
+  background-color: #2A2829BF;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+}
+
+.portfolio-wall .overlay .cta {
+  margin-top: calc(8rem - 1.7rem);
+}
+
+.portfolio-wall .overlay .cta a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #FFFFFFE0;
+  background-color: #2A2829;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.portfolio-wall .overlay .cta a:hover {
+  color: #2A2829;
+  background-color: #FFC800;
+}
+
+.portfolio-wall>* {
+  padding-right: unset !important;
+  padding-left: unset !important;
+}
+
+.portfolio-wall .mask {
+  position: relative;
+  height: 16rem;
+  overflow: hidden;
+}
+
+.portfolio-wall .mask img {
+  position: absolute;
+  top: -15%;
+  left: -30%;
+  width: 150%;
+
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 
 /* About */
@@ -1041,6 +1116,10 @@ ul li.pill-item {
   border: none !important;
 }
 
+.modal-container .modal-body article .media a:hover img {
+  opacity: .9125;
+}
+
 .modal-container .modal-body article p {
   margin-bottom: 4rem;
   color: #7f7d7e;
@@ -1193,7 +1272,17 @@ footer .source-code {
 }
 
 /* Max-width Responsive Breakpoints */
+@media (max-width: 1439.98px) {
+  .portfolio-wall .mask img {
+    width: 175%;
+  }
+}
+
 @media (max-width: 1279.98px) {
+  .portfolio-wall .mask img {
+    top: -10%;
+  }
+
   .about-details .grid {
     grid-template-columns: repeat(auto-fill, minmax(calc(18%), 1fr));
     gap: 4rem;
@@ -1261,6 +1350,10 @@ footer .source-code {
 }
 
 @media (max-width: 1094.98px) {
+  .portfolio-wall .mask img {
+    width: 200%;
+  }
+
   .about-details .grid {
     grid-template-columns: repeat(auto-fill, minmax(calc(31%), 1fr));
   }
@@ -1282,6 +1375,24 @@ footer .source-code {
 }
 
 @media (max-width: 991.98px) {
+  .portfolio-wall .mask img {
+    top: -5%;
+  }
+
+  .portfolio-wall .mask:first-child,
+  .portfolio-wall .mask:nth-last-child(2) {
+    display: none;
+  }
+
+  .portfolio-wall .overlay,
+  .portfolio-wall .mask {
+    height: 12rem;
+  }
+
+  .portfolio-wall .overlay .cta {
+    margin-top: calc(6rem - 1.7rem);
+  }
+
   .modal-container .modal-body article .details .sticky {
     top: unset;
   }
@@ -1491,6 +1602,12 @@ footer .source-code {
 }
 
 @media (max-width: 575.98px) {
+
+  .portfolio-wall .mask:nth-last-child(3),
+  .portfolio-wall .mask:nth-last-child(4) {
+    display: none;
+  }
+
   .modal-container .modal-body .hero-modal {
     padding-right: 4rem;
   }
@@ -1535,6 +1652,10 @@ footer .source-code {
 
   .about-details ul {
     margin-bottom: 4.25rem;
+  }
+
+  .modal-container .modal-body article .media figure {
+    padding: 0 2rem 2rem 2rem;
   }
 
   .modal-container .modal-body .hero-modal h2 {
@@ -1636,9 +1757,9 @@ footer .source-code {
   }
 
   header .container {
-    height: unset;
+    /*height: unset;
     padding-top: 16rem;
-    padding-bottom: 8rem;
+    padding-bottom: 8rem;*/
   }
 }
 
@@ -1673,8 +1794,8 @@ footer .source-code {
 
 @media (max-height: 575.98px) {
   header .container {
-    height: unset;
+    /*height: unset;
     padding-top: 16rem;
-    padding-bottom: 8rem;
+    padding-bottom: 8rem;*/
   }
 }
