@@ -20,7 +20,8 @@
                 "HTML5",
                 "CSS3/Sass",
                 "PHP",
-                "JavaScript/jQuery",
+                "JavaScript",
+                "jQuery",
                 "Bootstrap",
                 "Mobile Responsive Breakpoints",
                 "Adobe Illustrator",
@@ -54,7 +55,8 @@
                 "HTML5",
                 "CSS3",
                 "PHP",
-                "JavaScript/jQuery",
+                "JavaScript",
+                "jQuery",
                 "Mobile Responsive Breakpoints"
             ],
             "media": [
@@ -84,7 +86,8 @@
                 "HTML5",
                 "CSS3/Sass",
                 "PHP",
-                "JavaScript/jQuery",
+                "JavaScript",
+                "jQuery",
                 "Mobile Responsive Breakpoints",
                 "Adobe Illustrator",
                 "Adobe Photoshop"
@@ -117,7 +120,8 @@
                 "HTML5",
                 "CSS3",
                 "PHP",
-                "JavaScript/jQuery",
+                "JavaScript",
+                "jQuery",
                 "Mobile Responsive Breakpoints",
                 "Adobe Illustrator",
                 "Adobe Photoshop"
@@ -146,11 +150,14 @@
                 "Vue.js",
                 "HTML5",
                 "CSS3",
-                "JavaScript/jQuery",
+                "JavaScript",
+                "jQuery",
                 "Mobile Responsive Breakpoints",
                 "Branding",
                 "Logo Design",
-                "JSON"
+                "JSON",
+                "Leaflet",
+                "Charts.js"
             ],
             "media": [
                 "sc-01.jpg",
@@ -180,7 +187,8 @@
                 "HTML5",
                 "CSS3",
                 "PHP",
-                "JavaScript/jQuery",
+                "JavaScript",
+                "jQuery",
                 "Mobile Responsive Breakpoints"
             ],
             "media": [
@@ -210,7 +218,8 @@
                 "HTML5",
                 "CSS3/Sass",
                 "PHP",
-                "JavaScript/jQuery",
+                "JavaScript",
+                "jQuery",
                 "Mobile Responsive Breakpoints"
             ],
             "media": []
