@@ -1778,7 +1778,7 @@ footer .source-code {
   }
 
   .footer-left {
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
   }
 
   header .container {
@@ -1791,23 +1791,24 @@ footer .source-code {
 @media (max-width: 413.98px) {
 
   footer {
-    padding: 0;
+    padding: .65rem 0;
   }
 
   footer .footer-left,
   footer .footer-left p,
   footer .footer-left ul {
-    text-align: center;
-    display: none !important;
+    /*text-align: center;*/
+    /*display: none !important;*/
     /*display: block !important;*/
   }
 
   footer .footer-left ul {
-    margin: .75rem 0 1.5rem 0;
+    /*margin: .75rem 0 1.5rem 0;*/
   }
 
   footer .source-code {
-    display: block !important;
+    display: none !important;
+    /*display: block !important;*/
     border-left: none;
     margin-left: 0;
   }
