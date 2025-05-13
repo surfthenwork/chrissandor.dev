@@ -273,6 +273,19 @@ header {
   /*min-height: 100vh;*/
 }
 
+header::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: calc(50% - 20px);
+  bottom: -2rem;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FFC800;
+}
+
 header .text-light {
   color: #F2EAE2 !important;
   /*color: unset !important;*/
@@ -551,7 +564,19 @@ button#top {
 .projects .projects-container {
   padding: 8rem 8rem;
   text-align: center;
+}
 
+.projects .projects-container::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: calc(50% - 20px);
+  bottom: -2rem;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #F2EAE2;
 }
 
 .projects h3 {
@@ -719,7 +744,7 @@ button#top {
   font-size: 1.4rem;
   line-height: 1;
   font-weight: 700;
-  color: #FFFFFFE0;
+  color: #F2EAE2;
   background-color: #2A2829;
   display: inline-block;
   padding: 1rem;
@@ -798,7 +823,6 @@ button#top {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #FFFFFF;
-
 }
 
 #about .about-container {
@@ -1001,7 +1025,8 @@ ul li.pill-item {
 }
 
 .modal-container .modal-body .hero-modal .item-left {
-  padding: 0 4rem 0 0;
+  /*padding: 0 4rem 0 0;*/
+  padding: 0;
 }
 
 .modal-container .modal-body .hero-modal .item-right {
@@ -1545,7 +1570,7 @@ footer .source-code {
 @media (max-width: 767.98px) {
 
   header::after {
-    display: none;
+    /*display: none;*/
   }
 
   .hero .hero-message {

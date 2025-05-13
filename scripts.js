@@ -3,23 +3,20 @@ var app = angular.module("myApp", ['ngSanitize']);
 // Directive to rotate text with fade effect
 app.directive('rotateText', ['$interval', function ($interval) {
     return function (scope, element) {
-        //const wordArr = ['Husband', 'Father', 'Surfer', 'Skateboarder', 'Angler'];
+        /*
+        const wordArr = ['Husband', 'Father', 'Surfer', 'Skateboarder', 'Angler'];
         let i = 0;
-
         function updateWord() {
-            element.removeClass('reveal'); // Fade out current word
+            element.removeClass('reveal');
             setTimeout(() => {
                 i = (i + 1) % wordArr.length;
-                element.text(wordArr[i]).addClass('reveal'); // Update word and fade in
-            }, 1000);  // Sync with fade-out duration
+                element.text(wordArr[i]).addClass('reveal');
+            }, 1000); 
         }
-
-        // Initialize with the first word and start rotation
         element.text(wordArr[0]).addClass('reveal');
         const stopWord = $interval(updateWord, 4000);
-
-        // Cancel interval on element destroy
         element.on('$destroy', () => $interval.cancel(stopWord));
+        */
     };
 }]);
 
