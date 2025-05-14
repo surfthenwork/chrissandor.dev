@@ -1,25 +1,5 @@
 var app = angular.module("myApp", ['ngSanitize']);
 
-// Directive to rotate text with fade effect
-app.directive('rotateText', ['$interval', function ($interval) {
-    return function (scope, element) {
-        /*
-        const wordArr = ['Husband', 'Father', 'Surfer', 'Skateboarder', 'Angler'];
-        let i = 0;
-        function updateWord() {
-            element.removeClass('reveal');
-            setTimeout(() => {
-                i = (i + 1) % wordArr.length;
-                element.text(wordArr[i]).addClass('reveal');
-            }, 1000); 
-        }
-        element.text(wordArr[0]).addClass('reveal');
-        const stopWord = $interval(updateWord, 4000);
-        element.on('$destroy', () => $interval.cancel(stopWord));
-        */
-    };
-}]);
-
 app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
     $scope.pageTitle = document.title;
 
@@ -38,10 +18,10 @@ app.controller("myCtrl", ['$scope', '$http', '$sce', function ($scope, $http, $s
         });
     }
     preload(
-        //"./img/featured-jmt.png",
-        //"./img/featured-drac.png",
-        //"./img/featured-hsi.png",
-        //"./img/featured-br.png"
+        "./img/drac-01.png",
+        "./img/capc-03.png",
+        "./img/ohg-01.png",
+        "./img/br-01.png"
     );
 
     // Load featured projects and handle trusted HTML snippets
@@ -140,4 +120,4 @@ function onScroll() {
 }
 
 // Update copyright year
-document.getElementById('copyright').textContent = new Date().getFullYear();
+//document.getElementById('copyright').textContent = new Date().getFullYear();
