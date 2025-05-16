@@ -132,7 +132,8 @@
                     <div class="item bg-white"
                         ng-class="{'item-center': item.featuredPosition == 'center', 'item-left': item.featuredPosition == 'left', 'item-right': item.featuredPosition == 'right'}"
                         ng-repeat="item in projects | startFrom:currentPage*pageSize | limitTo:pageSize">
-                        <a ng-hide="item.caseStudy" href="javascript:void(0)" class="arrow" style="cursor: unset;"
+
+                        <a ng-hide="item.caseStudy" href="javascript:void(0)" class="arrow" style="cursor:not-allowed;"
                             bs-tooltip data-bs-placement="bottom" title="">
                             <figure>
                                 <img src="./img/projects/{{item.featured}}" alt="{{item.heading}}">
@@ -142,7 +143,7 @@
                         <!--a ng-if="item.url" href="{{item.url}}" target="_blank" class="link"><i class="fa-solid fa-link"></i></a-->
 
                         <a ng-if="item.caseStudy" href="javascript:void(0)" data-bs-toggle="modal"
-                            data-bs-target="#{{item.modalSlug}}">
+                            data-bs-target="#{{item.modalSlug}}" style="cursor:zoom-in;">
                             <figure>
                                 <img src="./img/projects/{{item.featured}}" alt="{{item.heading}}">
                                 <!--figcaption>{{item.heading}}</figcaption-->

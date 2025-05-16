@@ -132,6 +132,44 @@
         }
     },
     {
+        "heading": "Booth Ranches",
+        "subHeading": "Website Redesign and CMS Implementation",
+        "featured": "br-01.png",
+        "featuredPosition": "left",
+        "heroModal": "br-01.png",
+        "url": "https://boothranches.com/",
+        "modalSlug": "br",
+        "caseStudy": true,
+        "caseStudyDetails": {
+            "overview": "Coming soon.",
+            "responsibilities": [
+                "Creative direction",
+                "Wireframes",
+                "UX/UI",
+                "Prototyping",
+                "Front-end development",
+                "WordPress Custom Theme development",
+                "WordPress Advanced Custom Fields (ACF) development",
+                "HTML5",
+                "CSS3",
+                "PHP",
+                "JavaScript",
+                "jQuery",
+                "Mobile Responsive Breakpoints"
+            ],
+            "media": [
+                "br-02.jpg",
+                "br-03.jpg"
+            ]
+        }
+    },
+    {
+        "heading": "Horticultural Sales, Inc.",
+        "subHeading": "Homepage Design Prototype",
+        "featured": "featured-hsi.png",
+        "featuredPosition": "center"
+    },
+    {
         "heading": "Serial Catcher",
         "subHeading": "Branding, Website Design and Web App Development",
         "featured": "featured-sc.png",
@@ -162,38 +200,6 @@
             "media": [
                 "sc-01.jpg",
                 "sc-02.jpg"
-            ]
-        }
-    },
-    {
-        "heading": "Booth Ranches",
-        "subHeading": "Website Redesign and CMS Implementation",
-        "featured": "featured-br.png",
-        "featuredPosition": "center",
-        "heroModal": "br-01.png",
-        "url": "https://boothranches.com/",
-        "modalSlug": "br",
-        "caseStudy": true,
-        "caseStudyDetails": {
-            "overview": "Coming soon.",
-            "responsibilities": [
-                "Creative direction",
-                "Wireframes",
-                "UX/UI",
-                "Prototyping",
-                "Front-end development",
-                "WordPress Custom Theme development",
-                "WordPress Advanced Custom Fields (ACF) development",
-                "HTML5",
-                "CSS3",
-                "PHP",
-                "JavaScript",
-                "jQuery",
-                "Mobile Responsive Breakpoints"
-            ],
-            "media": [
-                "br-02.jpg",
-                "br-03.jpg"
             ]
         }
     },
@@ -232,12 +238,6 @@
         "featuredPosition": "center"
     },
     {
-        "heading": "Horticultural Sales, Inc.",
-        "subHeading": "Homepage Design Prototype",
-        "featured": "featured-hsi.png",
-        "featuredPosition": "center"
-    },
-    {
         "category": "dribbble",
         "img": "amsl.jpg"
     },
@@ -253,17 +253,17 @@
         "category": "dribbble",
         "img": "cfmg.jpg"
     },
-    {
-        "category": "dribbble",
-        "img": "hsi.jpg"
-    },
-    {
+        {
         "category": "dribbble",
         "img": "svats.jpg"
     },
     {
         "category": "dribbble",
         "img": "ppc.jpg"
+    },
+        {
+        "category": "dribbble",
+        "img": "i.jpg"
     },
     {
         "category": "dribbble",
