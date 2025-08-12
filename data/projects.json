@@ -8,15 +8,15 @@
         "heroModal": "featured-cmic.png",
         "caseStudy": true,
         "caseStudyDetails": {
-            "overview": "California Mutual Insurance Company, a provider of insurance products and services, faced the challenge of migrating off Adobe Business Catalyst—a platform approaching end-of-life. The solution involved designing and developing a custom WordPress CMS theme tailored to their brand and functional needs. This effort encompassed several key initiatives, including rebranding the corporate website to reflect a modernized identity, migrating all content and services from the legacy CMS to a new, secure server environment, and rebuilding the website with modern, responsive front-end markup and user-centric design principles.",
+            "overview": "California Mutual Insurance Company, a provider of insurance products and services, faced the challenge of migrating off Adobe Business Catalyst—a platform approaching end-of-life. The solution involved designing and developing a custom WordPress CMS theme tailored to their brand and functional needs. This effort encompassed several key initiatives, including rebranding the corporate website to reflect a modernized identity, migrating all content and services from the legacy CMS to a new, secure server environment, and rebuilding the website with responsive front-end markup and user-centric design principles.",
             "responsibilities": [
-                "Creative direction",
+                "Creative Direction",
                 "Wireframes",
                 "UX/UI",
                 "Prototyping",
-                "Front-end development",
-                "WordPress custom theme development",
-                "WordPress Advanced Custom Fields (ACF) configuration",
+                "Front-end Development",
+                "WordPress Custom Theme Development",
+                "WordPress Advanced Custom Fields (ACF) Configuration",
                 "HTML5",
                 "CSS3/Sass",
                 "PHP",
@@ -253,7 +253,7 @@
         "category": "dribbble",
         "img": "cfmg.jpg"
     },
-        {
+    {
         "category": "dribbble",
         "img": "svats.jpg"
     },
@@ -261,7 +261,7 @@
         "category": "dribbble",
         "img": "ppc.jpg"
     },
-        {
+    {
         "category": "dribbble",
         "img": "i.jpg"
     },
