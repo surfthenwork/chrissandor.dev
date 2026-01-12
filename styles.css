@@ -124,6 +124,10 @@ small {
   margin-top: 0;
 }
 
+.border-secondary {
+  border-color: #7f7d7e80 !important;
+}
+
 .decoration-solid {
   text-decoration: solid;
   text-decoration-color: #F2EAE2;
@@ -548,20 +552,21 @@ button#top {
   line-height: 3rem;
   height: 3rem;
   left: -45px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   width: 12rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .025rem;
-  color: #F2EAE2;
-  background-color: #2A2829;
+  color: #2A2829;
+  background-color: #FFC800;
+  /*box-shadow: -2px 2px #7f7d7e;*/
 }
 
 
 /* Projects */
 #projects {
-  scroll-margin-top: -4rem;
+  scroll-margin-top: -2rem;
 }
 
 .projects {
@@ -751,7 +756,7 @@ button#top {
 
   .overlay {
     width: 100%;
-    height: 16rem;
+    height: 20rem;
     /*opacity: .75;*/
     background-color: #2A2829BF;
     position: absolute;
@@ -760,7 +765,7 @@ button#top {
     text-align: center;
 
     .cta {
-      margin-top: calc(8rem - 1.7rem);
+      margin-top: calc(10rem - 1.7rem);
 
       a {
         text-transform: uppercase;
@@ -786,7 +791,7 @@ button#top {
 
   .mask {
     position: relative;
-    height: 16rem;
+    height: 20rem;
     overflow: hidden;
 
     img {
@@ -813,13 +818,15 @@ button#top {
 .bio-wall {
   --bs-gutter-x: 0 !important;
   background-image: url("./img/bg-bio-wall.gif");
-  background-size: auto 50%;
+  /*background-size: 33.33333333% auto;*/
+  background-size: 50% auto;
   background-repeat: no-repeat;
   background-position: bottom left;
 
   img {
     width: 100%;
     /*filter: grayscale(1);*/
+    mix-blend-mode: multiply;
 
     &:hover {
       filter: none;
@@ -835,8 +842,8 @@ button#top {
 
 #about {
   padding-top: 8rem;
-  padding-bottom: 6rem;
-  scroll-margin-top: 0;
+  padding-bottom: 4rem;
+  scroll-margin-top: -2rem;
   background-color: #FFFFFFE0;
   position: relative;
 
@@ -877,7 +884,7 @@ button#top {
     position: absolute;
     z-index: 10;
     left: calc(50% - 20px);
-    bottom: -10rem;
+    bottom: -8rem;
     width: 0px;
     height: 0px;
     border-left: 20px solid transparent;
@@ -946,6 +953,12 @@ button#top {
         }
       }
     }
+
+    li.border-bottom:last-child {
+      border-bottom: none !important;
+      padding-bottom: unset !important;
+      margin-bottom: unset;
+    }
   }
 }
 
@@ -957,6 +970,7 @@ ul li.pill-item {
   margin-right: .75rem;
   /*line-height: 1;*/
   font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
 
@@ -1155,12 +1169,18 @@ ul li.pill-item {
       margin-left: -2rem;
       position: relative;
       right: -4rem;
-      top: -8rem;
+      top: -4rem;
       margin-bottom: -8rem;
 
       img {
-        border-radius: 1rem;
-        border: none !important;
+        /*border-radius: 1rem;*/
+        /*border-radius: unset !important;*/
+        /*border: solid 2px #7f7d7e80;*/
+        /*border: none !important;*/
+
+        box-shadow: #7f7d7e40 0px 5px 10px;
+        border: solid 1rem #2A2829 !important;
+        border-radius: 2rem !important;
       }
 
       figure:first-child {
@@ -1168,12 +1188,12 @@ ul li.pill-item {
       }
 
       figure {
-        background-color: #2A2829;
+        /*background-color: #2A2829;*/
         padding: 0 4rem 4rem 4rem;
       }
 
       a:hover img {
-        opacity: .9125;
+        /*opacity: .9125;*/
       }
     }
 
@@ -1360,15 +1380,15 @@ footer {
 
   .bio-wall {
     div:first-child {
-      display: none;
+      /*display: none;*/
     }
 
     .col-2 {
-      width: 25%;
+      /*width: 25%;*/
     }
 
     .col-4 {
-      width: 50%;
+      /*width: 50%;*/
     }
   }
 
@@ -1440,6 +1460,12 @@ footer {
 }
 
 @media (max-width: 991.98px) {
+
+  .projects-title,
+  .about-title {
+    display: none;
+  }
+
   .portfolio-wall {
     .mask img {
       top: -5%;
@@ -1452,11 +1478,11 @@ footer {
 
     .overlay,
     .mask {
-      height: 12rem;
+      height: 16rem;
     }
 
     .overlay .cta {
-      margin-top: calc(6rem - 1.7rem);
+      margin-top: calc(8rem - 1.7rem);
     }
   }
 
@@ -1504,7 +1530,7 @@ footer {
 
   .projects {
     .projects-container {
-      padding: 4rem 4rem;
+      padding: 6rem 4rem;
     }
 
     h3 {
@@ -1681,8 +1707,14 @@ footer {
     padding-right: 4rem;
   }
 
+  .bio-wall {
+    background-size: 100% auto;
+  }
+
   .bio-wall .col-2,
-  .bio-wall .col-4 {
+  .bio-wall .col-3,
+  .bio-wall .col-4,
+  .bio-wall .col-5 {
     width: 100%;
     display: none;
   }
